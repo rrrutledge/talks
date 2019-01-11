@@ -14,7 +14,7 @@ Sustainable Open Source
 
 # Abstract
 
-Inner source is the application of open source methodologies to company-internal software.
+Inner source is the application of open source methods to company-internal software.
 It's an effective strategy for running shared internal projects and also for developing the people and organizational skills and muscle for wide and deep involvement in open source.
 While simple to define, inner source can be difficult to explain and implement successfully on a broad corporate scale.
 Many participating engineers lack background in open source and the ideas and mechanics of open code development.
