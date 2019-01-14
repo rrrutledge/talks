@@ -6,6 +6,8 @@ An Open Collaboration Maturity Model
 
 # One-sentence description of your presentation
 
+Learn the relationship between open source participation and other collaborative behavior, and apply that learning to meet your open source goals.
+
 # Topic
 
 Open Source
