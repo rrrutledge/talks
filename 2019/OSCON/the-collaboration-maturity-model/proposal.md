@@ -28,7 +28,7 @@ The model is easy to remember and shows how strictly open source activity relate
 
 The Collaboration Maturity Model gives you a map of guideposts to follow on your organization's journey towards open source.
 You'll easily be able to find where you are, where you want to go, and the small, incremental checkpoints that you can hit on your way there.
-As you listen to and gain ideas from other sessions of the conference, you'll be able to mentally plot where those ideas apply in the maturity model and focus on those that lie squarely in your incremental path of growth of open source culture.
+As you listen to and gain ideas from other sessions of the conference, you'll be able to mentally plot where those ideas apply in the maturity model and focus on those that lie squarely in your incremental path of growth towards open source culture.
 
 # Who is this presentation for?
 
