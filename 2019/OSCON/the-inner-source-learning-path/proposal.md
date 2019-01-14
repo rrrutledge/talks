@@ -68,9 +68,8 @@ None
 # Video URL
 
 https://learning.oreilly.com/videos/oscon-2018/9781492026075/9781492026075-video321580
-https://learning.oreilly.com/videos/oscon-2018/9781492026075/9781492026075-video321576
+https://learning.oreilly.com/videos/introduction-to-innersource/9781492041504
 https://learning.oreilly.com/videos/oscon-2018/9781492026075/9781492026075-video321438
-https://learning.oreilly.com/videos/oscon-2018/9781492026075/9781492026075-video321497
 
 # Did someone recommend or encourage you to submit a proposal?
 
