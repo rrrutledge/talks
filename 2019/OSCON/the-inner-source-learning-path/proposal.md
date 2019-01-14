@@ -40,7 +40,7 @@ The session includes a(n)
 
 # Who is this presentation for?
 
-Open source evangelists within a company 
+Open and inner source evangelists within a company 
 
 # Audience level
 
