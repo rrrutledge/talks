@@ -32,7 +32,7 @@ As you listen to and gain ideas from other sessions of the conference, you'll be
 
 # Who is this presentation for?
 
-Open collaboration evangelists in a company.
+Open collaboration evangelists in a company
 
 # Audience level
 
@@ -41,7 +41,7 @@ Non-technical
 # What's the takeaway for the audience?
 
 Learn the relationship between open source participation and other collaborative behavior.
-This understanding will help you to understand and plot next steps between your current position and your open source goals.
+This understanding will help you to plot next steps between your current position and your open source goals.
 
 # Prerequisite knowledge for this presentation
 
