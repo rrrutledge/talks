@@ -49,7 +49,7 @@ Non-technical
 # What's the takeaway for the audience?
 
 * Inner source is a step on the way to deep and robust open source culture. 
-* They key roles of inner source are explained in The Inner Source Learning Path.
+* The key roles of inner source are explained in The Inner Source Learning Path.
 * The learning path resources can be shared and used at your company.
 * You can get involved in the industry conversation around inner source.
 
