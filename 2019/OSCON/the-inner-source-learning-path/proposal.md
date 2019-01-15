@@ -27,16 +27,16 @@ Advanced segments deep dive into explanation of the specific roles of inner sour
 The learning path brings newcomers up to speed and also provides those with experience a common vocabulary and resource to use when discussing inner source.
 
 We'll review the content of the learning path and how you can access it for yourself and share it with others.
-The session includes a(n)
-* short introduction to inner source.
-* explanation of the problems that inner source can solve.
-* overview of the mechanics and roles of inner source.
-* review of the key benefits of inner source.
-* deeper look at the key roles of inner source.
+The session includes:
+* a short introduction to inner source.
+* an explanation of the problems that inner source can solve.
+* an overview of the mechanics and roles of inner source.
+* a review of the key benefits of inner source.
+* a deeper look at the key roles of inner source.
   * Product Owner
   * Trusted Committer
   * Contributor
-* summary of concepts and links to the online learning path resources.
+* a summary of concepts and links to the online learning path resources.
 
 # Who is this presentation for?
 
