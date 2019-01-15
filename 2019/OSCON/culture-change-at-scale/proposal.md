@@ -22,7 +22,7 @@ If your idea involves influencing the behavior of large numbers of individuals, 
 
 Scaled culture change is hard.
 It requires you to exert lasting influence on people and processes that are not in your direct control.
-Almost always the driving motivations of these actors are not in alignment with your idea.
+Almost always the driving motivations of these actors are not in full alignment with your idea.
 Attempts to mandate influence and alignment via organizational fiat have limited sustained efficacy.
 
 This presentation discusses proven strategies for sustained culture change at scale.
@@ -41,7 +41,7 @@ Non-technical
 
 # What's the takeaway for the audience?
 
-Intentially leverage these strategies for culture change instead of just reliance on organizational fiat.
+Intentionally leverage these strategies for culture change instead of just reliance on organizational fiat.
 
 # Prerequisite knowledge for this presentation
 
