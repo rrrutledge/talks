@@ -12,13 +12,76 @@ The Collaboration Maturity Model gives you a map of guideposts to follow on your
 
 # Audience
 
-People interested in spreading open culture within their organization.
+People interested in spreading open culture within their large organization.
 
 # Takeaways
 
 Learn the relationship between open source participation and other collaborative behavior. This understanding will help you to plot next incremental steps between your current position and your open source goals.
 
 # Outline
+
+What is the problem?  The problem is that you want people to engage in open source more than they are.
+
+Sunny Portland.
+
+Describe how great Portland is.
+
+Describe how great Mars is.
+
+What makes travelling to Portland more attractive than travelling to Mars?
+
+Don't know how to make the trip.
+No value along the way.
+Trip is too expensive.
+Too much initial outlay.
+Unknown.  Would need to be a pioneer.
+
+Could also have a description of some intermediate location - an out-of-the-way location on Earth.
+
+Give a description of how wonderful open source or open habits are.
+When people don't hear you does it sound like Mars or Portland to them?
+If you didn't want to go to Mars what if I doubled down on telling you how great
+
+Great time to bring in the idea of knocking down the mountain instead of pushing them over it.
+
+It's like I just keep telling you how great things are on the other side and hoping that will give you enough motivation to go over the mountain.
+
+This is like some people and the journey to Mars.  Replace the person and the hill and the destination with someone traveling to open source instead of to Mars.
+
+You could just say that your company isn't ready for Open Source, but you could actually help them to get ready instead.
+
+You need a map.  When you travelled to Portland it wasn't enough to just know, Portland, Portalnd, Portland (single dot on the map).  You also need to where you are now and what lies in-between you and Portland (so that you can plan out how to get from where you are now and your destination)
+
+Here is a map to full open source participation (4 dimensions)
+
+1.  Location
+1.  Artifact
+1.  Content
+1.  Organization
+
+There could be a 5th dimension, too, which is number of teams.  It is also growth to have more people working together, even if at the same level as before.
+
+Really talk about the idea of _maximum_ potential being limited.  Do not need to imply that the correct tool for every job is the one that has maximum potential value.
+
+Lower or higher _potential_ maturity.  What do you have in your toolbelt?
+
+Give concete examples of activities at the various levels of maturity.
+
+Each of these points provides value
+
+Every individual, every team needs to move up the continuum.
+
+You don't need to move up all dimensions at once.  Usually at any one point in time you just move up one of the dimensions with the others holding constant.
+
+You need to choose what's next based off of where people are now and what's the next step to tem.
+
+Could review some of the principles of culture change in 
+
+Review the principle of opt-in.  Remove the barrier that is preventing them to collaborate.
+
+They would have
+
+A 5th dimension for your program could be the number of projects that your program can support
 
 * Bulleted
 * Description
