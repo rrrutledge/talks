@@ -18,23 +18,37 @@ People interested in spreading open culture within their large organization.
 
 Learn the relationship between open source participation and other collaborative behavior. This understanding will help you to plot next incremental steps between your current position and your open source goals.
 
+# Timing
+
+30 minutes speaking
+10 minutes questions
+
 # Outline
+
+* Introduction
+  * Motivation to change involves more than just a desirable destimation.
+    * Give a picturesque description of Portland.  How many could see themselves visiting in the near future?
+    * Give a picturesque description of Mars.  How many could see themselves visiting in the near future?
+    * What makes travelling to Portland more attractive than travelling to Mars?
+      - Don't know how to make the trip.
+      - Don't know of anyone that has made the trip.  Would need to pioneer.
+      - All of the value comes at the end.
+      - Too expensive.
+      - All expense is at the front.
+    * Give some extra description of the fabulous benefits of visiting Mars.  Point out how doubling down on the message doesn't do anything to allay the concerns.
+  * Give a picturesque description of open collaboration.  How many could see themselves visiting in the near future?
+  * Has anyone had a Mars-like commitment/response when trying to sell a journey to open collaboration?
+  * When many of us hear a description of open collaboration it sounds like the trip to Portland.  Others may hear the exact words and it sounds to them like a trip to Mars.
+  * Show how
+
+Some people see it like visiting Mars.
+
 
 What is the problem?  The problem is that you want people to engage in open source more than they are.
 
 Sunny Portland.
 
-Describe how great Portland is.
 
-Describe how great Mars is.
-
-What makes travelling to Portland more attractive than travelling to Mars?
-
-Don't know how to make the trip.
-No value along the way.
-Trip is too expensive.
-Too much initial outlay.
-Unknown.  Would need to be a pioneer.
 
 Could also have a description of some intermediate location - an out-of-the-way location on Earth.
 
@@ -75,25 +89,19 @@ You don't need to move up all dimensions at once.  Usually at any one point in t
 
 You need to choose what's next based off of where people are now and what's the next step to tem.
 
-Could review some of the principles of culture change in 
+We find that people naturally want to move up this continuum (to the next step, that is).
+
+Assume that people want to move up but something is in their way.  Remove the barrier to entry.  Sometimes it's just as simple as telling them that they need to move up.
+
+Training.  Tooling.  Documentation.
+
+Some examples of how people have moved up.  Bring in the community meetup schedule.
 
 Review the principle of opt-in.  Remove the barrier that is preventing them to collaborate.
 
-They would have
+Sometimes the thing that is needed is visibilty and evangelism, but sometimes on the ground there is some other point of friction that needs to be addressed.
 
-A 5th dimension for your program could be the number of projects that your program can support
+You can use this same maturity model to evaluate your own open collaboration programs and where they can grow.
 
-* Bulleted
-* Description
-* Of key points
+* Conclusion
 
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
