@@ -42,8 +42,9 @@ Learn the relationship between open source participation and other collaborative
   * Show how the same concepts that give trepidation for a trip to Mars also apply to open collaboration.
 
 * Summary of the rest of the presentation.
-* This presentation explains how to guide people through this process.
-* The collaboration maturity model is like a map.
+  * We'll discuss how to overcome those reservations.
+  * A useful tool in charting this journey is the open collaboration maturity model.
+  * We'll review what is the model and how to use it in your open collaboration journey.
 
 ## Body
 
