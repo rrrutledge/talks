@@ -14,24 +14,9 @@ We'll review the content of the learning path and how you can access it for your
 The Learning Path is an effective way of teaching the basics of InnerSource, but many advanced topics require more discussion and training.
 The InnerSource Commons is an online community with with resources to help.
 It has an active, online chat group and mailing list as well as several working groups to plan:
+* Learning Path
 * Patterns
 * Summits
-* Learning Path.
-
-The session includes:
-
-a short introduction to inner source.
-an explanation of the problems that inner source can solve.
-an overview of the mechanics and roles of inner source.
-a review of the key benefits of inner source.
-a deeper look at the key roles of inner source.
-Product Owner
-Trusted Committer
-Contributor
-a summary of concepts and links to the online learning path resources.
-
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
 
 # Audience
 
@@ -40,23 +25,21 @@ Inner source evangelists within a company.
 # Takeaways
 
 * You need InnerSource training.
-* The key roles of inner source are explained in The Inner Source Learning Path.
+* The key roles of InnerSource are explained in The InnerSource Learning Path.
 * Use and share the learning path resources at your company.
 * You can get involved in the industry conversation around InnerSource.
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
-
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
+* Summary of the talks heard today.
+* Quick definition of InnerSource.
+* Inner source needs dedicated training because
+  * Not everyone that needs to participate in InnerSource is already trained in open source.
+  * Different constraints and motivations are at play within the enterprise.
+* Common terminology helps to have shared training on InnerSource.
+* Introduce the key terms of Contributor, Product Owner, and Trusted Committer.
+* Explain what is the Learning Path and how to use it.
+* Explain the other parts of the InnerSource Commons and how to get involved.
+  * Online chat
+  * Summits
+  * Patterns
