@@ -36,6 +36,7 @@ Inner source evangelists within a company.
 * Inner source needs dedicated training because
   * Not everyone that needs to participate in InnerSource is already trained in open source.
   * Different constraints and motivations are at play within the enterprise.
+* The Learning Path is company-shared training.
 * Common terminology helps to have shared training on InnerSource.
 * Introduce the key terms of Contributor, Product Owner, and Trusted Committer.
 * Explain what is the Learning Path and how to use it.
