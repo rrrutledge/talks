@@ -31,7 +31,7 @@ The Inner Source Learning Path gives a simple, easy to understand introduction t
 It introduces key terms, concepts, and principles for effective inner sourcing along with explanations and real examples.
 It is intended to bring newcomers up to speed as well as provide those with experience a common vocabulary to use when discussing more advanced concepts.
 
-The Inner Source Learning path will be freely hosted by O'Reilly Media at https://www.safaribooksonline.com/learning-paths for your use and sharing.
+The Inner Source Learning path will be freely hosted at innersourcecommons.org for your use and sharing.
 More advanced segments of the learning path are forthcoming, and we'll outline how you can get involved.
 
 # Session Detailed Description (max. 1,000 words)
