@@ -118,7 +118,7 @@ After attending this presentation, we hope that viewers will:
 #### Speaker(s) References / Bibliography
 * [Introduction to InnerSource](https://learning.oreilly.com/videos/introduction-to-innersource/9781492041504) (Learning Path).
 * [An Open Collaboration Maturity Model](https://learning.oreilly.com/videos/oscon-2019/9781492050643/9781492050643-video325987) (OSCON 2019)
-* [Growing an InnerSource Program](http://innersourcecommons.org/events/isc-fall-2018/) (ISC Summit Fall 2018 Keynote).
+* [Growing an InnerSource Program](http://innersourcecommons.org/events/isc-fall-2018/) (ISC Summit Fall 2018 Keynote)
 
 #### Comments
 Looking forward to it!
