@@ -35,17 +35,6 @@ The Inner Source Learning path will be freely hosted at innersourcecommons.org f
 More advanced segments of the learning path are forthcoming, and we'll outline how you can get involved.
 
 # Session Detailed Description (max. 1,000 words)
-We'll review the content of the learning path and how you can access it for yourself and share it with others.
-The session includes:
-* a short introduction to inner source.
-* an explanation of the problems that inner source can solve.
-* an overview of the mechanics and roles of inner source.
-* a review of the key benefits of inner source.
-* a deeper look at the key roles of inner source.
-  * Product Owner
-  * Trusted Committer
-  * Contributor
-* a summary of concepts and links to the online learning path resources.
 
 ## Outline
 
