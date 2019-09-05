@@ -54,7 +54,7 @@ Contrast with botched rollout of agile.
     * Each of these are the same number of syllables as "InnerSource".
 * Show a video clip explaining some of this terminology.
 
-## Creating the Learning Path.
+## Creating the Learning Path
 
 * Breakdown of the learning path into sections and segments.
 * Run as an open source project.
