@@ -5,7 +5,7 @@ Bottom-Up Open Source Culture
 # Abstract
 
 Open source produces the world's most impactful software.
-Guides to producing open source are the gold standard for how to collaborate on a large software project.
+Open source working patterns are the gold standard for how to collaborate on a large software project.
 These same patterns of open collaboration produce great benefits when applied to company-internal software development.
 Internal projects, run in an open, collaborative fashion, unlock developer creativity.
 They balance the needs from multiple parts of the company and reduce siloed, duplicative work.
