@@ -7,7 +7,7 @@ Bottom-Up Open Source Culture
 Open source produces the world's most impactful software.
 Open source working patterns are the gold standard for how to collaborate on a large software project.
 These same patterns of open collaboration produce great benefits when applied to company-internal software development.
-Internal projects, run in an open, collaborative fashion, unlock developer creativity.
+Internal projects, run in an open, collaborative fashion, unlock developer creativity and efficiency.
 They balance the needs from multiple parts of the company and reduce siloed, duplicative work.
 
 In this presentation, we'll explore how to go about introducing an open source inspired working model within your company from the ground up.
