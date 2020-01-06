@@ -29,6 +29,7 @@ People that already believe that open source is the right way to develop softwar
 
 * InnerSource is the application of open source methodology to company-internal software development.
 * InnerSource is hard but brings many benefits.
+* I have an idea of how to improve my InnerSource based on one of the experiences that I've heard.
 * I will join the InnerSource Commons.
 
 # Outline
@@ -39,4 +40,5 @@ People that already believe that open source is the right way to develop softwar
 * As multiple companies in the industry benefit via open source collaboration,
 so do multiple teams in the company benefit via InnerSource collaboration.
 * While simple in theory, successful InnerSource comes with many challenges.
+* InnerSource comes in many shapes depending on the context it's in.
 * The InnerSource Commons is an open community where people come together to help each other in adoption of InnerSource.
