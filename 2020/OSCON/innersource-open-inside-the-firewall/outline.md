@@ -4,17 +4,22 @@ InnerSource: Open Inside the Firewall
 
 # Abstract
 
-Open source produces and supports the world's most impactful software.
-It helps companies to not reinvent the wheel and is a lot of fun.
-Anything that is not a company's secret sauce can be accelerated by working on it with others.
+Open source helps create the world's most impactful software.
+It allows people from all walks to collaborate on projects that fill a common need.
+InnerSource applies the lessons learned from open source to company-internal software development.
+Sustained InnerSource practice unlocks developer creativity and efficiency.
+It reduces siloed, duplicated work and creates a dynamic, fulfilling work environment.
 
-In this talk we'll look at InnerSource.
-InnerSource is the application of open source methodology to company-internal software development.
-We'll examine the benefits and challenges from case studies share in the InnerSource Commons,
-a non-profit dedicated to education of open source software.
+This talk gives an introduction and overview of the breadth of current state of InnerSource in the industry.
+We'll discuss motivations for InnerSource, benefits seen, challenges faced, and areas of active investigation.
+This content comes not just from a single perspective,
+but from the breadth of experiences shared by dozens of software companies as told in the InnerSource Commons,
+an open organization dedicated to education and spread of InnerSource.
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+No matter what your current interest or motivation for InnerSource, this presentation will give you the latest experiences that others in your place have already had.
+You'll be ready to build on their learnings.
+You'll also learn how to leverage the InnerSource Commons to stay in touch on an ongoing basis with the latest industry experiences in InnerSource.
+
 
 # Audience
 
