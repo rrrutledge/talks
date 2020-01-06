@@ -20,7 +20,6 @@ No matter what your current interest or motivation for InnerSource, this present
 You'll be ready to build on their learnings.
 You'll also learn how to leverage the InnerSource Commons to stay in touch on an ongoing basis with the latest industry experiences in InnerSource.
 
-
 # Audience
 
 People that already believe that open source is the right way to develop software.
