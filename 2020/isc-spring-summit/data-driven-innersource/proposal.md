@@ -22,7 +22,7 @@ Presentation (45 min)
 Inner Source Metrics
 
 # Session Title (max. 20 words)
-Data-Drive InnerSource
+Data-Driven InnerSource
 
 # Session Abstract (max. 250 words)
 Wide-scale adoption of InnerSource is a state that can feel so close yet many times is so far.
