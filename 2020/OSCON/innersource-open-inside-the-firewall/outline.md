@@ -26,7 +26,7 @@ People that already believe that open source is the right way to develop softwar
 
 # Takeaways
 
-* InnerSource is the application of open source methodology to company-internal software development.
+* InnerSource is the application of open source practices to company-internal software development.
 * InnerSource is hard but brings many benefits.
 * I have an idea of how to improve my InnerSource based on one of the experiences that I've heard.
 * I will join the InnerSource Commons.
