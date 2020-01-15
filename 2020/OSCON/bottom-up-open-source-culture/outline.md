@@ -32,6 +32,6 @@ Engineering leaders and evangelists that want to bring open source culture and p
 * Applying open source culture and methodology internally (InnerSource) brings benefits to proprietary software development.
 * Introducing an InnerSource working style at scale is a culture change.
 * Reusable patterns for culture change (summarized in [the Fearless Change series](http://www.fearlesschangepatterns.com/)) apply and work.
-* Scientific research on the social dynamics of culture change supports these key patterns.
+* Scientific research on the social dynamics of culture change (summarized in [How Behavior Spreads](https://www.amazon.com/How-Behavior-Spreads-Contagions-Analytical/dp/0691175314)) supports these key patterns.
 * Give examples of how we've used these patterns at Nike and what has been our experience with them.
 * Introduce InnerSource working style at your company and use these culture change patterns to do it.
