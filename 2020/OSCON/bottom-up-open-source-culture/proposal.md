@@ -58,7 +58,7 @@ None
 https://learning.oreilly.com/videos/oscon-2019/9781492050643/9781492050643-video325987
 
 ## Did someone recommend or encourage you to submit a proposal?
-None
+Sharon Cordesse
 
 ## Diversity
 No
@@ -71,5 +71,5 @@ Published material that supports this content includes:
 * Fearless Change (https://fearlesschangepatterns.com/)
 * How Behavior Spreads (https://www.amazon.com/How-Behavior-Spreads-Contagions-Analytical/dp/0691175314)
 
-We've been in contact with both authors of these patterns to discuss what how we've seen them play out in real life at Nike.
+We've been in contact with both authors of these patterns to discuss how we've seen them play out in real life at Nike.
 We will ask both authors to review and give feedback on rehearsals of this presentation before sharing at OSCON.
