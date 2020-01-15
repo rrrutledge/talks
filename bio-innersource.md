@@ -14,3 +14,4 @@ Links to some of Russ' public talks:
 
 * [Introduction to InnerSource](https://learning.oreilly.com/videos/introduction-to-innersource/9781492041504)
 * [Growing an InnerSource Program](https://learning.oreilly.com/videos/oscon-2018-/9781492026075/9781492026075-video321576)
+* [An Open Collaboration Maturity Model](https://learning.oreilly.com/videos/oscon-2019/9781492050643/9781492050643-video325987)
