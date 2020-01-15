@@ -18,12 +18,12 @@ At the end of the presentation you'll leave with a mental guide of principles to
 
 # Audience
 
-Engineering leaders and evangelists that want to bring open source culture and methodology inside their company.
+Engineering leaders and evangelists that want to bring open source culture and practices inside their company.
 
 # Takeaways
 
 * Sustainable change to open source culture starts at the grass roots level and expands from there.
-* Management can support and make space for grass roots open source culture change, but cannot drive it.
+* Management can support and make space for grass roots open source culture change, but cannot force it.
 * Published research on the social dynamics of culture change support explain why this grass roots expansion model is effective.
 
 # Outline
