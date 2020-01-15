@@ -40,7 +40,7 @@ Advanced
 
 * Sustainable change to open source culture starts at the grass roots level and expands from there.
 * Management can support and make space for grass roots open source culture change, but cannot force it.
-* Published research on the social dynamics of culture change support explain why this grass roots expansion model is effective.
+* Published research on the social dynamics of culture change explain why this grass roots expansion model is effective.
 
 ## Is this session more conceptual or how-to?
 
