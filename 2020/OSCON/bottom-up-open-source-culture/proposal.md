@@ -67,9 +67,9 @@ No
 No
 
 ## Additional notes
-Published material that supports this content includes:
+Published material that supports this presentation includes:
 * Fearless Change (https://fearlesschangepatterns.com/)
-* How Behavior Spreads (https://www.amazon.com/How-Behavior-Spreads-Contagions-Analytical/dp/0691175314)
+* How Behavior Spreads (https://amzn.to/35YhFhs)
 
 We've been in contact with both authors of these patterns to discuss how we've seen them play out in real life at Nike.
 We will ask both authors to review and give feedback on rehearsals of this presentation before sharing at OSCON.
