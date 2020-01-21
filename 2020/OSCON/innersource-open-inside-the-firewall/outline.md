@@ -22,7 +22,7 @@ You'll also learn how to leverage the InnerSource Commons to stay in touch on an
 
 # Audience
 
-People that already believe that open source is the right way to develop software.
+Open source advocates who want a gentler way to push their companies into open source practices.
 
 # Takeaways
 
