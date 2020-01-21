@@ -64,13 +64,4 @@ No
 No
 
 ## Additional notes
-I have an alternative bio to use for this submission.
-This bio highlights my work in the InnerSource community rather than my corporate affiliation:
-
-- - -
-
-Russ Rutledge is a member of the Board of Directors at the InnerSource Commons,
-a non-profit dedicated to the teaching of InnerSource across the industry.
-Russ has worked at several multi-national software companies and participated at all levels of InnerSource practice,
-both as individual contributor, director, and everywhere between.
-Russ's drive and passion is to enable all software engineers to achieve incredible technical and business throughput via streamlined, collaborative, InnerSource process.
+Looking forward to sharing!
