@@ -31,8 +31,7 @@ You'll be ready to build on their learnings.
 You'll also learn how to leverage the InnerSource Commons to stay in touch with the latest industry experiences in InnerSource on an ongoing basis.
 
 ## Who is this presentation for?
-* Open source advocates who want a gentler way to push their companies into open source practices.
-* Open source advocates who want to bring the benefits of open source practices inside their company.
+Open source advocates who want to bring the benefits of open source practices inside their company.
 
 ## Audience level
 Advanced
