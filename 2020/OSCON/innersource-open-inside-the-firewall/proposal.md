@@ -24,7 +24,7 @@ This talk gives an introduction and overview of the breadth of current state of 
 We'll discuss motivations for InnerSource, benefits seen, challenges faced, and areas of active investigation.
 This content comes not just from a single perspective,
 but from the breadth of experiences shared by dozens of software companies as told in the InnerSource Commons,
-an open organization dedicated to education and spread of InnerSource.
+an open organization dedicated to the education and spread of InnerSource.
 
 No matter what your current interest or motivation for InnerSource, this presentation will give you the latest experiences that others in your place have already had.
 You'll be ready to build on their learnings.
