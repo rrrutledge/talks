@@ -2,6 +2,7 @@
 
 People that are in the software development process.
 Engineers, architects, product, scrum, etc., but all involved in the day-to-day and week-to-week process of producing software.
+Not necessarily having been involved before in open source or InnerSource.
 
 # Takeaways
 
