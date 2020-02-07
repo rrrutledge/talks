@@ -68,36 +68,3 @@ We'll go over gotchas and pitfalls as well as how to stay in touch with the ongo
    * Wait it out, Work Around, and Escalate are antipatterns in a situation that needs InnerSource.
    * Use these key terms when describing InnerSource: Guest, Host, Contributor, Product Owner, Trusted Committer.
    * The InnerSource Commons and InnerSource Learning Path support industry learning and sharing on InnerSource.
-
-# Raw Notes
-
-* This process we call InnerSource.
-
-* Tell my own story (make it personal)
-  * We will support you above and beyond what we're otherwise doing.
-  * Community vs core team roadmap.
-  * The core team was always there to support the community of interest.
-  * I wouldn't have done it any other way.
-* My own story hits these points:
-  * More nimble in responding to the needs of the business (the centrally-managed process couldn't keep up)
-    * Actually got a team.
-    * Building EC2 and _Lambda_.
-  * We got things done via InnerSource rather than dependency mapping.
-* Since then we've worked to formalize what we're doing.
-* Responsibilities of core team to support the community.
-* How to make it relevant to a team running a platform as well as a team consuming a platform?
-  * Team consuming the platform:
-    * Going to do the work anyway.
-    * Don't have to maintain it.
-* Talk about dividing it up into tickets - The work and then the time we all will spend supporting the work.
-* Scaled, top-down planning processes tend to make sure that coupled parts of the business are together.  There's nothing to make sure that coupled parts of the tech stack are together.
-* It takes a whole lot of planning and overhead-y people in order to work out the business couplings.  Let's assume that we will never have that around tech.   You can around the production of the tech but the usage of the tech, how do you make sure that in a one-to-many relationship that the needs of the many are filled.  We're doing it with these traditional "give"s and "get"s, but that was meant for a one-to-one or one-to-few relationship whereas we now have a one-to-many relationship.
-* The way to run a one-to-many relationship is in a marketplace.
-* You are going to run into this.
-* Explain the actual roles.
-* This is a culture change.
-* Have to value the whole-company time.
-* Have to take into account the ongoing cost of maintenance. 
-* The InnerSource learning path is a resource to help.
-* Stay in touch with the #innersourcecommons.
-* Conclusion
