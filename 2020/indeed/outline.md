@@ -1,19 +1,19 @@
-This document holds generic planning material that can be used when preparing content to share with a broad audience (presentation, article, class, etc.).
-Make a copy of it, fill it out, and open a pull request to a repo you own to get feedback on it _before_ creating your specific content.
-This step will sharpen your focus and reduce spin and wasted effort on the more expensive final product.
-
 # Audience
 
-_Who is the intended audience for your remarks?  Understanding this point up-front should help you to cull and focus your content._
+Indeed Open Source Ambassadors.
+These developers are already excited and sold on open source and are interested in how the same principles can be practice inside Indeed.
+They are wondering how code can be shared more broadly within the company.
 
 # Takeaways
 
-_What do you want to change in your audience as a result of your remarks?_
-_While increased understanding is a possibility, your content will be stronger if part of the takeaway is some change in behavior that you'd like to see in your audience members._
+* InnerSource is the application of open source methodologies to corporate-internal development.
+* Participants in InnerSource have different constraints and motivations and, thus, need different support to engage in open-source-esque behavior.
+* The industry has defined "Trusted Committer", "Contributor", and "Product Owner" as the three key roles in a sucessful InnerSource effort. 
+* The InnerSource Commons is a place to discuss and learn InnerSource with other companies.
 
 # Time
 
-_How much time do you have?_
+30min
 
 # Abstract
 
