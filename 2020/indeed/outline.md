@@ -13,7 +13,8 @@ They are wondering how code can be shared more broadly within the company.
 
 # Time
 
-30min
+* 30min presentation
+* 30min Q&A
 
 # Abstract
 
@@ -29,6 +30,7 @@ Afterward we'll consider how these learnings apply to our path at Indeed.
 
 * Introduction
   * My own story as introduction to both myself and the topic.
+    * InnerSource at Nike.
   * Benefits of InnerSource
 * Defintion of InnerSource
   * Multiple squads, teams, business units, all contributing to the same repository.
