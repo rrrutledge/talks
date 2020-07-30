@@ -1,40 +1,43 @@
-This document holds generic planning material that can be used when preparing content to share with a broad audience (presentation, article, class, etc.).
-Make a copy of it, fill it out, and open a pull request to a repo you own to get feedback on it _before_ creating your specific content.
-This step will sharpen your focus and reduce spin and wasted effort on the more expensive final product.
-
 # Audience
 
-_Who is the intended audience for your remarks?  Understanding this point up-front should help you to cull and focus your content._
+The InnerSource industry.
+People that are familiar with InnerSource and want to make it happen.
 
 # Takeaways
 
-_What do you want to change in your audience as a result of your remarks?_
-_While increased understanding is a possibility, your content will be stronger if part of the takeaway is some change in behavior that you'd like to see in your audience members._
+* Nike's approach to InnerSource is very interesting.
+* I'm excited to see how thing progress at Nike.
+* This content expands my mental model of an InnerSource program.
 
 # Time
 
-_How much time do you have?_
+15min
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+InnerSource is more than telling someone the mechanics of code and community management.
+It is a culture change that needs to be nurtured and supported.
+Like all culture change, it can be encouraged from the top-down but grows out of energy from the bottom up.
+How can we foster real InnerSource culture change at an enterprise-wide scale?
+Come and see how we work at Nike to create an culture ripe for InnerSource and leverage data to scale that culture company-wide.
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
-
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
-
-
+* Preview of the talk - How are accomplishing InnerSource culture change through social and data-driven means.
+* Approach to culture change.
+  * Sustained InnerSource is a culture change.
+  * The key to sustainable culture change is voluntary participation.
+    * Your new culture has to be attractive and useful enough so that people want to participate.
+    * Leadership can make space to permit people to voluntarily participate, but cannot be the reason that people participate.
+    * Example of the tree and the supporting rod.
+* The Collaboration Grid.
+  * Peoples' opportunities and constraints did not make InnerSource an attractive, sustainable option.
+  * InnerSource is a piece on a larger collaboration continuum.
+  * Rather than overcome our difficulty through leadership pressure, we encouraged people to get started at a point on the collaboration continuum for which they were ready.
+  * As people participate in collaboration, they naturally want to uplevel themselves.
+  * Review timeline and results at the company.
+* Scaling with Data
+  * Data helps us to see the effect that our culture is having and to know where more work is needed.
+  * Data can also make it easier for people to engage in the type of culture that we want to see.
+  * Summary of the Jeter system.
+* Summary
