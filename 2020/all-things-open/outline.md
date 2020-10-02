@@ -1,3 +1,7 @@
+# Title
+
+Bottom-Up Open Source Culture
+
 # Audience
 
 Engineering leaders and evangelists that want to bring open source culture and practices inside their company.
