@@ -25,7 +25,7 @@ The purpose is to see where the flow of ideas is unnatural or needs to be augmen
 I also can see how the slide images or content need update.I incorporate feedback and ideas in realtime as I am talking.
 Eventually I get through it once.
 
-**Time: 2x**
+**Time: 3x**
 
 # Rough Rehearsal
 
