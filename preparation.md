@@ -40,15 +40,15 @@ I view the rough rehearsal.
 I incorporate any feedback.
 I rehearse again.
 
-**Time: 3x**
+**Time: 5x**
 
 # Final Rehearsal
 
-I view the rough rehearsal.
+I view the polished rehearsal.
 I incorporate any feedback.
 I rehearse one last time.
 This rehearsal is usually done close to the time of giving the actual presentation.
 
 The purpose is to have a solid, sparkling run that incorporates all of the feedback and gives confidence to the actual upcoming presentation.
 
-**Time: 2.5x**
+**Time: 3x**
