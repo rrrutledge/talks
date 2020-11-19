@@ -13,45 +13,43 @@ They want to see if this idea could actually work at their company.
 
 # Takeaways
 
-_What do you want to change in your audience as a result of your remarks?_
-_While increased understanding is a possibility, your content will be stronger if part of the takeaway is some change in behavior that you'd like to see in your audience members._
+* I will clarify my goals with respect to InnerSource.
+* I will follow culture change principles in the rollout.
+* I will stay involved in the InnerSource Commons.
 
 # Time
 
-_How much time do you have?_
+20min
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+You want InnerSource at your company and are wondering where to start.
+Successful rollout of InnerSource is more than just calling out a direction.
+Let's review together the factors to consider and principles to employ when charting out a path to a successful InnerSource transition.
 
 # Outline
 
 * Before getting started you need to know where you want to arrive.
-* 
-
-* What is the criticality of collaboration?  From the host and guest point of view?  Side, ancillary, or main?
-* How do you account for peoples' time?  Protected and given or ad-hoc?  Time that comes out in sprints.
-* Do you start with a pilot project or go big right away?  Recommend some kind of limited rollout.
-* 3 principles to culture change initiative.  Multiple points of reinforcement horizontally and vertically.  Planted success
+* There are different types of InnerSource
 * What are your goals with InnerSource?
   * Hackathon-style innovations?
   * Developer quality of life?
   * Unblocking dependencies? Allowing in more engineering resources?
-* Contributing agreements.
-* Foster a culture of collaboration.
+* Introduce Guest and Host
+* Introduce criticality - side, support, main.
+* 9x9 grid showing combination of motivations
 
-* Bulleted
-* Description
-* Of key points
+| Guest \ Host | Side | Support | Main |
+|--------------|------|---------|------|
+| Side         | Playground - just for fun.  Protected time | Gig marketplace.  Low motivation. | Gig marketplace |
+| Support      | This can work. | Ouch.  | Work in support |
+| Main         | This is what people get concerned about.  Need a way to make it real | This can get frustrating. | How do I work it into my sprints | 
 
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
+* How do you account for peoples' time?
+  * No accounting.
+  * Protected and sidelined.
+  * Tracked first-class
+* It is a culture change (fearless change, how behavior spreads)
+* 3 principles to culture change initiative.  Multiple points of reinforcement horizontally and vertically.  Planted success.
+* Do you start with a pilot project or go big right away?  You can only roll out as big as you can provide that reinforcement.
+* Stay in touch, learn, and share in the InnerSource Commons.
