@@ -1,7 +1,3 @@
-This document holds generic planning material that can be used when preparing content to share with a broad audience (presentation, article, class, etc.).
-Make a copy of it, fill it out, and open a pull request to a repo you own to get feedback on it _before_ creating your specific content.
-This step will sharpen your focus and reduce spin and wasted effort on the more expensive final product.
-
 # Title
 
 Getting Started with InnerSource at your Company
