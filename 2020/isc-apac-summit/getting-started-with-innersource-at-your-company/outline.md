@@ -4,14 +4,12 @@ This step will sharpen your focus and reduce spin and wasted effort on the more 
 
 # Title
 
-_What is the title of your content?_
+Getting Started with InnerSource at your Company
 
 # Target Audience
 
-_Who is the intended recipient for your remarks?_
-_It may be just a subset of those that are actually listening to you._
-_What is important to your target audience?_
-_Be as specific as possible, as it will help you to focus and streamline your content._
+People that have heard of InnerSource and are interested in the idea.
+They want to see if this idea could actually work at their company.
 
 # Takeaways
 
@@ -28,6 +26,20 @@ _What is the elevator pitch for your content?_
 _This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
 
 # Outline
+
+* Before getting started you need to know where you want to arrive.
+* 
+
+* What is the criticality of collaboration?  From the host and guest point of view?  Side, ancillary, or main?
+* How do you account for peoples' time?  Protected and given or ad-hoc?  Time that comes out in sprints.
+* Do you start with a pilot project or go big right away?  Recommend some kind of limited rollout.
+* 3 principles to culture change initiative.  Multiple points of reinforcement horizontally and vertically.  Planted success
+* What are your goals with InnerSource?
+  * Hackathon-style innovations?
+  * Developer quality of life?
+  * Unblocking dependencies? Allowing in more engineering resources?
+* Contributing agreements.
+* Foster a culture of collaboration.
 
 * Bulleted
 * Description
