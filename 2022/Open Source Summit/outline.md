@@ -1,46 +1,39 @@
-This document holds generic planning material that can be used when preparing content to share with a broad audience (presentation, article, class, etc.).
-Make a copy of it, fill it out, and open a pull request to a repo you own to get feedback on it _before_ creating your specific content.
-This step will sharpen your focus and reduce spin and wasted effort on the more expensive final product.
-
 # Title
 
-_What is the title of your content?_
+Open Inside: Accelerating Corporate Software Delivery with InnerSource
 
 # Target Audience
 
-_Who is the intended recipient for your remarks?_
-_It may be just a subset of those that are actually listening to you._
-_What is important to your target audience?_
-_Be as specific as possible, as it will help you to focus and streamline your content._
+* Open-source enthusiasts who wish to apply their craft in their daily work.
+* InnerSource advocates who want to see how it's done.
 
 # Takeaways
 
-_What do you want to change in your audience as a result of your remarks?_
-_While increased understanding is a possibility, your content will be stronger if part of the takeaway is some change in behavior that you'd like to see in your audience members._
+* Use the Core Team and Design Review patterns.
+* Come to the InnerSource Commons.
 
 # Time
 
-_How much time do you have?_
+30min
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+Open source community management practices do a wonderful job of creating projects that are broadly useful by many groups across the software industry.
+These same practices applied inside corporations (InnerSource) can have the analagous result of widely-shared software within the company,
+reducing engineering silos and increasing engineering throughput.
+Achieving this result in the context of a corporate environment, however, requires unique motivations and structure.
+InnerSource activities must be incorporated in alongside sprints, roadmaps, quarterly deliverables, staffing changes and so on.
+Come to see the detailed structure and setup that have worked for us to give support to sustained InnerSource in strategic company projects.
+We'll review specific suggestions and reference open materials that you can take back and apply to your specific projects and organizations. 
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
-
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
-
+* Applying open practices on the inside is InnerSource.
+* This is not spontaneous InnerSource but planned InnerSource instead.
+* We have an InnerSource project that is modernizing part of our technology stack agile and higher throughput
+* MVP created and then InnerSource to spread it.
+* Agreement to use it.
+* Need a core team to make it easy to use and contribute.
+* This is technology and also process.
+* The core team pattern.
+* Integrated into Sprints and Jira.
