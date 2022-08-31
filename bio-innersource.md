@@ -2,7 +2,7 @@ This file holds my bio for use in conference speaker outlines.
 
 - - -
 
-Russ Rutledge is the Secretary and Member of the Board of Directors at the InnerSource Commons,
+Russ Rutledge is the Assistance Secretary of the InnerSource Commons,
 a non-profit foundation dedicated to the teaching of InnerSource across the industry.
 Russ has worked at several multi-national software companies and participated at all levels of InnerSource practice,
 both as individual contributor, director, and everywhere between.
