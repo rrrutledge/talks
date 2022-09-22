@@ -1,46 +1,37 @@
-This document holds generic planning material that can be used when preparing content to share with a broad audience (presentation, article, class, etc.).
-Make a copy of it, fill it out, and open a pull request to a repo you own to get feedback on it _before_ creating your specific content.
-This step will sharpen your focus and reduce spin and wasted effort on the more expensive final product.
-
 # Title
 
-_What is the title of your content?_
+Continuous InnerSource in Production (5 times)
 
 # Target Audience
 
-_Who is the intended recipient for your remarks?_
-_It may be just a subset of those that are actually listening to you._
-_What is important to your target audience?_
-_Be as specific as possible, as it will help you to focus and streamline your content._
+InnerSource program and project leaders.
+They want to run successful InnerSource projects.
 
 # Takeaways
 
-_What do you want to change in your audience as a result of your remarks?_
-_While increased understanding is a possibility, your content will be stronger if part of the takeaway is some change in behavior that you'd like to see in your audience members._
+* It is possible to have InnerSource contributions to critical projects.
+* Use the "InnerSource Responsibilities" flow in high-activity InnerSource projects.
 
 # Time
 
-_How much time do you have?_
+15 minutes
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+InnerSource contributions are wonderful,
+but how do you handle a situation where there are so many of them that they threaten the stability of the product?
+Come for the story of our flagship InnerSource project at WellSky and the things we've done to handle the incredible demand to contribute to it and use it.
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
-
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
-
+* Introduction of Russ and WellSky.
+* Genesis of Form Builder.
+* Formation of the core team.
+* Breaks in the product.
+* Personal relationships with the business units.
+* Solutions and engineering review.
+* Branching and manual QA.
+* Future vision: Full CI.
+* Takeaways:
+  * You can leverage relationships and process until you get automation.
+  * Link to the "InnerSoruce" responsibilities video.
