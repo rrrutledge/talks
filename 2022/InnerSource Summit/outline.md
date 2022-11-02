@@ -34,4 +34,4 @@ Come for the story of our flagship InnerSource project at WellSky and the things
 * Future vision: Full CI.
 * Takeaways:
   * You can leverage relationships and process until you get automation.
-  * Link to the "InnerSoruce" responsibilities video.
+  * Link to the "InnerSource" responsibilities video.
