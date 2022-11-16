@@ -1,46 +1,46 @@
-This document holds generic planning material that can be used when preparing content to share with a broad audience (presentation, article, class, etc.).
-Make a copy of it, fill it out, and open a pull request to a repo you own to get feedback on it _before_ creating your specific content.
-This step will sharpen your focus and reduce spin and wasted effort on the more expensive final product.
-
 # Title
 
-_What is the title of your content?_
+An ISPO Working Group for the ISC
 
 # Target Audience
 
-_Who is the intended recipient for your remarks?_
-_It may be just a subset of those that are actually listening to you._
-_What is important to your target audience?_
-_Be as specific as possible, as it will help you to focus and streamline your content._
+People that in charge of spreading InnerSource at their company.
 
 # Takeaways
 
-_What do you want to change in your audience as a result of your remarks?_
-_While increased understanding is a possibility, your content will be stronger if part of the takeaway is some change in behavior that you'd like to see in your audience members._
+* The ISPO working group produces shared, usable content to help me to teach and run InnerSource at my company.
+* I will join the ISPO Working Group.
 
 # Time
 
-_How much time do you have?_
+20min
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+Many of us in the ISC are in charge of the adoption of InnerSource at their respective company.
+We all need to teach and enable people and teams at our companies to practice effective InnerSource.
+We need documentation and tooling to overcome the challenges associated with adopting InnerSource.
+We need training to enable people to apply that documentation and tooling.
+Each of us is creating this documentation, tooling, and training within our company.
+
+While no two of our companies are exactly the same, not each company is wholly different, either.
+We must work together to create open-source documentation, tooling, training for overcoming InnerSource-related challenges.
+We must practice what we preach and stop duplicating work in creating solutions specific to each company.
+Since not all companies are the same, there may be more than one solution for a given InnerSource challenge, but there will not be an infinite number of solutions either.
+
+Let us form an ISC working group to document challenges that we have and plan that solutions to those challenges are implemented as much as possible in the open.
+Many of these open implementations may result in contributions existing ISC working groups,
+but it's also possible that we may start some new projects.
+Let's get together to discuss this idea and how to organize ourselves to accomplish it.](
+
+See [ISPO Working Group Charter](https://github.com/InnerSourceCommons/foundation-governance/pull/2).
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
-
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
-
+* Common challenges facing an InnerSource program.
+* Examples in the ISC where multiple companies are solving the same challenges.
+* No two situations are exactly the same, not every situation is wholly different.
+* We can produce shared documentation, tooling, and training.
+* Companies can reuse what applies to them, leave behind what doesn't, and create what's missing.
+* We all benefit in having one anothers' work more readily sharable and composable.
+* Working group structure: project board and regular meetups.
