@@ -4,7 +4,7 @@ An ISPO Working Group for the ISC
 
 # Target Audience
 
-People that in charge of spreading InnerSource at their company.
+People in charge of spreading InnerSource at their company.
 
 # Takeaways
 
@@ -31,7 +31,7 @@ Since not all companies are the same, there may be more than one solution for a 
 Let us form an ISC working group to document challenges that we have and plan that solutions to those challenges are implemented as much as possible in the open.
 Many of these open implementations may result in contributions existing ISC working groups,
 but it's also possible that we may start some new projects.
-Let's get together to discuss this idea and how to organize ourselves to accomplish it.](
+Let's get together to discuss this idea and how to organize ourselves to accomplish it.
 
 See [ISPO Working Group Charter](https://github.com/InnerSourceCommons/foundation-governance/pull/2).
 
