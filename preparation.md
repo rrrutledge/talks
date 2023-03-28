@@ -22,7 +22,8 @@ I translate the outline to a slide deck and get quick, Ignite!-style visuals for
 
 I try to give the presentation based on the slides.
 The purpose is to see where the flow of ideas is unnatural or needs to be augmented.
-I also can see how the slide images or content need update.I incorporate feedback and ideas in realtime as I am talking.
+I also can see how the slide images or content need update.
+I incorporate feedback and ideas in realtime as I am talking.
 Eventually I get through it once.
 
 **Time: 3x**
