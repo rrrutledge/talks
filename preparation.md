@@ -31,7 +31,7 @@ Eventually I get through it once.
 # Rough Rehearsal
 
 I do a rehearsal of the presentation.
-It's still pretty rough
+It's still pretty rough.
 
 **Time: x**
 
