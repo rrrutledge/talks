@@ -26,6 +26,63 @@ Slides from last year:
 * https://docs.google.com/presentation/d/1aFfCUjvX2y3q9HOHZxMQyLh5lsj8plMx/edit?usp=sharing&ouid=111601782014637907784&rtpof=true&sd=true
 
 ## ISC Update
+  * Introduction to InnerSource Commons.
+    * Non-profit foundation
+    * Educate and promote the adoption of InnerSource
+  * InnerSource is growing
+     * Gartner identifies InnerSource first in its top strategic technology trends.
+       * https://www.gartner.com/en/newsroom/press-releases/gartner-identifies-the-top-strategic-technology-trends-in-software-engineering-trends-for-2023
+       * Presented at the Gartner Application Innovation & Business Solutions Summit.
+     * Included on the Stack Overflow developer survey.
+       * https://survey.stackoverflow.co/2023/#overview
+     * InnerSource Commons stories have been collected.
+   * InnerSource Commons is growing
+     * 2,700 and 800 companies participating.
+     * State of InnerSource survey
+       * InnerSource is an important strategy in my organization - 68%
+       * Executive Management explicitly supports InnerSource - 65%
+       * "Scaling Up" stage - 49%
+       * InnerSource is funded: 57%
+     * Organized in working groups
+       * Patterns
+         * What it is
+           * Repeatable solutions to common challenges in InnerSource.
+         * Accomplishments for the year
+         * Contributor of the Year
+         * What's next
+           * Add yourself as an adopter of patterns
+       * ISPO
+         * What it is
+           * ISPO is short for "InnerSource Program Office"
+           * Collaborate on materials for those working on scaling InnerSource throughout their company
+         * Accomplishments for the year
+           * First year!
+           * 27 participants
+         * Contributor of the Year
+         * What's next
+       * Marketing/Outreach
+         * What it is
+         * Accomplishments for the year
+         * Contributor of the Year
+         * What's next
+         * Repeatable solutions to common challenges in InnerSource.
+         * Plan and run events of the InnerSource Commons
+           * Twice-monthly community calls
+           * Annual summit
+           * In-person gatherings
+           * Monnthly newsletter
+           * State of InnerSource
+       * Learning Path
+         * What it is
+           * InnerSource practitioner training content in the form of articles and videos.
+         * Accomplishments for the year
+           * Project Leader section
+           * Brazilian Portuguese translation
+           * 53 updates
+         * Contributor of the Year
+           * Senthil Nathan!
+         * What's next
+           * New videos
   * 4min (InnerSource)
     * Reflection of InnerSouce in the Marketplace (here is why InnerSource is winning)
       * Gartner
