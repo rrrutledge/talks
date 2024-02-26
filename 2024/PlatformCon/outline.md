@@ -1,42 +1,48 @@
-This document holds generic planning material that can be used when preparing content to share with a broad audience (presentation, article, class, etc.).
-Make a copy of it, fill it out, and open a pull request to a repo you own to get feedback on it _before_ creating your specific content.
-This step will sharpen your focus and reduce spin and wasted effort on the more expensive final product.
-
 # Title
 
-_What is the title of your content?_
+Apparating a Platform with InnerSource
 
 # Target Audience
 
-_Who is the intended recipient for your remarks?_
-_It may be just a subset of those that are actually listening to you._
-_What is important to your target audience?_
-_Be as specific as possible, as it will help you to focus and streamline your content._
+Platform engineers and engineering leaders.
+They want to know how to get a platform built on a lean budget.
 
 # Takeaways
 
-_What do you want to change in your audience as a result of your remarks?_
-_While increased understanding is a possibility, your content will be stronger if part of the takeaway is some change in behavior that you'd like to see in your audience members._
+What a great story!
+I will check out the InnerSource Commons.
 
 # Time
 
-_How much time do you have?_
+15min
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+I was a individual application engineer at Nike with the idea of a company-wide web deployment platform.
+Unable to get funding for a team to build it,
+I partnered, created, and rallied an internal development community that took this idea from skunk works side project to running 88% of all web projects at the company.
+Come for the fun, entertaining, and inspiring story of how it happened and what lessons you can apply in your own dreams of internal development and deployment platforms.
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
-
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
+* Introduction to self and background.
+* Setup: the need for a web deployment platform.
+* Initial rejection of a team to build it.
+* Leverage of community infrastructure to get things going.
+* A 4-team shared web deployment pipeline.
+* More teams come on board and continue to contribute.
+* Formalizing a working team to run the community.
+* Our setup for running Sprints and milestones.
+* Tapping into roadmap planning to expand to new parts of the company.
+* Leveraging metrics to communicate success and find more partners.
+* We become the de-facto company standard.
+* Our platform strategy spreads to other areas.
+* Lessons learned:
+  * Focus on outcomes.
+  * Build social relationships.
+  * Define contracts.
+  * Run like a startup.
+  * Communicate value.
 
 * And flow of ideas
 * For your presentation
