@@ -44,9 +44,3 @@ Come for the fun, entertaining, and inspiring story of how it happened and what 
   * Define contracts.
   * Run like a startup.
   * Communicate value.
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
