@@ -31,7 +31,7 @@ Come for the fun, entertaining, and inspiring story of how it happened and what 
 * Leveraging metrics to communicate success and find more partners.
 * We become the de-facto company standard, running 88% of all web projects.
 * Our platform strategy spreads to other areas.
-* The InnerSource Commons supports the practice of InnerSource.
+* The InnerSource Commons supports the practice of InnerSource into the future.
 * Lessons learned:
   * Focus on outcomes.
   * Build social relationships.
