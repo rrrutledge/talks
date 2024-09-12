@@ -1,45 +1,45 @@
-This document holds generic planning material that can be used when preparing content to share with a broad audience (presentation, article, class, etc.).
-Make a copy of it, fill it out, and open a pull request to a repo you own to get feedback on it _before_ creating your specific content.
-This step will sharpen your focus and reduce spin and wasted effort on the more expensive final product.
-
 # Title
 
-_What is the title of your content?_
+Accelerating InnerSource with the InnerSource Commons Foundation
 
 # Target Audience
 
-_Who is the intended recipient for your remarks?_
-_It may be just a subset of those that are actually listening to you._
-_What is important to your target audience?_
-_Be as specific as possible, as it will help you to focus and streamline your content._
+* Relative newcomers to InnerSource.
+* Not familiar with the InnerSource Commons Foundation.
+* Want to know how InnerSource can help them.
 
 # Takeaways
 
-_What do you want to change in your audience as a result of your remarks?_
-_While increased understanding is a possibility, your content will be stronger if part of the takeaway is some change in behavior that you'd like to see in your audience members._
+* The InnerSource Commons is the premier location for InnerSource knowledge and collaboration in the industry.
+* Look at Chinese translations of InnerSource Commons material (and contribute more).
+* Attend the global InnerSource Summit is coming up in November.
 
 # Time
 
-_How much time do you have?_
+10min
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+The InnerSource Commons is the premier location for InnerSource knowledge and collaboration in the industry.
+In the InnerSource Commons we work together open-source style to work on overcoming common challenges in the implmentation of InnerSource.
+Material in the InnerSource Commons is translated into multiple languages, including Chinese.
+Come to learn about the InnerSource Commons and how you can get involved.
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
-
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
-
-* And flow of ideas
-* For your presentation
-
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
+* My own connection with China as a boy.
+  * Spinning the globe and hoping that it landed in China.
+  * Glad to be with everyone today.
+* Reasons for InnerSource: Preparation for Open Source, Engineering Efficiency, Innovation, People Development
+* InnerSource on the Gartner Hype Cycle.
+* We don't want to solve the same problems in InnerSource all over again.
+* We work on InnerSource in the open source way
+* The InnerSource Commons is place for InnerSource practitioners and leaders to come together to collaborate on problems for InnerSource.
+* Working Groups: Metrics, Portal
+* Published material
+  * Patterns
+  * Learning Path
+  * State of InnerSource Survey.
+* The InnerSource Commons Global Summit.
+  * What it is.
+  * How to come.
