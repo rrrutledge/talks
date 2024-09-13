@@ -10,9 +10,10 @@ Accelerating InnerSource with the InnerSource Commons Foundation
 
 # Takeaways
 
+* InnerSource can ___ (benefit).
 * The InnerSource Commons is the premier location for InnerSource knowledge and collaboration in the industry.
 * Look at Chinese translations of InnerSource Commons material (and contribute more).
-* Attend the global InnerSource Summit is coming up in November.
+* Attend the Global InnerSource Summit is coming up in November.
 
 # Time
 
