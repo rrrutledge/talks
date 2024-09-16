@@ -35,6 +35,8 @@ Come to learn about the InnerSource Commons and how you can get involved.
 * InnerSource on the Gartner Hype Cycle.
 * Reasons for InnerSource: Preparation for Open Source, Engineering Efficiency, Innovation, People Development
 * InnerSource is more effective because it pools together new feature development and maintenance into common locations.
+  * Example from Microsoft.
+  * Example from Morgan Stanley at OSFF (coming soon).
 * InnerSource takes intention to implement.
 * We don't want to solve the same problems in InnerSource all over again.
 * We work on InnerSource in the open source way
