@@ -7,7 +7,7 @@ a non-profit foundation dedicated to the teaching of InnerSource across the indu
 Russ is a founding director of the foundation and has served in many leadership positions there.
 Russ has worked at several multi-national software companies and participated at all levels of InnerSource practice,
 both as individual contributor, director, and everywhere between.
-Russ currently serves as Senior Director, InnerSource and Collaboration at WellSky, which is the health technology company leading the charge to make health care more better and more efficient for everyone through technical innovation.
+Russ currently serves as Senior Director, InnerSource and Collaboration at WellSky, which is the health technology company leading the charge to make health care better and more efficient for everyone through technical innovation.
 Russ' drive and passion is to enable all software engineers worldwide to achieve incredible technical, business, and personal results via streamlined, collaborative, InnerSource process.
 
 - - -
