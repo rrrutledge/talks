@@ -39,7 +39,11 @@ It will be a wonderful summit and a fantastic upcoming year.
   * I remember 10 years ago when we could count on our fingers the number of companies doing InnerSource and we all knew each other.
   * We seen new articles and companies announcing their involvement with InnerSource continually.
   * Continuation of _all_ sponsors.
+    * Fleming tool for AI-powered discover of InnerSource projects.
   * Local communities and gatherings.
+    * InnerSource Man coming from the Japanese community.
+    * Huge gathering (w/ awards!) in the Chinese community.
+    * Start of InnerSource Africa community.
   * Come and stay involved in the InnerSource Commons online community.
 * Challenges in the tech industry (layoffs).
 * InnerSource is a way to augment value in this time of tightening.
