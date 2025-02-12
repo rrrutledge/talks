@@ -7,7 +7,7 @@ The InnerSource Marketplace: Drive Widespread Collaboration Through Market Econo
 In today's competative landscape, InnerSource is emerging as a vehicle to help organizations to stay efficient and nimble as they scale.
 Since every organization incorporates the culture of InnerSource in its own way,
 there's a pressing need for innovative frameworks to guide decision making around support for InnerSource.
-Enter The InnerSource Market, a fresh and new take that reimagines InnerSource support through the lens of market economy principles.
+Enter The InnerSource Marketplace, a fresh and new take that reimagines InnerSource support through the lens of market economy principles.
 
 Drawing upon the robust mechanisms and incentives that drive market economies, this talk unveils a powerful metaphor for nurturing value-adding InnerSource projects within organizations.
 We delve into the parallels between market economies and InnerSource environments,
