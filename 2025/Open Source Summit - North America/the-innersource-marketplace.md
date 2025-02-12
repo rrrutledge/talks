@@ -30,11 +30,10 @@ By utilizing the market economy metaphor, attendees will gain a deeper appreciat
 
 # Speaker biography
 
-Russ Rutledge is the Senior Director of InnerSource and Collaboration at WellSky,
-a leading technology company offering a range of software solutions that help organizations across the healthcare continuum.
-In this role, Russ is leading a transformational change in the company towards broad and pervasive InnerSource as the normal way that work gets done.
-Russ's drive and passion is to enable all software engineers to achieve incredible technical and business throughput via quality tooling and streamlined work process.
-
-Russ is a founding member of the [InnerSource Commons Foundation](https://innersourcecommons.org/) and currently serves as the foundation executive director.
-Previously, Russ founded and led the Developer Collaboration effort at Nike.
-He began his career as an engineer on feature and infrastructure development on the Outlook and OneDrive consumer websites at Microsoft.
+Russ Rutledge is the Executive Director of the InnerSource Commons,
+a non-profit foundation dedicated to the teaching of InnerSource across the industry.
+Russ is a founding director of the foundation and has served in many leadership positions there.
+Russ has worked at several multi-national software companies and participated at all levels of InnerSource practice,
+both as individual contributor, director, and everywhere between.
+Russ currently serves as Senior Director, InnerSource and Collaboration at WellSky, which is the health technology company leading the charge to make health care better and more efficient for everyone through technical innovation.
+Russ' drive and passion is to enable all software engineers worldwide to achieve incredible technical, business, and personal results via streamlined, collaborative, InnerSource process.
