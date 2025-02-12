@@ -4,7 +4,7 @@ InnerSource on a Shoestring: Transform your Organization without Blowing the Bud
 
 # Description
 
-In today's fast-paced and resource-constrained business environment, organizations are seeking innovative ways to drive collaboration, efficiency, and innovation without significant increase in budget spend.
+In today's fast-paced and resource-constrained business environment, organizations are seeking new ways to drive collaboration, efficiency, and innovation without significant increase in budget spend.
 InnerSource promises to help by streamlining and combining communication and work across an organization.
 However, InnerSource is not a magic word that is uttered once and then forevermore a part of organizational DNA.
 It requires care and attention to bring the sustained and deep culture change needed for it to have its full potential.
@@ -15,7 +15,7 @@ Key takeaways from this session include:
 
 * Understanding InnerSource: A review of InnerSource principles and how they can be applied within your organization.
 * Practical Implementation: Guidance on initiating and sustaining InnerSource practices on a limited budget.
-* Success Stories: Real-world examples of organizations that have successfully these strategies.
+* Success Stories: Real-world examples of organizations that have successfully leveraged these strategies.
 * Tips, Tricks, and Gotchas: Advice and inisght on overcoming common challenges and maximizing the impact of your InnerSource initiatives.
 
 # Benefits to the Ecosystem
@@ -24,9 +24,9 @@ Across the industry, OSPOs, ISPOs, DevRel, DevEx etc. are all recognized as impo
 All of these areas have seasoned and passionate individuals that deeply believe in the importance of their craft,
 and they all are chronically underfundeded across organizations and industries.
 
-This session will give hope, direction, practical ideas, industry connections and success stories to people who are wondering what to do to advance this area that they care about.
+This session will give hope, direction, practical ideas, industry connections, and success stories to people who are wondering what to do to advance this area that they care about.
 The time is ripe for this content to be shared because people want to know how to have impact in this area despite lack of funding.
-The results that they get achieve through these techniques will be appreciated by leadership and individuals alike.
+The results that they achieve through these techniques will be appreciated by leadership and individuals alike.
 
 Whether you're an executive looking to improve your organization's efficiency or a developer seeking to enhance collaboration within your team, this session offers valuable insights and actionable strategies to transform your organization with InnerSource.
 
