@@ -32,12 +32,11 @@ It takes more than raw passion, excitement, and energy to make it happen.
 It requires you to exert lasting influence on people and processes that are not in your direct control.
 It requires you to change culture across the company.
 
-This presentation distills the essence of how to think and go about culture change into easy-to-remember steps and principles.
+This presentation distills the essence of how to think and go about culture change into an easy-to-remember framework.
 Our goal is to teach you what you need to know so that you can spend your time and energy implementing your ideas for change instead of spending it learning how to create culture change at scale.
 We'll teach and demonstrate the principles and proven strategies of scaled culture change.
 We'll share real anecdotes of successful implementation of these strategies from our own experience at WellSky and from industry examples and research.
-We'll discuss the role of metrics, reports, mandates, recognition, training, competition, volunteerism, fun, and more.
-
+We'll discuss the role of metrics, mandates, recognition, training, competition, social interactions, tooling, fun, and more.
 
 
 # Outline
