@@ -1,6 +1,6 @@
 # Title
 
-_What is the title of your content?_
+Conversational Judo: How to Move from Disagreement to Energetic Buy-In
 
 # Target Audience
 
@@ -20,8 +20,10 @@ _How much time do you have?_
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+How do you respond when you pitch a great idea that is rejected?
+If your next move is either to explain yourself with more detail/clarity or to back off completely, you need to stop and come to this talk.
+Learn the secret of how to collaborate with others to produce ideas and plans with broad buy-in and commitment that are better than anyone can make alone.
+With real examples a humerous anecdotes, we'll teach the mindset shift and interaction tactics that produce these wonderful results and help you to build great friendships along the way.
 
 # Outline
 
