@@ -4,7 +4,7 @@ This step will sharpen your focus and reduce spin and wasted effort on the more 
 
 # Title
 
-Progress at the Speed of Code with InnerSource
+Delivery at the Speed of Code with InnerSource
 
 # Target Audience
 
