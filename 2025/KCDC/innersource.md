@@ -26,15 +26,14 @@ _How much time do you have?_
 
 The software we build today is too large for any one team to deliver alone.
 Effective and seamless cooperation between many teams is necessary to deliver the experiences that today's consumers expect.
-Yet the agile development model optimizes processes around the work of a single team.
-How can engineers and teams work together effectively across team boundaries?
+Yet the agile development model optimizes processes around the work of a single team. How can engineers and teams work together effectively across team boundaries?
 
 In recent years, the practice of InnerSource has risen as a methodology for facilitating cross-team collaboration across the company.
-InnerSource is the application of the open source project management and work strategies applied to company-internal software.
+InnerSource is the application of open source project management and work strategies applied to company-internal software.
 An InnerSource mindset treats all software inside the organization as free and open for anyone to use and contribute, much the same way as open source outside the company.
 
-Successful adoption of InnerSource is an intentional process that, if done right, unlocks greater engineering efficiences, increased innovation, a more empowering developer environment, and easier participation in open source.
-In this talk we give an explanation of InnerSource, specific examples of its adoption in various companies and industries, anecdotes and data on the value it gives, and tips, tricks and gotchas for introducing it into your company.
+Successful adoption of InnerSource is an intentional process that, if done right, unlocks greater engineering efficiencies, increased innovation, a more empowering developer environment, and easier participation in open source.
+In this talk, we give an explanation of InnerSource, specific examples of its adoption in various companies and industries, anecdotes and data on the value it gives, and tips, tricks, and gotchas for introducing it into your company.
 
 _What is the elevator pitch for your content?_
 _This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
