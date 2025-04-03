@@ -24,8 +24,20 @@ _While increased understanding is a possibility, your content will be stronger i
 
 # Abstract
 
-_What is the elevator pitch for your content?_
-_This section should be about a paragraph in length and sufficient for anyone to understand the general idea of what you're going to share and be interested in participating._
+You're here at KCDC because you're a leader.
+You have ideas for tools, practices, and behaviors that should be adopted across your company,
+and you'll leave this conference with even more.
+This kind of broad uptake across a company is \*hard\*.
+It takes more than raw passion, excitement, and energy to make it happen.
+It requires you to exert lasting influence on people and processes that are not in your direct control.
+It requires you to change culture across the company.
+
+This presentation distills the essence of how to think and go about culture change into an easy-to-remember framework.
+Our goal is to teach you what you need to know so that you can spend your time and energy implementing your ideas for change instead of spending it learning how to create culture change at scale.
+We'll teach and demonstrate the principles and proven strategies of scaled culture change.
+We'll share real anecdotes of successful implementation of these strategies from our own experience at WellSky and from industry examples and research.
+We'll discuss the role of metrics, mandates, recognition, training, competition, social interactions, tooling, fun, and more.
+
 
 # Outline
 
