@@ -40,18 +40,119 @@ _This section should be about a paragraph in length and sufficient for anyone to
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
+# 🧭 InnerSource at Scale — Engineering for Impact
 
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
+**Duration:** ~45 minutes
 
-* And flow of ideas
-* For your presentation
+---
 
-_Readers of this outline should be able to understand how you're going to go about presenting your content._
-_It shouldn't be any longer than one screen of vertical text._
+## 1. Opening: The Scale Challenge (~5 min)
+- Software is too large for any one team.
+- Agile optimizes for single teams—but delivery requires cross-team collaboration.
+- Introduce InnerSource as a solution.
+- **Example:** GitHub’s internal language communities (e.g., Ruby, Go) adopted InnerSource to scale collaboration across teams.
+
+---
+
+## 2. What Is InnerSource? (~5 min)
+- **Definition:** Open source principles applied inside the company.
+- **Key principles:** transparency, reuse, contribution, shared ownership.
+- Introduce the concept of InnerSource Patterns.
+- **Example:** PayPal and Bloomberg use InnerSource to improve internal code quality and accelerate delivery.
+
+---
+
+## 3. Why InnerSource Works — Avoiding Common Anti-Patterns (~5 min)
+- ❌ Anti-patterns:
+  - Work Around: Build duplicate solutions.
+  - Wait It Out: Delay hoping someone else delivers.
+  - Escalate: Force prioritization through management.
+- ✅ InnerSource replaces these with:
+  - Discoverability
+  - Contribution
+  - Collaboration
+- **Example:** The New York Times used InnerSource to empower teams to contribute directly to their internal developer platform.
+
+---
+
+## 4. Is InnerSource Right for My Project? (~5 min)
+- Ask:
+  - Will contributions come?
+  - Will I support them?
+  - Is the project company-specific?
+- If yes to all → InnerSource is a good fit.
+- **Example:** Walmart adopted InnerSource to unify internal tooling and reduce duplication across business units.
+
+---
+
+## 5. Getting Started: The InnerSource Mentality (~5 min)
+- Reuse before reinvention.
+- If it exists, use it. If it needs work, contribute. If it doesn’t exist, create and share.
+- Introduce the InnerSource Portal pattern as the ideal starting point.
+- **Example:** GitHub’s use of SAP’s InnerSource Portal to improve discoverability and contribution pathways.
+
+---
+
+## 6. How InnerSource Operates — Roles and Responsibilities (~7 min)
+- **Guest-Host Model:** Contributors submit code; maintainers guide and review.
+- Responsibilities across Solutions and Engineering phases.
+- Introduce patterns:
+  - Trusted Committer
+  - Contribution Guidelines
+  - InnerSource Ambassadors
+- **Example:** Capital One’s “InnerSource Flywheel” model used lightweight governance and community-building to scale contributions.
+
+---
+
+## 7. Support Models for InnerSource Projects (~4 min)
+- Three tiers:
+  - Full Team
+  - Maintenance Team
+  - Distributed
+- Clarify expectations for contributions, maintenance, and security.
+- **Example:** Deutsche Bahn structured support tiers to manage cross-unit collaboration and uptime for shared services.
+
+---
+
+## 8. Driving Cultural Change (~5 min)
+- InnerSource requires a shift in mindset: from ownership to stewardship, from silos to sharing.
+- Success depends on intentional leadership:
+  - Could be an InnerSource Program Office (ISPO) or a dedicated champion.
+- Roles include:
+  - Evangelizing InnerSource
+  - Supporting contributors and maintainers
+  - Maintaining the portal and registry
+  - Facilitating training and onboarding
+- Introduce patterns:
+  - InnerSource Ambassadors
+  - Dedicated Community Leader
+  - Maturity Model
+- **Example:** The InnerSource Commons community itself is a model of distributed leadership and cultural stewardship.
+
+---
+
+## 9. Patterns in Practice (~2 min)
+- Highlight key patterns from the InnerSource Patterns book:
+  - InnerSource Portal
+  - InnerSource Ambassadors
+  - Trusted Committer
+  - Maturity Model
+- **Example:** The InnerSource Patterns book includes case studies from companies like Bosch, Ericsson, and Bloomberg.
+
+---
+
+## 10. Tips, Tricks, and Gotchas (~2 min)
+- Start small. Document everything. Be responsive.
+- Avoid “open but unresponsive” projects.
+- Use RFCs for transparent decision-making.
+- **Example:** Capital One used recognition and lightweight governance to avoid contributor burnout and maintain momentum.
+
+---
+
+## 11. Call to Action (~2 min)
+- Identify one project to open up.
+- Explore the InnerSource Patterns book.
+- Join the InnerSource Commons community.
+- **Example:** Invite attendees to contribute their own patterns or join the InnerSource Commons working groups.
+
 
