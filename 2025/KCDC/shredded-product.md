@@ -28,17 +28,29 @@ With fun anecdotes and inspiring lessons, this talk will leave you motivated to 
 
 # Outline
 
-* Bulleted
-* Description
-* Of key points
+ - **Opening Hook (30 sec)**
+   - “I want to talk about product quality — through the lens of personal fitness.”
+   - Quick setup: intense workouts, chasing visible results, wanting to *look* strong.
 
-  * subpoints
-  * examples
-  * anecdotes
-  * technologies
+ - **Lesson 1: Looking Good vs. Being Strong (1 min)**
+   - Cheating form to impress others — looked fine, but weakened the workout.
+   - Parallel: chasing vanity metrics in software — green test suites, high code coverage — doesn’t mean the product is strong.
 
-* And flow of ideas
-* For your presentation
+ - **Lesson 2: Perceived Limits vs. True Capacity (1 min)**
+   - Story: push-up breakthrough — thought I was done, but did 3 more than expected.
+   - Insight: “You can always lower yourself — the real test is whether you can push back up.”
+   - Parallel: in engineering, we often stop at “good enough” — but growth comes from testing assumptions.
+
+ - **Lesson 3: Failure as a Strategy (1 min)**
+   - Shifted mindset: failure became the goal — because it meant I was pushing hard enough.
+   - Irony: to succeed at finishing the workout, I had to fail first.
+   - Parallel: in product development, failure is how we learn fast and build resilience.
+
+ - **Lesson 4: Honest Testing Builds Strength (1 min)**
+   - Real goal: not to look strong, but to *be* strong — for real-life demands.
+   - Parallel: tests shouldn’t just pass — they should challenge the product.
+   - Closing thought: “If your product isn’t being pushed to failure, it’s not getting stronger.”
+
 
 _Readers of this outline should be able to understand how you're going to go about presenting your content._
 _It shouldn't be any longer than one screen of vertical text._
