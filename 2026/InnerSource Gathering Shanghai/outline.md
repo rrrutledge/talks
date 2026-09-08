@@ -36,15 +36,76 @@ concrete view of what's next and practical guidance for leading InnerSource in a
 # Outline
 
 * Open (~1 min)
-  * Thank Jerry Tan / InnerSource China Community for the invitation
+  * Thank Jerry Tan and the InnerSource China Community for the invitation
+  * APAC opening hook - a real, reciprocal relationship, not a courtesy:
+    last year Jerry invited me to give a video keynote to InnerSource Gathering Beijing 2025;
+    this year I get to be with you in person in Shanghai.
+    And this region hasn't been on the edge of the InnerSource movement - it's been near the center of it for years:
+    in ISC's own audience data, countries in this region (Japan and India especially) are consistently among our
+    very top for engagement, regularly ahead of the US, and our Japanese-language material is some of the
+    most-read content we publish anywhere.
   * Frame the two halves: a global ISC update, then how AI is reshaping InnerSource
-  * TBD: an APAC-specific opening hook
 
-* Part 1: Global update on InnerSource Commons, ED vantage (~6 min) - **not yet drafted**
-  * Where the movement stands today (TBD: a current stat, ideally APAC-relevant)
-  * 2-3 patterns emerging across large-org InnerSource journeys (TBD)
-  * What ISC is investing in next - Summit 2026 confirmed; anything else? (TBD)
-  * Challenges leaders should prepare for (TBD)
+* Part 1: Global update on InnerSource Commons, ED vantage (~6 min) - **first pass drafted; see `research/part1-research.md` for sources**
+  * Where the movement stands today
+    * InnerSource has moved from a promising practice to a core strategy for how large enterprises build
+      software together - and the community around it keeps compounding. One clean line: ISC's LinkedIn
+      following grew from about 92 people in 2020 to roughly 2,700 today, still climbing around 15% a year -
+      call it a 30x rise over the life of the Foundation, and our fastest-growing channel by far.
+    * It's a genuinely global movement, and this region is out in front rather than catching up: in ISC's own
+      audience data, Japan and India are consistently among our top countries for engagement, and our
+      Japanese-language content is some of the most-read we have. Adoption across APAC runs deep - Huawei
+      presented its own InnerSource program at our 2025 Summit in Yokohama, and many of the region's largest
+      engineering organizations are on the same path.
+    * The most recent State of InnerSource report (2025, roughly 120 organizations surveyed) shows why it
+      spreads: the top reasons orgs adopt are code reuse (84%), development speed (81%), knowledge sharing
+      (79%), and breaking down silos (77%) - and formal InnerSource programs or program offices now exist at
+      about a third of surveyed orgs, with another third running informally.
+  * 2-3 patterns emerging across large-org InnerSource journeys - **candidates; NEEDS RUSSELL: pick the two that ring truest against your own vantage, and confirm or replace**
+    * Pattern A - the center of gravity is shifting from a project team to an enabling office. The most mature
+      programs run InnerSource through a central OSPO or InnerSource Program Office whose job is to *enable*
+      teams - playbooks, repository blueprints, contribution pathways, education - rather than to own the
+      shared code itself. (Recurring across ISC community calls and matched by the survey's rise in formal
+      program offices; tellable generically without naming a specific company.)
+    * Pattern B - scaffolding beats enthusiasm. What separates programs that scale from ones that stall isn't
+      grassroots energy, it's concrete scaffolding: consistent tooling and process, clear contribution
+      guidelines, a discoverability or portal layer, and explicit governance. The survey shows the gap plainly
+      - about 86% run shared repositories, but only about 60% have InnerSource documentation, and portals,
+      training, and metrics lag further behind. Adoption is running ahead of operational maturity.
+    * Pattern C - InnerSource is becoming the substrate for AI-native development. The community increasingly
+      frames InnerSource less as a nice-to-have and more as essential infrastructure for building well with AI:
+      shared prompts and context, collaboratively built internal AI tooling, and well-structured internal code
+      that agents can actually find and reuse. (This is ISC's current thesis and the natural bridge into Part 2
+      - frame it as where the community is heading, not a settled survey finding.)
+  * What ISC is investing in next
+    * The 2026 Summit is the flagship, and it's built for exactly this room: a single continuous 22-hour
+      "follow-the-sun" virtual event on November 12, 2026, opening in APAC before handing off to EMEA and then
+      the Americas - your region kicks off the global day. Theme: "InnerSource in Motion: Navigating the
+      Shifting Tides," across three tracks - Cultural Elasticity, Follow-the-Sun Collaboration, and the
+      Evolving Developer Experience - with AI running through all of them. (Scott Hanselman is a confirmed
+      keynote. NEEDS RUSSELL: whether to preview the planned AI-and-InnerSource panel, which is still being
+      finalized.)
+    * Beyond the Summit, the community is actively building: a new public InnerSource Pattern for keeping
+      AI-generated code aligned with a project's own conventions; standing peer working groups for InnerSource
+      practice and for program offices; and a formal Foundation membership.
+    * And the direction is toward getting back in the room together - in-person regional Summits are the aim
+      for 2027, including an InnerSource presence at a major open-source event here in the region. (NEEDS
+      RUSSELL: how firmly to state the 2027 in-person plans, which are still forming.)
+  * Challenges leaders should prepare for - grounded in the 2025 survey; **NEEDS RUSSELL: which one to lead with feels like the most honest call**
+    * The number-one blocker is no longer culture - it's time. For the first time, "lack of time and resources"
+      (84%) overtook organizational culture and silo thinking (74%) as the top perceived blocker. The
+      supporting numbers are stark: only about 22% of orgs give employees time to contribute, about 15% reward
+      contributions, and about 14% factor InnerSource into promotion. People are convinced; they just have no
+      room to act on it.
+    * The value is obvious; the investment isn't. Leaders endorse InnerSource and then under-fund it, largely
+      because it's hard to measure: fewer than half of orgs measure InnerSource at all, and the methods that do
+      exist are immature - manual tracking, surveys, basic portal metrics. Without a credible ROI story,
+      programs stall - roughly 1 in 7 were ramping down in 2025.
+    * (Optional third) The remaining blockers are structural and human, not technical: awareness gaps, missing
+      executive sponsorship, and - tellingly - missing middle-manager support, which is the exact layer that
+      decides whether an engineer actually has the time the first challenge is about.
+  * Bridge into Part 2: every one of these - the patterns, the investments, the challenges - now runs into a
+    single question the whole community is asking at once. What does AI do to all of it? That's the second half.
 
 * Part 2: How AI is reshaping InnerSource (~6 min) - **drafted, full spoken text in `part2-spoken-draft.md`**
   * The myth, named directly: InnerSource existed because writing code was expensive - if AI makes writing code nearly free, doesn't that quietly end the argument for InnerSource? State it plainly before rebutting it.
@@ -64,6 +125,13 @@ concrete view of what's next and practical guidance for leading InnerSource in a
   * Thank you
 
 # References
+
+Part 1 (the global update) is grounded in ISC's own Foundation data and in published, citable sources - the
+State of InnerSource 2024/2025 reports, ISC community-call topics, and the public Summit 2026 announcements.
+`research/part1-research.md` records what backs each claim and where it came from, and flags what was
+generalized to keep out of this public repo (internal analytics figures, unannounced plans, and any
+company named only in a not-yet-public source) - the same anonymization judgment Part 2's survey material
+required.
 
 Part 2 is grounded in two research tracks - a short community survey I ran ahead of this talk (20
 practitioners, three questions, responses anonymized per each respondent's stated preference - see
