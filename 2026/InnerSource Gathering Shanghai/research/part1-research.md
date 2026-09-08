@@ -55,10 +55,10 @@ generalized to keep out of this public repo - the same judgment Part 2's survey 
   and breaking down silos (77%); formal InnerSource programs or program offices exist at about 35% of orgs,
   with another ~29% running informally.
 
-## Patterns across large-org journeys (candidates)
+## Patterns across large-org journeys
 
-The lead pattern is Russell's own confirmed observation; the other two are candidates drawn from the survey
-and community-call themes, offered for him to confirm, reorder, or replace.
+Russell confirmed all three as the set to use, led by consolidation (his own observation), then scaffolding,
+then the AI-native substrate. The latter two were drawn from the survey and community-call themes.
 
 * **Pattern 1 - consolidation (Russell's own read; lead).**
   As budgets tighten and AI reshapes where engineering money and effort go, InnerSource is increasingly funded
@@ -68,12 +68,12 @@ and community-call themes, offered for him to confirm, reorder, or replace.
   when InnerSource has to serve every team. This is Russell's direct ED observation, not a survey finding, and
   it subsumes the earlier "OSPO-led enablement" candidate (the OSPO becomes one of the partner functions). It
   is told generically, with no company named.
-* **Pattern 2 - scaffolding over spontaneity (candidate).**
+* **Pattern 2 - scaffolding over spontaneity.**
   What lets programs scale is concrete scaffolding - consistent tooling/process, contribution guidelines, a
   discoverability/portal layer, explicit governance - more than grassroots enthusiasm. The 2025 survey shows
   the maturity gap directly: ~86% run shared repositories but only ~60% have InnerSource documentation, with
   portals, training, and metrics lagging further behind.
-* **Pattern 3 - InnerSource as the substrate for AI-native development (candidate).**
+* **Pattern 3 - InnerSource as the substrate for AI-native development.**
   ISC's 2025 report treats InnerSource as essential infrastructure for building with AI (shared prompts and
   context, collaboratively built internal AI tooling, well-structured internal code agents can reuse). This
   is ISC advocacy/thesis rather than a survey-proven causal claim, and is the natural bridge into Part 2, so
@@ -90,9 +90,10 @@ personnel changes, and any unconfirmed keynote were found in planning material a
   in Motion: Navigating the Shifting Tides."** Three tracks: Cultural Elasticity, Follow-the-Sun
   Collaboration, and the Evolving Developer Experience, with AI woven throughout. Scott Hanselman is a
   confirmed keynote. After a hybrid 2025, ISC deliberately returned to fully virtual for 2026.
-* **Planned but not yet locked (flagged NEEDS RUSSELL in the outline):**
+* **Planned but not yet locked (kept out of the talk):**
   an AI-and-InnerSource panel is in planning but not confirmed; a second keynote and the APAC keynote slot
-  were still open in the most recent notes - none of those names are used here.
+  were still open in the most recent notes. Russell chose to leave the panel out of the keynote entirely
+  until it is confirmed, and none of those unconfirmed names are used.
 * **Ongoing programs worth naming (public):**
   a new public InnerSource Pattern for keeping AI-generated code aligned with a project's own conventions
   (drafted in the public InnerSourcePatterns repo); standing peer working groups for InnerSource practice and
@@ -102,15 +103,17 @@ personnel changes, and any unconfirmed keynote were found in planning material a
   in Yokohama (2025); the aim for 2027 is more regular in-person regional events, including a presence in the
   APAC region. Paired with this is an investment in greater curation - focusing each gathering on the topics
   that matter to the participant companies so InnerSource knowledge spreads worldwide as fast as possible.
-  These plans are still forming and are flagged as direction in the outline. Russell also noted personal pride
-  in and affinity for the InnerSource China Community, folded into the opening.
+  Russell's steer is to state the 2027 in-person direction as a clear, confident intention. He also noted
+  personal pride in and affinity for the InnerSource China Community, folded into the opening.
 * **FINOS:** a real, longstanding partnership (the FINOS InnerSource SIG), but no distinct *new* 2026 activity
   surfaced - so it is not overstated as a 2026 investment.
 * **Certification/training product:** none found; not claimed.
 
 ## Challenges leaders should prepare for
 
-All three are grounded in the published State of InnerSource 2024/2025 reports.
+All three are grounded in the published State of InnerSource 2024/2025 reports. Russell's steer is to lead
+with both of the first two, in order - time and resources first, then ROI - with the structural blockers as
+an optional third.
 
 * **Time/resources overtook culture as the #1 blocker.**
   In 2025, "lack of time and resources" (84%) overtook organizational culture / silo thinking (74%) as the top

@@ -73,8 +73,8 @@ concrete view of what's next and practical guidance for leading InnerSource in a
       spreads: the top reasons orgs adopt are code reuse (84%), development speed (81%), knowledge sharing
       (79%), and breaking down silos (77%) - and formal InnerSource programs or program offices now exist at
       about a third of surveyed orgs, with another third running informally.
-  * 2-3 patterns emerging across large-org InnerSource journeys
-    * Pattern 1 (Russell's own read - lead with this) - consolidation: InnerSource is increasingly funded and
+  * Three patterns emerging across large-org InnerSource journeys (lead with consolidation, then the other two)
+    * Pattern 1 (lead) - consolidation: InnerSource is increasingly funded and
       housed alongside a partner function rather than as a standalone line item. As budgets tighten and AI
       reshapes where engineering money and effort go, InnerSource more and more sits with a related group - an
       OSPO, a developer-experience team, or a platform-engineering org. Those are natural partners; they share
@@ -82,27 +82,24 @@ concrete view of what's next and practical guidance for leading InnerSource in a
       to fund InnerSource for what helps its own remit, and the whole premise of InnerSource is that it has to
       serve *every* team, not just the one paying for it. The programs that land this well fund InnerSource
       through a partner function while keeping its mandate company-wide.
-    * Pattern 2 (candidate) - scaffolding beats enthusiasm. What separates programs that scale from ones that
+    * Pattern 2 - scaffolding beats enthusiasm. What separates programs that scale from ones that
       stall isn't grassroots energy, it's concrete scaffolding: consistent tooling and process, clear
       contribution guidelines, a discoverability or portal layer, and explicit governance. The 2025 survey
       shows the gap plainly - about 86% run shared repositories, but only about 60% have InnerSource
       documentation, and portals, training, and metrics lag further behind. Adoption is running ahead of
       operational maturity.
-    * Pattern 3 (candidate) - InnerSource is becoming the substrate for AI-native development. The community
+    * Pattern 3 - InnerSource is becoming the substrate for AI-native development. The community
       increasingly frames InnerSource less as a nice-to-have and more as essential infrastructure for building
       well with AI: shared prompts and context, collaboratively built internal AI tooling, and well-structured
       internal code that agents can actually find and reuse. (ISC's current thesis and the natural bridge into
       Part 2 - frame it as where the community is heading, not a settled survey finding.)
-    * NEEDS RUSSELL: lead with the consolidation pattern; pick one of the other two to pair with it, or swap in
-      another you've seen from the ED chair.
   * What ISC is investing in next
     * The 2026 Summit is the flagship, and it's built for exactly this room: a single continuous 22-hour
       "follow-the-sun" virtual event on November 12, 2026, opening in APAC before handing off to EMEA and then
       the Americas - your region kicks off the global day. Theme: "InnerSource in Motion: Navigating the
       Shifting Tides," across three tracks - Cultural Elasticity, Follow-the-Sun Collaboration, and the
       Evolving Developer Experience - with AI running through all of them. (Scott Hanselman is a confirmed
-      keynote. NEEDS RUSSELL: whether to preview the planned AI-and-InnerSource panel, which is still being
-      finalized.)
+      keynote.)
     * Beyond the Summit, the community is actively building: a new public InnerSource Pattern for keeping
       AI-generated code aligned with a project's own conventions, and standing peer working groups for
       InnerSource practice and for program offices.
@@ -111,8 +108,8 @@ concrete view of what's next and practical guidance for leading InnerSource in a
       more regular in-person regional events, including a presence here in this region. And alongside the
       events, we're investing in greater curation - focusing each gathering on the topics that actually matter
       to the companies in the room, so that hard-won InnerSource knowledge spreads across the world as fast as
-      possible. (NEEDS RUSSELL: how firmly to state the 2027 in-person plans, which are still forming.)
-  * Challenges leaders should prepare for - grounded in the 2025 survey; **NEEDS RUSSELL: which one to lead with feels like the most honest call**
+      possible.
+  * Challenges leaders should prepare for - grounded in the 2025 survey; lead with both, in this order - time and resources first, then ROI
     * The number-one blocker is no longer culture - it's time. For the first time, "lack of time and resources"
       (84%) overtook organizational culture and silo thinking (74%) as the top perceived blocker. The
       supporting numbers are stark: only about 22% of orgs give employees time to contribute, about 15% reward
