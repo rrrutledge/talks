@@ -13,17 +13,37 @@ generalized to keep out of this public repo - the same judgment Part 2's survey 
   clean line to cite.
   Source: ISC's own marketing-metrics tracking; the follower counts themselves are publicly visible on the
   profiles.
-* **APAC is out in front.**
-  In ISC's own audience analytics, this region - Japan and India especially - is consistently among the top
-  countries for engagement, regularly ahead of the US, and ISC's Japanese-language content is among its
-  most-read. APAC engagement is long-standing (an APAC-region Summit ran as far back as 2020).
-  The exact traffic figures are internal analytics and are deliberately kept out of this file and out of the
-  committed outline; only the qualitative pattern is used.
-* **APAC adoption.**
-  Huawei presented its own InnerSource program in person at ISC's 2025 Summit in Yokohama, Japan (a public,
-  delivered talk). Many of the region's largest engineering organizations appear on ISC's public list of
-  companies practicing InnerSource. The outline names Huawei only because that talk was public; other
-  in-region adopters are referred to generally.
+* **APAC is out in front (Japan is the standout).**
+  In ISC's own web-search analytics, Japan trades the number-one country spot with the United States month to
+  month and sits well ahead of everyone else; through most of late 2025 Japan was clearly #1, peaking around
+  490 monthly search clicks in November 2025 against roughly 190 for the US. In the two most recent months
+  (mid-2026) the US is nominally back on top by a narrow margin (about 149 to Japan's 95 in July 2026), but the
+  multi-year pattern is a clear Japan/US lead pair. Germany, the UK, and India round out the top five; India
+  appears in the leading set but is usually #4-5, not top-two - so the headline claim is about Japan, not
+  "Japan and India." ISC's Japanese-language pages (the `/ja/` homepage, the Japanese Patterns book, the Tokyo
+  gathering pages) recur among the top-performing pages, and Japanese-language search queries recur among the
+  top growing queries. APAC engagement is long-standing (an APAC-region Summit ran as far back as 2020).
+  The exact monthly figures are internal analytics; the committed outline uses only the qualitative pattern.
+* **APAC adoption and the Huawei talk.**
+  Chen Wei (family name Chen; credited by ISC as "Chenwei"), Senior Project Director of Huawei's InnerSource
+  Office, presented **"Huawei InnerSource Culture and Value Closed-Loop Practice"** in person at ISC's 2025
+  Summit in Yokohama, Japan on Nov 13, 2025 - a public, delivered talk. Many of the region's largest
+  engineering organizations also appear on ISC's public list of companies practicing InnerSource.
+  Kept out of this repo: Chen Wei's personal and `@huawei.com` email addresses, and an internal ISC legal
+  discussion about Huawei sponsorship under US sanctions (unrelated and sensitive).
+* **APAC membership - individual and merit-based (not organizational).**
+  ISC Foundation membership works like Apache: individuals are elected in on merit; there is no "organizational
+  membership," so the accurate framing is "Shingo Oidate was elected a Foundation Member," never "Mitsubishi
+  Electric joined." Shingo Oidate (追立 真吾, Oidate Shingo), General Manager of Mitsubishi Electric's Open
+  Source Program Office, was elected a Foundation Member in the public September 2026 announcement
+  (innersourcecommons.org/about/announcements/2026-09-new-members/); Frédéric Sicot Mouret of Airbus's OSPO
+  was elected in the same announcement. Verified APAC-based Foundation Members include Jerry Tan (China / the
+  InnerSource China Community), Yuki Hattori (GitHub, Japan; ISC's immediate-past President), Yoshitake
+  Kobayashi (Toshiba, Japan), Ada Dai (Tencent, China), Willem Jiang (Huawei, China), Shingo Oidate
+  (Mitsubishi Electric, Japan), and Mishari Muqbil (Zymple, Thailand), among others.
+  Governance corrections to avoid a stage error: Micaela Eller (EY) is the current President (not Yuki
+  Hattori); Jerry Tan is a Foundation Member and community leader, not a board director. The members page,
+  board page, and new-member announcement are all public.
 * **Adoption reasons and program maturity.**
   State of InnerSource 2025 (published report, roughly 120 organizations surveyed, foreword by ISC President
   Yuki Hattori): top adoption drivers are code reuse (84%), development speed (81%), knowledge sharing (79%),
@@ -32,23 +52,23 @@ generalized to keep out of this public repo - the same judgment Part 2's survey 
 
 ## Patterns across large-org journeys (candidates)
 
-These are drafted as candidates for Russell to confirm, reorder, or replace against his own ED vantage -
-not asserted as settled findings.
+The lead pattern is Russell's own confirmed observation; the other two are candidates drawn from the survey
+and community-call themes, offered for him to confirm, reorder, or replace.
 
-* **Pattern A - OSPO / program-office-led enablement.**
-  Mature programs increasingly run InnerSource through a central OSPO or InnerSource Program Office that
-  enables teams (playbooks, repository blueprints, contribution pathways, education) rather than owning the
-  shared code. Recurring theme across ISC community calls, and matched by the survey's rise in formal
-  program offices.
-  Generalization: the clearest single example is a large bank's OSPO talk scheduled for an ISC community call
-  *after* the Shanghai date, so it is not yet public. The pattern is therefore told generically, with no
-  company named, until that talk airs.
-* **Pattern B - scaffolding over spontaneity.**
+* **Pattern 1 - consolidation (Russell's own read; lead).**
+  As budgets tighten and AI reshapes where engineering money and effort go, InnerSource is increasingly funded
+  and housed alongside a partner function - an OSPO, a developer-experience team, or a platform-engineering
+  group - rather than as a standalone line item. Those are natural partners (shared cross-team, reuse-first
+  instincts); the risk to manage is that a host function funds InnerSource only for what serves its own remit,
+  when InnerSource has to serve every team. This is Russell's direct ED observation, not a survey finding, and
+  it subsumes the earlier "OSPO-led enablement" candidate (the OSPO becomes one of the partner functions). It
+  is told generically, with no company named.
+* **Pattern 2 - scaffolding over spontaneity (candidate).**
   What lets programs scale is concrete scaffolding - consistent tooling/process, contribution guidelines, a
   discoverability/portal layer, explicit governance - more than grassroots enthusiasm. The 2025 survey shows
   the maturity gap directly: ~86% run shared repositories but only ~60% have InnerSource documentation, with
   portals, training, and metrics lagging further behind.
-* **Pattern C - InnerSource as the substrate for AI-native development.**
+* **Pattern 3 - InnerSource as the substrate for AI-native development (candidate).**
   ISC's 2025 report treats InnerSource as essential infrastructure for building with AI (shared prompts and
   context, collaboratively built internal AI tooling, well-structured internal code agents can reuse). This
   is ISC advocacy/thesis rather than a survey-proven causal claim, and is the natural bridge into Part 2, so
@@ -91,6 +111,11 @@ All three are grounded in the published State of InnerSource 2024/2025 reports.
   Fewer than half of orgs measure InnerSource at all, and existing methods are immature (manual tracking ~42%,
   surveys ~38%, portal metrics ~28%). About 1 in 7 programs were ramping down in 2025. This is the most
   differentiated, best-evidenced challenge in the data - sharper than a generic "proving ROI."
+  ROI white paper (open): Russell referenced an ROI-of-engineering white paper (transcribed as "Trumandron")
+  that did not resolve to any author or title in Drive, Gmail, or on the web. The strongest current external
+  candidates are DX's "ROI per engineer" work by Abi Noda and Laura Tacho (the DX Core 4 / Developer
+  Experience Index) and, as the classic fallback, McKinsey's "Developer Velocity." Flagged NEEDS RUSSELL in
+  the outline for him to confirm which he meant before it is cited.
 * **Structural and human blockers (optional third).**
   Past the top blocker: awareness gaps (~70%), missing executive sponsorship (~67%), missing middle-manager
   support (~66%), and discoverability (~65%). Overlaps with the time/resources challenge (both are the
@@ -99,10 +124,11 @@ All three are grounded in the published State of InnerSource 2024/2025 reports.
 ## The opening hook
 
 * **The reciprocal relationship with the InnerSource China Community.**
-  Jerry Tan leads the InnerSource China Community and sits on ISC's board. Last year he invited Russell to
-  give a video keynote to InnerSource Gathering Beijing 2025; this year the Shanghai Gathering brings Russell
-  in person. That, plus ISC's own APAC-heavy audience data, makes the honest opening: this region has been
-  near the center of the InnerSource movement, not on its edge.
+  Jerry Tan (Zhongyi Tan) leads the InnerSource China Community and is an ISC Foundation Member - he is not a
+  board director, so don't call him one on stage. Last year he invited Russell to give a video keynote to
+  InnerSource Gathering Beijing 2025; this year the Shanghai Gathering brings Russell in person. That, plus
+  ISC's own APAC-heavy audience data, makes the honest opening: this region has been near the center of the
+  InnerSource movement, not on its edge.
   Individual contact details and internal China-strategy discussion (e.g. building a presence on regional
   platforms) were found in email but are kept out of this repo.
 
@@ -113,5 +139,6 @@ All three are grounded in the published State of InnerSource 2024/2025 reports.
   Shanghai) - generalized until public.
 * Summit sponsor names, tiers, and amounts; internal event-health/status; personnel changes; and unconfirmed
   keynote names.
-* All individual email addresses and internal China-strategy specifics.
+* All individual email addresses (including Chen Wei's), the internal Huawei-sponsorship/US-sanctions legal
+  discussion, and internal China-strategy specifics.
 * Part 2's AI-interview inputs remain anonymized per those respondents' terms; Part 1 does not draw on them.

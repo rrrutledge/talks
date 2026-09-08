@@ -41,9 +41,9 @@ concrete view of what's next and practical guidance for leading InnerSource in a
     last year Jerry invited me to give a video keynote to InnerSource Gathering Beijing 2025;
     this year I get to be with you in person in Shanghai.
     And this region hasn't been on the edge of the InnerSource movement - it's been near the center of it for years:
-    in ISC's own audience data, countries in this region (Japan and India especially) are consistently among our
-    very top for engagement, regularly ahead of the US, and our Japanese-language material is some of the
-    most-read content we publish anywhere.
+    in ISC's own audience data, Japan is consistently our number-one or number-two country for engagement,
+    trading the top spot with the United States month to month and sitting well ahead of anywhere else, and our
+    Japanese-language material is some of the most-read content we publish anywhere.
   * Frame the two halves: a global ISC update, then how AI is reshaping InnerSource
 
 * Part 1: Global update on InnerSource Commons, ED vantage (~6 min) - **first pass drafted; see `research/part1-research.md` for sources**
@@ -53,30 +53,43 @@ concrete view of what's next and practical guidance for leading InnerSource in a
       following grew from about 92 people in 2020 to roughly 2,700 today, still climbing around 15% a year -
       call it a 30x rise over the life of the Foundation, and our fastest-growing channel by far.
     * It's a genuinely global movement, and this region is out in front rather than catching up: in ISC's own
-      audience data, Japan and India are consistently among our top countries for engagement, and our
-      Japanese-language content is some of the most-read we have. Adoption across APAC runs deep - Huawei
-      presented its own InnerSource program at our 2025 Summit in Yokohama, and many of the region's largest
-      engineering organizations are on the same path.
+      audience data, Japan is consistently our number-one or number-two country for engagement - trading the top
+      spot with the United States month to month, and well ahead of everyone else, with Germany, the UK, and
+      India rounding out the leading set - and our Japanese-language content is among the most-read we publish.
+    * And the community's own bench reflects that: ISC Foundation membership is individual and merit-based (you
+      are elected in, the way Apache does it), and the APAC contingent is deep. Chen Wei, Senior Project
+      Director of Huawei's InnerSource Office, presented "Huawei InnerSource Culture and Value Closed-Loop
+      Practice" at our 2025 Summit in Yokohama; Shingo Oidate, who runs Mitsubishi Electric's Open Source
+      Program Office, was elected a Foundation Member just this month (September 2026). They join a strong
+      APAC roster of members - Jerry Tan (InnerSource China Community), Yuki Hattori (Japan), Yoshitake
+      Kobayashi (Toshiba), Ada Dai (Tencent), Willem Jiang (Huawei), and others - so this region isn't just
+      consuming InnerSource, it's helping lead the Foundation.
     * The most recent State of InnerSource report (2025, roughly 120 organizations surveyed) shows why it
       spreads: the top reasons orgs adopt are code reuse (84%), development speed (81%), knowledge sharing
       (79%), and breaking down silos (77%) - and formal InnerSource programs or program offices now exist at
       about a third of surveyed orgs, with another third running informally.
-  * 2-3 patterns emerging across large-org InnerSource journeys - **candidates; NEEDS RUSSELL: pick the two that ring truest against your own vantage, and confirm or replace**
-    * Pattern A - the center of gravity is shifting from a project team to an enabling office. The most mature
-      programs run InnerSource through a central OSPO or InnerSource Program Office whose job is to *enable*
-      teams - playbooks, repository blueprints, contribution pathways, education - rather than to own the
-      shared code itself. (Recurring across ISC community calls and matched by the survey's rise in formal
-      program offices; tellable generically without naming a specific company.)
-    * Pattern B - scaffolding beats enthusiasm. What separates programs that scale from ones that stall isn't
-      grassroots energy, it's concrete scaffolding: consistent tooling and process, clear contribution
-      guidelines, a discoverability or portal layer, and explicit governance. The survey shows the gap plainly
-      - about 86% run shared repositories, but only about 60% have InnerSource documentation, and portals,
-      training, and metrics lag further behind. Adoption is running ahead of operational maturity.
-    * Pattern C - InnerSource is becoming the substrate for AI-native development. The community increasingly
-      frames InnerSource less as a nice-to-have and more as essential infrastructure for building well with AI:
-      shared prompts and context, collaboratively built internal AI tooling, and well-structured internal code
-      that agents can actually find and reuse. (This is ISC's current thesis and the natural bridge into Part 2
-      - frame it as where the community is heading, not a settled survey finding.)
+  * 2-3 patterns emerging across large-org InnerSource journeys
+    * Pattern 1 (Russell's own read - lead with this) - consolidation: InnerSource is increasingly funded and
+      housed alongside a partner function rather than as a standalone line item. As budgets tighten and AI
+      reshapes where engineering money and effort go, InnerSource more and more sits with a related group - an
+      OSPO, a developer-experience team, or a platform-engineering org. Those are natural partners; they share
+      InnerSource's cross-team, reuse-first instincts. The thing to get right is scope: a host function tends
+      to fund InnerSource for what helps its own remit, and the whole premise of InnerSource is that it has to
+      serve *every* team, not just the one paying for it. The programs that land this well fund InnerSource
+      through a partner function while keeping its mandate company-wide.
+    * Pattern 2 (candidate) - scaffolding beats enthusiasm. What separates programs that scale from ones that
+      stall isn't grassroots energy, it's concrete scaffolding: consistent tooling and process, clear
+      contribution guidelines, a discoverability or portal layer, and explicit governance. The 2025 survey
+      shows the gap plainly - about 86% run shared repositories, but only about 60% have InnerSource
+      documentation, and portals, training, and metrics lag further behind. Adoption is running ahead of
+      operational maturity.
+    * Pattern 3 (candidate) - InnerSource is becoming the substrate for AI-native development. The community
+      increasingly frames InnerSource less as a nice-to-have and more as essential infrastructure for building
+      well with AI: shared prompts and context, collaboratively built internal AI tooling, and well-structured
+      internal code that agents can actually find and reuse. (ISC's current thesis and the natural bridge into
+      Part 2 - frame it as where the community is heading, not a settled survey finding.)
+    * NEEDS RUSSELL: lead with the consolidation pattern; pick one of the other two to pair with it, or swap in
+      another you've seen from the ED chair.
   * What ISC is investing in next
     * The 2026 Summit is the flagship, and it's built for exactly this room: a single continuous 22-hour
       "follow-the-sun" virtual event on November 12, 2026, opening in APAC before handing off to EMEA and then
@@ -86,8 +99,8 @@ concrete view of what's next and practical guidance for leading InnerSource in a
       keynote. NEEDS RUSSELL: whether to preview the planned AI-and-InnerSource panel, which is still being
       finalized.)
     * Beyond the Summit, the community is actively building: a new public InnerSource Pattern for keeping
-      AI-generated code aligned with a project's own conventions; standing peer working groups for InnerSource
-      practice and for program offices; and a formal Foundation membership.
+      AI-generated code aligned with a project's own conventions, and standing peer working groups for
+      InnerSource practice and for program offices.
     * And the direction is toward getting back in the room together - in-person regional Summits are the aim
       for 2027, including an InnerSource presence at a major open-source event here in the region. (NEEDS
       RUSSELL: how firmly to state the 2027 in-person plans, which are still forming.)
@@ -100,7 +113,10 @@ concrete view of what's next and practical guidance for leading InnerSource in a
     * The value is obvious; the investment isn't. Leaders endorse InnerSource and then under-fund it, largely
       because it's hard to measure: fewer than half of orgs measure InnerSource at all, and the methods that do
       exist are immature - manual tracking, surveys, basic portal metrics. Without a credible ROI story,
-      programs stall - roughly 1 in 7 were ramping down in 2025.
+      programs stall - roughly 1 in 7 were ramping down in 2025. (NEEDS RUSSELL: you flagged an
+      ROI-of-engineering white paper to cite here - the name didn't resolve from the transcript, so tell me
+      which you meant. The most-cited current one is DX's "ROI per engineer" work by Abi Noda and Laura Tacho
+      (the DX Core 4 / Developer Experience Index); McKinsey's "Developer Velocity" is the classic fallback.)
     * (Optional third) The remaining blockers are structural and human, not technical: awareness gaps, missing
       executive sponsorship, and - tellingly - missing middle-manager support, which is the exact layer that
       decides whether an engineer actually has the time the first challenge is about.
