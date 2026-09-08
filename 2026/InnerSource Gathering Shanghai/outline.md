@@ -113,10 +113,11 @@ concrete view of what's next and practical guidance for leading InnerSource in a
     * The value is obvious; the investment isn't. Leaders endorse InnerSource and then under-fund it, largely
       because it's hard to measure: fewer than half of orgs measure InnerSource at all, and the methods that do
       exist are immature - manual tracking, surveys, basic portal metrics. Without a credible ROI story,
-      programs stall - roughly 1 in 7 were ramping down in 2025. (NEEDS RUSSELL: you flagged an
-      ROI-of-engineering white paper to cite here - the name didn't resolve from the transcript, so tell me
-      which you meant. The most-cited current one is DX's "ROI per engineer" work by Abi Noda and Laura Tacho
-      (the DX Core 4 / Developer Experience Index); McKinsey's "Developer Velocity" is the classic fallback.)
+      programs stall - roughly 1 in 7 were ramping down in 2025. The encouraging part is that the community is
+      building the answer: Chamindra de Silva (Citi, who leads the FINOS InnerSource SIG) and Daniel Izquierdo
+      (Bitergia) have put real rigor into quantifying it, in their work on the business impact of InnerSource
+      and how to measure it - the credible ROI reference this challenge has been missing, worth pointing the
+      room to.
     * (Optional third) The remaining blockers are structural and human, not technical: awareness gaps, missing
       executive sponsorship, and - tellingly - missing middle-manager support, which is the exact layer that
       decides whether an engineer actually has the time the first challenge is about.
@@ -144,6 +145,8 @@ concrete view of what's next and practical guidance for leading InnerSource in a
 
 Part 1 (the global update) is grounded in ISC's own Foundation data and in published, citable sources - the
 State of InnerSource 2024/2025 reports, ISC community-call topics, and the public Summit 2026 announcements.
+For the ROI/measurement challenge it points to Chamindra de Silva and Daniel Izquierdo's
+[The Business Impact of Inner Source and How to Quantify It](https://www.researchgate.net/publication/372758825_The_Business_Impact_of_Inner_Source_and_How_to_Quantify_It).
 `research/part1-research.md` records what backs each claim and where it came from, and flags what was
 generalized to keep out of this public repo (internal analytics figures, unannounced plans, and any
 company named only in a not-yet-public source) - the same anonymization judgment Part 2's survey material

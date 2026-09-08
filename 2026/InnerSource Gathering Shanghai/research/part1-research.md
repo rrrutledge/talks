@@ -111,11 +111,12 @@ All three are grounded in the published State of InnerSource 2024/2025 reports.
   Fewer than half of orgs measure InnerSource at all, and existing methods are immature (manual tracking ~42%,
   surveys ~38%, portal metrics ~28%). About 1 in 7 programs were ramping down in 2025. This is the most
   differentiated, best-evidenced challenge in the data - sharper than a generic "proving ROI."
-  ROI white paper (open): Russell referenced an ROI-of-engineering white paper (transcribed as "Trumandron")
-  that did not resolve to any author or title in Drive, Gmail, or on the web. The strongest current external
-  candidates are DX's "ROI per engineer" work by Abi Noda and Laura Tacho (the DX Core 4 / Developer
-  Experience Index) and, as the classic fallback, McKinsey's "Developer Velocity." Flagged NEEDS RUSSELL in
-  the outline for him to confirm which he meant before it is cited.
+  ROI reference (confirmed by Russell): Chamindra de Silva (Citi, lead of the FINOS InnerSource SIG) and
+  Daniel Izquierdo (Bitergia), *The Business Impact of Inner Source and How to Quantify It*
+  (https://www.researchgate.net/publication/372758825_The_Business_Impact_of_Inner_Source_and_How_to_Quantify_It).
+  This is the credible, InnerSource-specific ROI work to cite for this challenge - stronger than the generic
+  engineering-ROI papers (DX's DX Core 4, McKinsey's Developer Velocity) because it is about InnerSource
+  directly. Both authors are public InnerSource figures, so naming them is fine.
 * **Structural and human blockers (optional third).**
   Past the top blocker: awareness gaps (~70%), missing executive sponsorship (~67%), missing middle-manager
   support (~66%), and discoverability (~65%). Overlaps with the time/resources challenge (both are the
