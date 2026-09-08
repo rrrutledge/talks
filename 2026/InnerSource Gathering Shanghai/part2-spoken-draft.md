@@ -3,31 +3,59 @@
 Let's turn to the second half of what I promised - what I'm actually seeing, across the community, as
 AI meets InnerSource in practice.
 
-Here's the shift I want you to hold in your head for the next six minutes. AI doesn't shrink the
-problem InnerSource was built to solve. It makes that problem bigger, and it makes it happen faster.
-AI collapses the cost of writing code that compiles and looks right. It does nothing - nothing - about
-the cost of writing code that's actually correct: available, secure, and tested against every edge case
-your organization already learned the hard way. And when you make something cheap, you get more of it.
-That includes duplication.
+## The myth - and why it doesn't hold
 
-## The trap is already happening - and the real cost is the long tail
+Here's a story a lot of us are telling ourselves right now, and I want to name it directly before I
+push back on it. InnerSource exists because writing code used to be expensive. If two teams both need
+the same thing, it's cheaper for the company if one team builds it and the other reuses it. That was
+the whole premise: don't duplicate, work together, because duplication was costly.
+
+Now AI comes along and writes code in seconds. So the myth goes: if creating code is basically free,
+what exactly are we saving by not duplicating it anymore? Doesn't AI just quietly end the argument for
+InnerSource?
+
+Here's why that's wrong. AI collapses the cost of writing code that compiles and looks right. It does
+nothing - nothing - about the cost of writing code that's actually correct: available, secure, and
+tested against every edge case your organization already learned the hard way. And when you make
+something cheap, you get more of it. That includes duplication. The myth mistakes "cheap to write" for
+"cheap," full stop. It isn't. It just moved the bill to later, and to someone else.
+
+## The trap is already happening - in their own words
 
 I want to give you a real example, from inside a large e-commerce company I talked to preparing this
 talk. A team needed a capability. Their own AI tooling found it - it already existed, built and
-working, somewhere else in the company. And the team built it again anyway. Why? Because the review
-process for contributing back had gotten so heavy that duplicating it from scratch, with AI, was faster
-than navigating the paperwork to reuse it.
+working, somewhere else in the company. And the team built it again anyway. Here's how the person who
+told me this put it: "the friction of contributing back felt too high." So they had AI spin up a
+duplicate from scratch instead.
 
-Now - here's the question worth sitting with. Was that actually the wrong call? In the moment, for that
-team, on that day - probably not. They had a deadline. They shipped.
+Their own words on what that actually cost the organization: "raw AI efficiency can inadvertently
+bypass and starve out collaboration loops if governance isn't adapted to match the speed." And then,
+almost as an aside, the line that's stuck with me since I read it: "the value of cooperating and
+participating alongside communities is no longer recognized, making it practically prohibitive during
+working hours." That's not a system failing quietly in the background. That's someone who cares about
+this, watching it happen, and saying so.
 
-But zoom out. That duplicate doesn't disappear once it ships. It has a lifespan. Someone has to patch
-it, secure it, keep it running for years - all the correctness work the original component had already
-earned through years of production hardening, this new copy has none of it, and now has to earn all
-over again, from a standing start. That's the cost AI never touches. It only hides it, behind something
-that looks finished on day one. Multiply that one decision by every team, every sprint, across a
-company the size of that one - and you don't get one duplicate. You get an accumulating maintenance
-bill nobody signed up to pay.
+Now - here's the question worth sitting with. Was that team's call actually wrong? In the moment, for
+them, on that day - probably not. They had a deadline. They shipped.
+
+## Why this actually matters - be precise about the cost
+
+Let's be exact about why that decision is still a problem, because "it's technically inefficient" isn't
+going to move anyone. Two concrete costs.
+
+First: tokens. Every time an agent duplicates something instead of finding it, it's burning real
+compute, reasoning its way through a problem the company already solved, from scratch, on every team,
+on every task. That's not a rounding error. That compounds, sprint over sprint, across a company the
+size of the one in that story.
+
+Second: correctness. The original component didn't just compile - it earned years of hardening. Every
+edge case, every security patch, every outage that taught somebody something, all baked in. None of
+that transfers to a duplicate. The copy starts back at zero, no matter how confident it looks on day
+one. That duplicate has a lifespan. Someone has to patch it, secure it, keep it running for years - and
+they're re-earning correctness the original component already paid for once.
+
+That's the trap, precisely: cheap to write, expensive to own, and the bill arrives after everyone's
+stopped paying attention.
 
 ## Where it's breaking things: review capacity
 
