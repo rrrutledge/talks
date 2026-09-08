@@ -39,7 +39,7 @@ concrete view of what's next and practical guidance for leading InnerSource in a
   * Thank Jerry Tan and the InnerSource China Community for the invitation
   * APAC opening hook - a real, reciprocal relationship, not a courtesy:
     last year Jerry invited me to give a video keynote to InnerSource Gathering Beijing 2025;
-    this year I get to be with you in person in Shanghai.
+    this year I'm glad to be back with you for the Shanghai Gathering - joining remotely, but very much with you.
     I'll say it plainly: I'm proud of what the InnerSource China Community has built, and I feel a genuine
     affinity for this community.
     And this region hasn't been on the edge of the InnerSource movement - it's been near the center of it for years:
