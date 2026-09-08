@@ -7,10 +7,11 @@ generalized to keep out of this public repo - the same judgment Part 2's survey 
 ## Where the movement stands today
 
 * **Community growth.**
-  ISC's LinkedIn following grew from about 92 people in 2020 to roughly 2,700 in mid-2026, still climbing
-  around 15% a year - about a 30x rise over the Foundation's life, and the fastest-growing of ISC's channels.
-  YouTube and X/Twitter grew far more slowly, and X was flat-to-negative through 2025, so LinkedIn is the
-  clean line to cite.
+  ISC's LinkedIn following is up roughly 30-fold over the Foundation's life (from about 92 in 2020 to ~2,700
+  in mid-2026), still growing about 15% year over year, and is the fastest-growing of ISC's channels. Per
+  Russell's steer, the outline cites this as percentages/multiples only - the small absolute follower counts
+  land as less impressive than the growth rate, so they are kept out of the spoken framing. YouTube and
+  X/Twitter grew far more slowly, and X was flat-to-negative through 2025, so LinkedIn is the clean line.
   Source: ISC's own marketing-metrics tracking; the follower counts themselves are publicly visible on the
   profiles.
 * **APAC is out in front (Japan is the standout).**
@@ -24,6 +25,10 @@ generalized to keep out of this public repo - the same judgment Part 2's survey 
   gathering pages) recur among the top-performing pages, and Japanese-language search queries recur among the
   top growing queries. APAC engagement is long-standing (an APAC-region Summit ran as far back as 2020).
   The exact monthly figures are internal analytics; the committed outline uses only the qualitative pattern.
+  Open question (Russell to check with Jerry Tan): whether a China audience finds Japan/other-Asia activity
+  compelling, or whether Japan carries no more weight for them than any other region. If the latter, the hook
+  should lean on Russell's relationship with the China InnerSource Community plus the global picture, and the
+  Japan data should sit in the body rather than the opening. Flagged NEEDS RUSSELL in the Open.
 * **APAC adoption and the Huawei talk.**
   Chen Wei (family name Chen; credited by ISC as "Chenwei"), Senior Project Director of Huawei's InnerSource
   Office, presented **"Huawei InnerSource Culture and Value Closed-Loop Practice"** in person at ISC's 2025
@@ -92,9 +97,13 @@ personnel changes, and any unconfirmed keynote were found in planning material a
   a new public InnerSource Pattern for keeping AI-generated code aligned with a project's own conventions
   (drafted in the public InnerSourcePatterns repo); standing peer working groups for InnerSource practice and
   for program offices (ISPO); and a formal Foundation membership.
-* **Direction, not commitment:**
-  in-person regional Summits are the aim for 2027, including an InnerSource presence at a major regional
-  open-source event. These plans are still forming and are flagged as direction in the outline.
+* **Direction, not commitment (in-person events, per Russell's steer):**
+  ISC ran in-person Summits before the pandemic, went virtual through it, and returned to in person last year
+  in Yokohama (2025); the aim for 2027 is more regular in-person regional events, including a presence in the
+  APAC region. Paired with this is an investment in greater curation - focusing each gathering on the topics
+  that matter to the participant companies so InnerSource knowledge spreads worldwide as fast as possible.
+  These plans are still forming and are flagged as direction in the outline. Russell also noted personal pride
+  in and affinity for the InnerSource China Community, folded into the opening.
 * **FINOS:** a real, longstanding partnership (the FINOS InnerSource SIG), but no distinct *new* 2026 activity
   surfaced - so it is not overstated as a 2026 investment.
 * **Certification/training product:** none found; not claimed.

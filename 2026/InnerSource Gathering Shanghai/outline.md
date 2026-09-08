@@ -40,18 +40,23 @@ concrete view of what's next and practical guidance for leading InnerSource in a
   * APAC opening hook - a real, reciprocal relationship, not a courtesy:
     last year Jerry invited me to give a video keynote to InnerSource Gathering Beijing 2025;
     this year I get to be with you in person in Shanghai.
+    I'll say it plainly: I'm proud of what the InnerSource China Community has built, and I feel a genuine
+    affinity for this community.
     And this region hasn't been on the edge of the InnerSource movement - it's been near the center of it for years:
     in ISC's own audience data, Japan is consistently our number-one or number-two country for engagement,
     trading the top spot with the United States month to month and sitting well ahead of anywhere else, and our
     Japanese-language material is some of the most-read content we publish anywhere.
+    * NEEDS RUSSELL / to check with Jerry: does emphasizing Japan and activity elsewhere in Asia land with a
+      China audience, or is Japan no more relevant to them than any other region? If the latter, lean the hook
+      on the China-community relationship above plus the global picture, and hold the Japan data for the body.
   * Frame the two halves: a global ISC update, then how AI is reshaping InnerSource
 
 * Part 1: Global update on InnerSource Commons, ED vantage (~6 min) - **first pass drafted; see `research/part1-research.md` for sources**
   * Where the movement stands today
     * InnerSource has moved from a promising practice to a core strategy for how large enterprises build
-      software together - and the community around it keeps compounding. One clean line: ISC's LinkedIn
-      following grew from about 92 people in 2020 to roughly 2,700 today, still climbing around 15% a year -
-      call it a 30x rise over the life of the Foundation, and our fastest-growing channel by far.
+      software together - and the community around it keeps compounding. One clean line: our LinkedIn
+      following is up roughly 30-fold over the life of the Foundation and still growing about 15% year over
+      year - our fastest-growing channel by far.
     * It's a genuinely global movement, and this region is out in front rather than catching up: in ISC's own
       audience data, Japan is consistently our number-one or number-two country for engagement - trading the top
       spot with the United States month to month, and well ahead of everyone else, with Germany, the UK, and
@@ -101,9 +106,12 @@ concrete view of what's next and practical guidance for leading InnerSource in a
     * Beyond the Summit, the community is actively building: a new public InnerSource Pattern for keeping
       AI-generated code aligned with a project's own conventions, and standing peer working groups for
       InnerSource practice and for program offices.
-    * And the direction is toward getting back in the room together - in-person regional Summits are the aim
-      for 2027, including an InnerSource presence at a major open-source event here in the region. (NEEDS
-      RUSSELL: how firmly to state the 2027 in-person plans, which are still forming.)
+    * And the direction is toward getting back in the room together. We ran in-person Summits before the
+      pandemic, went virtual through it, and returned to in person last year in Yokohama; the aim for 2027 is
+      more regular in-person regional events, including a presence here in this region. And alongside the
+      events, we're investing in greater curation - focusing each gathering on the topics that actually matter
+      to the companies in the room, so that hard-won InnerSource knowledge spreads across the world as fast as
+      possible. (NEEDS RUSSELL: how firmly to state the 2027 in-person plans, which are still forming.)
   * Challenges leaders should prepare for - grounded in the 2025 survey; **NEEDS RUSSELL: which one to lead with feels like the most honest call**
     * The number-one blocker is no longer culture - it's time. For the first time, "lack of time and resources"
       (84%) overtook organizational culture and silo thinking (74%) as the top perceived blocker. The
