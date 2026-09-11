@@ -140,11 +140,24 @@ concrete view of what's next and practical guidance for leading InnerSource in a
   * What actually helps: automation as a force multiplier for a human's attention (one team's agent pipeline authored 25-35% of merged PRs and closed 70-80% of incoming issues by doing reproduction and verification before a human decided) - not as a replacement for judgment (one open source project's AI-reviewer trial found half its output noise, and turned it off; two-thirds of engineers surveyed won't merge on an AI review alone).
   * Bridge: the real frontier is teaching agents themselves the InnerSource habit - search before you build, reuse the shared piece, push back what's genuinely new and generic. Real examples already exist without anyone calling it InnerSource: a shared-spec pattern where one team owns requirements and others consume them read-only, right where their coding agent can read them; Shell's own Project Fleming, an AI-powered discovery layer finding code that's merely adjacent to what you asked for. Two of three legs - reuse, publish-back - are already shipping in the wild. The third leg, agents that search before they build, is still wide open. (Note: this bridge material - agents InnerSourcing on their own, better review agents - echoes what's coming at Summit 2026; worth a light touch here rather than fully mining it.)
 
-* Close: what comes next (~2 min) - **not yet drafted**
-  * Candidate idea: "the 'Source' in InnerSource is evolving into a 'Source of Knowledge'" - several community members converged on this independently, unprompted
-  * TBD: the 1-2 concrete takeaways I want the room to leave with
-  * Where to go next (ISC site, Summit 2026)
-  * Thank you
+* Close: what comes next (~2 min) - **first pass drafted**
+  * Bridge straight off Part 2's closing point - agents that search before they build is the frontier still wide
+    open. That's the real evolution: the "Source" in InnerSource is becoming a "Source of Knowledge" - not just
+    code, but the context, patterns, and decisions a team accumulates, which is exactly the substrate agents
+    need too. Several community members have converged on this framing independently, unprompted - it isn't
+    just my read.
+    * NEEDS RUSSELL: does "Source of Knowledge" still feel right as the closing image, or is there a better
+      way you'd put it?
+  * The two things to leave the room with (pulled from the outline's own Takeaways, picking the two that carry
+    furthest past the talk):
+    1. InnerSource isn't obsolete in the AI era - AI makes the problem InnerSource solves bigger and faster,
+       not smaller.
+    2. The next frontier isn't managing the flood, it's teaching AI agents themselves the InnerSource habit:
+       search before building, reuse, and contribute back.
+    * NEEDS RUSSELL: are these the right two to leave the room with, or would you swap in one of the other two
+      Takeaways (the maintenance-cost-arrives-later point, or the review-capacity-bottleneck point)?
+  * Where to go next: the ISC site, and Summit 2026 - November 12, follow-the-sun, APAC opens the global day
+  * Thank you - echo the opening: thank Jerry Tan and the InnerSource China Community again
 
 # References
 
