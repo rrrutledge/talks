@@ -25,10 +25,13 @@ generalized to keep out of this public repo - the same judgment Part 2's survey 
   gathering pages) recur among the top-performing pages, and Japanese-language search queries recur among the
   top growing queries. APAC engagement is long-standing (an APAC-region Summit ran as far back as 2020).
   The exact monthly figures are internal analytics; the committed outline uses only the qualitative pattern.
-  Open question (Russell to check with Jerry Tan): whether a China audience finds Japan/other-Asia activity
-  compelling, or whether Japan carries no more weight for them than any other region. If the latter, the hook
-  should lean on Russell's relationship with the China InnerSource Community plus the global picture, and the
-  Japan data should sit in the body rather than the opening. Flagged NEEDS RUSSELL in the Open.
+  Russell asked Jerry Tan directly (Slack DM, 2026-09-08) whether a China audience finds Japan/other-Asia
+  activity compelling. Jerry's answer (2026-09-10): for most Chinese audiences the default frame is national
+  rather than pan-Asian - Japan, Korea, Southeast Asia, Europe, and the US all read as "international," not
+  "our region" - so Japan's numbers land as global evidence, not as regional pride. His steer: lead with
+  China, then place Japan as one of the top countries in the global picture. Russell confirmed. Resolved: the
+  opening hook now leans on the China-community relationship and bridges straight to "this is a global
+  movement," with the Japan data held for the body (where it already sits, under "APAC is out in front").
 * **APAC adoption and the Huawei talk.**
   Chen Wei (family name Chen; credited by ISC as "Chenwei"), Senior Project Director of Huawei's InnerSource
   Office, presented **"Huawei InnerSource Culture and Value Closed-Loop Practice"** in person at ISC's 2025
