@@ -41,14 +41,8 @@ concrete view of what's next and practical guidance for leading InnerSource in a
     last year Jerry invited me to give a video keynote to InnerSource Gathering Beijing 2025;
     this year I'm glad to be back with you for the Shanghai Gathering - joining remotely, but very much with you.
     I'll say it plainly: I'm proud of what the InnerSource China Community has built, and I feel a genuine
-    affinity for this community.
-    And this region hasn't been on the edge of the InnerSource movement - it's been near the center of it for years:
-    in ISC's own audience data, Japan is consistently our number-one or number-two country for engagement,
-    trading the top spot with the United States month to month and sitting well ahead of anywhere else, and our
-    Japanese-language material is some of the most-read content we publish anywhere.
-    * NEEDS RUSSELL / to check with Jerry: does emphasizing Japan and activity elsewhere in Asia land with a
-      China audience, or is Japan no more relevant to them than any other region? If the latter, lean the hook
-      on the China-community relationship above plus the global picture, and hold the Japan data for the body.
+    affinity for this community - and that pride connects to something bigger: InnerSource is a genuinely
+    global movement, and I want to give you the view from that vantage point.
   * Frame the two halves: a global ISC update, then how AI is reshaping InnerSource
 
 * Part 1: Global update on InnerSource Commons, ED vantage (~6 min) - **first pass drafted; see `research/part1-research.md` for sources**
