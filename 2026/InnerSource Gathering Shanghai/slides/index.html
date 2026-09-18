@@ -192,6 +192,7 @@
     .punch b { color:var(--accent); }
 
     .shot { background:#fff; border-radius:14px; padding:16px; box-shadow:0 22px 55px rgba(0,0,0,0.5); max-width:470px; }
+    .shot.wide { max-width:660px; }
     .shot img { width:100%; border-radius:6px; display:block; }
     .shot .cap { text-align:center; font-size:0.46em; color:#33475b; font-weight:700; margin-top:10px; letter-spacing:0.02em; }
 
@@ -536,11 +537,11 @@ And the supporting numbers are stark: only about twenty-two percent of organizat
         </div>
         <div class="card accent-edge">
           <div class="n">The community is building the answer</div>
-          <p style="font-size:0.82em;color:var(--ink);"><b>de Silva &amp; Izquierdo</b> - <em>The Business Impact of Inner Source and How to Quantify It.</em> The ROI reference this challenge has been missing.</p>
+          <p style="font-size:0.82em;color:var(--ink);"><b>de Silva &amp; Izquierdo</b> - <em>Measuring InnerSource Value</em> (MSR 2025). The ROI reference this challenge has been missing.</p>
         </div>
       </div>
     </div>
-    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons; de Silva &amp; Izquierdo (ROI research).</div>
+    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons; de Silva &amp; Izquierdo, <a class="clink" href="https://2025.msrconf.org/details/msr-2025-industry-track/2/Measuring-InnerSource-Value" target="_blank" rel="noopener">Measuring InnerSource Value</a> (MSR 2025).</div>
     <div class="foot"><span class="dot"></span> Part 1</div>
     <aside class="notes">
 The second challenge: the value is obvious, but the investment isn't - largely because it's hard to measure. Under fifty percent of organizations measure InnerSource at all, and the methods that exist are immature. Without a credible ROI story, programs stall - roughly one in seven were ramping down last year.
@@ -710,8 +711,8 @@ That's the trap, precisely: cheap to write, expensive to own, and the bill arriv
         <p class="sub" style="margin-top:24px;font-size:0.8em;max-width:26ch;">Reused / refactored code fell from <b style="color:var(--ink)">21% to 3.8%</b> of changes. And DORA paired more AI use with a drop in delivery stability.</p>
       </div>
       <div class="stack" style="align-items:center;">
-        <div class="shot">
-          <img src="assets/img/src-gitclear-crop.png" alt="GitClear Maintainability Gap report">
+        <div class="shot wide">
+          <img src="assets/img/proof-gitclear.png" alt="GitClear report - code block duplication up 81%">
           <div class="cap">GitClear - The Maintainability Gap, 2026 (623M changes)</div>
         </div>
       </div>
@@ -727,14 +728,16 @@ And this isn't just one anecdote. A large-scale code-change analysis - over six 
   <section>
     <div class="stack">
       <div class="kicker">Where it's breaking - review capacity</div>
-      <h1 style="font-size:1.7em;max-width:30ch;margin-bottom:14px;">Producing a contribution now costs almost nothing. <span class="accent">Reviewing one costs the same as ever.</span></h1>
-      <p class="sub" style="font-size:0.82em;margin-bottom:30px;max-width:44ch;">Zoom out to curl - one of the most-used pieces of software on Earth:</p>
+      <h1 style="font-size:1.5em;max-width:32ch;margin-bottom:20px;">Producing a contribution now costs almost nothing. <span class="accent">Reviewing one costs the same as ever.</span></h1>
       <div class="tiles c3">
         <div class="tile"><div class="v">~1 in 5</div><div class="l">of reports were AI-assisted</div></div>
         <div class="tile"><div class="v">~1 in 20</div><div class="l">of all reports was a genuine vulnerability</div></div>
         <div class="tile"><div class="v red">0</div><div class="l">came from AI - every real one was human-found (6 yrs)</div></div>
       </div>
-      <p class="sub" style="margin-top:28px;font-size:1.0em;font-weight:700;">January 2026: curl shut its bug bounty program down <span style="color:#f08a8a;">(later reopened as slop subsided).</span></p>
+      <div style="display:flex;align-items:center;gap:36px;margin-top:26px;">
+        <div class="shot wide" style="max-width:520px;flex:0 0 auto;"><img src="assets/img/proof-curl.png" alt="curl - the end of the bug bounty"><div class="cap">Daniel Stenberg / curl - "The end of the curl bug bounty," 2026</div></div>
+        <p class="sub" style="font-size:1.05em;font-weight:700;margin:0;">Zoom out to curl - one of the most-used pieces of software on Earth. January 2026: it shut its bug bounty down <span style="color:#f08a8a;">(later reopened as slop subsided).</span></p>
+      </div>
     </div>
     <div class="cite">Source: <a class="clink" href="https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/" target="_blank" rel="noopener">Daniel Stenberg / curl</a> (HackerOne), 2025&ndash;2026; community survey 2026.</div>
     <div class="foot"><span class="dot"></span> Part 2</div>
@@ -752,17 +755,13 @@ This isn't just internal. Take curl - one of the most widely used pieces of soft
       <div class="verdict">
         <div class="vcol good">
           <div class="vh"><span>&#10003;</span> Multiplies attention</div>
-          <div class="vstat">25&ndash;35%</div>
-          <div class="vsub">of merged PRs authored by one team's agent pipeline - reproducing and verifying first.</div>
-          <div class="vstat sp">70&ndash;80%</div>
-          <div class="vsub">of incoming issues closed the same way, before a human looked.</div>
+          <div class="shot" style="max-width:none;padding:12px;margin-bottom:18px;"><img src="assets/img/proof-vercel.png" alt="Vercel AI SDK software factory"><div class="cap">Vercel AI SDK - the software factory</div></div>
+          <div class="vsub">Agents reproduce and verify first - authoring 25-35% of merged PRs, before a human ever looks.</div>
         </div>
         <div class="vcol bad">
           <div class="vh"><span>&#10007;</span> Doesn't replace judgment</div>
-          <div class="vstat">96%</div>
-          <div class="vsub">of developers don't fully trust AI-generated code.</div>
-          <div class="vstat sp">Turned off</div>
-          <div class="vsub">one Red Hat project trialed an AI reviewer, found it noisy, and disabled it.</div>
+          <div class="shot" style="max-width:none;padding:12px;margin-bottom:18px;"><img src="assets/img/proof-sonar.png" alt="SonarSource State of Code 2026"><div class="cap">SonarSource - State of Code 2026</div></div>
+          <div class="vsub">And one Red Hat project trialed an AI reviewer, found it noisy, and turned it off.</div>
         </div>
       </div>
       <p style="text-align:center;font-size:1.15em;color:var(--ink);margin-top:30px;font-weight:700;">A force multiplier for <em>attention</em> - not a replacement for <em>judgment</em>.</p>
