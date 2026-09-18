@@ -113,7 +113,7 @@ They just have no room to act on it.
 The second: the value is obvious, but the investment isn't - largely because it's hard to measure.
 Fewer than half of organizations measure InnerSource at all, and the methods that exist are immature.
 Without a credible ROI story, programs stall - roughly one in seven were ramping down last year.
-The encouraging part is that the community is building the answer: Chamindra de Silva and Daniel Izquierdo have put real rigor into quantifying the business impact of InnerSource.
+And the community is building the answer: Chamindra de Silva and Daniel Izquierdo have put real rigor into quantifying the business impact of InnerSource.
 If you need the ROI reference this challenge has been missing, that's it.
 
 ---
