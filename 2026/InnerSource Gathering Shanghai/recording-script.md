@@ -220,8 +220,8 @@ Where automation works, it's doing the boring part - reproducing an issue, verif
 One team building AI tooling reported an agent pipeline authoring a third of their merged pull requests and closing three-quarters of incoming issues, in a month, just by doing that first pass.
 
 Where it doesn't work is asking AI to replace the judgment call.
-One open source project tried an AI reviewer, found half of what it said was noise and a quarter was pointless nitpicking, and turned it off.
-A survey of seven thousand engineers this year found two-thirds of them won't merge code on an AI review's word alone.
+One open source project tried an AI reviewer, found half of what it said was noise, and turned it off.
+And a SonarSource survey this year found ninety-six percent of developers don't fully trust AI-generated code.
 
 So here's the line: automation is a genuine force multiplier for a human's attention.
 It is not, yet, a replacement for a human's judgment.
