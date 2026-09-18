@@ -42,19 +42,17 @@ It's our fastest-growing channel by far.
 
 ---
 
-And it's a genuinely global movement, with this region out in front rather than catching up.
-In our own audience data, Japan is consistently one of our top two countries for engagement - trading the number-one spot with the United States month to month, and well ahead of everyone else.
-Germany, the UK, and India round out the leading set.
-And our Japanese-language content is among the most-read we publish.
+And it's a truly worldwide movement - one that runs right through China.
+The InnerSource Commons Foundation counts real Chinese leadership: Jerry Tan, who leads the InnerSource China Community; Willem Jiang at Huawei; Ada Dai at Tencent - all elected Foundation Members.
+And at our 2025 Global Summit in Yokohama, Chen Wei of Huawei's InnerSource Office presented "Huawei InnerSource Culture and Value Closed-Loop Practice."
+China isn't following this movement; it's helping lead it.
 
 ---
 
-The community's own bench reflects that.
-Foundation membership is individual and merit-based - you're elected in, the way Apache does it - and the APAC contingent is deep.
-Chen Wei, Senior Project Director of Huawei's InnerSource Office, presented "Huawei InnerSource Culture and Value Closed-Loop Practice" at our 2025 Summit in Yokohama.
-Shingo Oidate, who runs Mitsubishi Electric's Open Source Program Office, was elected a Foundation Member just this month.
-They join a strong roster - Jerry Tan, Yuki Hattori, Yoshitake Kobayashi, Ada Dai, Willem Jiang, and others.
-This region isn't just consuming InnerSource; it's helping lead the Foundation.
+That leadership is earned, not bought.
+Foundation membership is individual and merit-based - you're elected in, the way Apache does it - and the roster spans the world: members across China, Japan, Europe, the Americas.
+Shingo Oidate, who runs Mitsubishi Electric's Open Source Program Office, was elected just this month.
+This is a global community electing its own leaders.
 
 ---
 
@@ -75,7 +73,8 @@ A host function tends to fund InnerSource for what helps its own remit - but the
 The programs that land this well fund through a partner function while keeping the mandate company-wide.
 
 Second - scaffolding beats enthusiasm.
-What separates programs that scale from ones that stall isn't grassroots energy; it's concrete scaffolding: consistent tooling and process, clear contribution guidelines, a discoverability layer, explicit governance.
+What separates programs that scale from ones that stall isn't grassroots energy; it's concrete scaffolding: consistent tooling and process, clear contribution guidelines, explicit governance - and, just as much, manager and HR support, so that contributing actually counts on someone's career ladder.
+Without that backing, the enthusiasm has nowhere to go.
 
 Third - InnerSource is becoming the substrate for AI-native development.
 The community increasingly frames InnerSource less as a nice-to-have and more as essential infrastructure for building well with AI: shared prompts and context, collaboratively built internal AI tooling, and well-structured internal code that agents can actually find and reuse.
@@ -83,8 +82,10 @@ Hold onto that one - it's where the second half of this talk goes.
 
 ---
 
-The survey shows the scaffolding gap plainly - about eighty-six percent run shared repositories, but only about sixty percent have InnerSource documentation, and portals, training, and metrics lag further behind.
-Adoption is running ahead of operational maturity.
+The survey shows the gap plainly.
+About eighty-six percent share code in shared repositories - the basic move.
+But only about sixty percent have written InnerSource documentation, and portals, training, and metrics are rarer still.
+In plain terms: teams are sharing code faster than they're building the support system - the docs, the portals, the training - that keeps that code usable.
 
 ---
 
@@ -93,6 +94,7 @@ The flagship is the 2026 Summit, and it's built for exactly this room: a single 
 Your region kicks off the global day.
 The theme is "InnerSource in Motion: Navigating the Shifting Tides," across three tracks - Cultural Elasticity, Follow-the-Sun Collaboration, and the Evolving Developer Experience - with AI running through all of them.
 Scott Hanselman is a confirmed keynote.
+If you scan the code on screen, it takes you straight to signing up.
 
 ---
 
@@ -111,7 +113,7 @@ They just have no room to act on it.
 ---
 
 The second: the value is obvious, but the investment isn't - largely because it's hard to measure.
-Fewer than half of organizations measure InnerSource at all, and the methods that exist are immature.
+Under fifty percent of organizations measure InnerSource at all, and the methods that exist are immature.
 Without a credible ROI story, programs stall - roughly one in seven were ramping down last year.
 And the community is building the answer: Chamindra de Silva and Daniel Izquierdo have put real rigor into quantifying the business impact of InnerSource.
 If you need the ROI reference this challenge has been missing, that's it.
@@ -261,7 +263,7 @@ Search before building, reuse, and contribute back.
 ---
 
 Where to go next: the InnerSource Commons site, and the 2026 Summit on November twelfth - follow-the-sun, and your region opens the global day.
-I'd love to see you there.
+Scan the code, and I'd love to see you there.
 
 Thank you again - to Jerry Tan, and to the entire InnerSource China Community.
 It's an honor to be part of what you're building here.
