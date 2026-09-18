@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnerSource in the AI Era</title>
+  <meta name="description" content="Keynote for InnerSource Gathering Shanghai 2026 - Russell Rutledge, Executive Director, InnerSource Commons">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+
+  <style>
+    :root {
+      /* --- deck chrome --- */
+      --bg-0:        #0a1420;   /* deepest */
+      --bg-1:        #0e1a2b;   /* base navy */
+      --bg-2:        #14233a;   /* raised panel */
+      --ink:         #ffffff;
+      --ink-2:       #b7c5d8;   /* secondary */
+      --ink-3:       #7e90a8;   /* muted */
+      --accent:      #2fd0bd;   /* ISC teal */
+      --accent-2:    #7fe3d6;   /* teal light */
+      --hair:        rgba(255,255,255,0.10);
+      --hair-strong: rgba(255,255,255,0.18);
+
+      /* --- validated categorical (dark surface) --- */
+      --series-1: #3987e5;  /* blue */
+      --series-2: #d95926;  /* orange */
+      --series-3: #199e70;  /* aqua */
+      --series-4: #c98500;  /* yellow */
+      --series-5: #d55181;  /* magenta */
+      --series-8: #e66767;  /* red */
+      --good:     #0ca30c;
+      --critical: #d03b3b;
+    }
+
+    .reveal {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      font-weight: 400;
+      color: var(--ink);
+      font-size: 32px;
+    }
+    .reveal .slides { text-align: left; }
+    html.reveal-viewport,
+    .reveal-viewport { background: var(--bg-1); }
+
+    .reveal .slides section {
+      height: 100%;
+      padding: 60px 88px;
+      box-sizing: border-box;
+      background:
+        radial-gradient(1200px 700px at 82% -10%, rgba(47,208,189,0.10), transparent 60%),
+        linear-gradient(160deg, var(--bg-1) 0%, var(--bg-0) 100%);
+    }
+
+    /* ---------- typography ---------- */
+    .reveal h1, .reveal h2, .reveal h3 { color: var(--ink); font-weight: 800; letter-spacing: -0.02em; margin: 0; line-height: 1.05; text-transform: none; }
+    .reveal h1 { font-size: 2.15em; font-weight: 900; }
+    .reveal h2 { font-size: 1.5em; }
+    .reveal h3 { font-size: 1.05em; }
+    .reveal p  { line-height: 1.4; margin: 0 0 0.6em; }
+    .reveal strong { color: var(--ink); font-weight: 700; }
+    .reveal em { color: var(--accent-2); font-style: normal; font-weight: 600; }
+    .accent { color: var(--accent); }
+
+    /* eyebrow / kicker */
+    .kicker {
+      display: inline-flex; align-items: center; gap: 14px;
+      font-size: 0.5em; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 30px;
+    }
+    .kicker::before { content: ""; width: 40px; height: 3px; background: var(--accent); border-radius: 2px; }
+
+    .lede { font-size: 1.12em; color: var(--ink-2); max-width: 22ch; line-height: 1.32; }
+    .sub  { color: var(--ink-2); font-size: 0.82em; line-height: 1.4; }
+    .foot { position: absolute; left: 88px; bottom: 46px; right: 88px; display: flex; justify-content: space-between; align-items: center; font-size: 0.5em; color: var(--ink-3); letter-spacing: 0.04em; }
+    .foot .brand { display: flex; align-items: center; gap: 12px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; }
+
+    /* layout helpers */
+    .grid { display: grid; gap: 40px; align-items: center; height: 100%; }
+    .grid.two { grid-template-columns: 1fr 1fr; }
+    .grid.wide-left { grid-template-columns: 1.15fr 0.85fr; }
+    .grid.wide-right { grid-template-columns: 0.8fr 1.2fr; }
+    .stack { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+    .center { align-content: center; justify-items: center; text-align: center; }
+
+    /* ---------- title slide ---------- */
+    .title-wrap { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 56px; height: 100%; align-items: center; }
+    .title-main .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.52em; margin-bottom: 26px; }
+    .title-main h1 { font-size: 2.5em; line-height: 1.02; }
+    .title-main .byline { margin-top: 44px; padding-top: 30px; border-top: 1px solid var(--hair-strong); }
+    .title-main .byline .name { font-size: 1.0em; font-weight: 700; }
+    .title-main .byline .role { color: var(--ink-2); font-size: 0.72em; margin-top: 4px; }
+    .title-portrait { justify-self: center; text-align: center; }
+    .title-portrait img { width: 300px; height: 300px; object-fit: cover; border-radius: 50%; border: 3px solid var(--accent); box-shadow: 0 0 0 10px rgba(47,208,189,0.10), 0 30px 60px rgba(0,0,0,0.45); }
+    .title-portrait .event { margin-top: 30px; font-size: 0.62em; color: var(--ink-2); line-height: 1.5; }
+    .title-portrait .event b { color: var(--ink); font-weight: 700; display: block; font-size: 1.15em; }
+
+    /* ---------- section divider ---------- */
+    .divider { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+    .divider .num { font-size: 1.0em; font-weight: 800; color: var(--accent); letter-spacing: 0.3em; margin-bottom: 24px; }
+    .divider h1 { font-size: 3.0em; max-width: 18ch; }
+    .divider .meta { margin-top: 34px; color: var(--ink-2); font-size: 0.8em; letter-spacing: 0.02em; }
+
+    /* ---------- cards / lists ---------- */
+    .cards { display: grid; gap: 22px; }
+    .card { background: linear-gradient(160deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015)); border: 1px solid var(--hair); border-radius: 18px; padding: 26px 28px; }
+    .card .n { color: var(--accent); font-weight: 800; font-size: 0.62em; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px; }
+    .card h3 { font-size: 1.02em; margin-bottom: 8px; }
+    .card p { color: var(--ink-2); font-size: 0.7em; line-height: 1.42; margin: 0; }
+    .card.accent-edge { border-left: 4px solid var(--accent); }
+
+    .featurelist { list-style: none; margin: 0; padding: 0; }
+    .featurelist li { position: relative; padding-left: 40px; margin-bottom: 26px; color: var(--ink-2); font-size: 0.86em; line-height: 1.36; }
+    .featurelist li::before { content: ""; position: absolute; left: 0; top: 6px; width: 20px; height: 20px; border-radius: 6px; background: rgba(47,208,189,0.18); border: 1px solid var(--accent); }
+    .featurelist li b { color: var(--ink); font-weight: 700; }
+
+    /* ---------- stat tiles ---------- */
+    .tiles { display: grid; gap: 20px; }
+    .tiles.c2 { grid-template-columns: 1fr 1fr; }
+    .tiles.c3 { grid-template-columns: repeat(3,1fr); }
+    .tile { background: var(--bg-2); border: 1px solid var(--hair); border-radius: 16px; padding: 26px 26px; }
+    .tile .v { font-size: 1.9em; font-weight: 900; letter-spacing: -0.03em; color: var(--ink); line-height: 1; }
+    .tile .v.teal { color: var(--accent); }
+    .tile .v.red { color: var(--series-8); }
+    .tile .l { color: var(--ink-2); font-size: 0.62em; margin-top: 12px; line-height: 1.35; }
+
+    .hero-num { font-size: 6.2em; font-weight: 900; letter-spacing: -0.04em; line-height: 0.9; color: var(--accent); }
+    .hero-num.red { color: var(--series-8); }
+
+    /* ---------- bar chart (HTML/CSS) ---------- */
+    .barchart { display: flex; flex-direction: column; gap: 20px; width: 100%; }
+    .bar-row { display: grid; grid-template-columns: 260px 1fr; align-items: center; gap: 22px; }
+    .bar-row .cap { color: var(--ink-2); font-size: 0.66em; text-align: right; line-height: 1.2; }
+    .bar-row .cap b { color: var(--ink); display: block; font-weight: 600; font-size: 1.0em; }
+    .track { position: relative; height: 40px; background: rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden; }
+    .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 8px; display: flex; align-items: center; justify-content: flex-end; padding-right: 16px; font-weight: 800; font-size: 0.66em; color: #fff; }
+    .fill.s1 { background: linear-gradient(90deg, rgba(57,135,229,0.55), var(--series-1)); }
+    .fill.teal { background: linear-gradient(90deg, rgba(47,208,189,0.45), var(--accent)); color: #05201d; }
+    .fill.muted { background: linear-gradient(90deg, rgba(126,144,168,0.35), #56657d); }
+    .fill.red { background: linear-gradient(90deg, rgba(214,59,59,0.5), var(--critical)); }
+
+    /* pill / tag row */
+    .tags { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .tag { font-size: 0.56em; font-weight: 600; color: var(--ink-2); background: rgba(255,255,255,0.05); border: 1px solid var(--hair); border-radius: 999px; padding: 9px 18px; }
+    .tag.on { color: var(--accent); border-color: rgba(47,208,189,0.5); background: rgba(47,208,189,0.08); }
+
+    /* two-column verdict (helps / doesn't) */
+    .verdict { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .vcol { border-radius: 18px; padding: 30px 30px; border: 1px solid var(--hair); background: rgba(255,255,255,0.02); }
+    .vcol.good { border-top: 4px solid var(--good); }
+    .vcol.bad  { border-top: 4px solid var(--critical); }
+    .vcol .vh { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 0.86em; margin-bottom: 20px; }
+    .vcol.good .vh { color: #4bd07a; }
+    .vcol.bad .vh  { color: #ef7a7a; }
+    .vcol .vstat { font-size: 1.5em; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; }
+    .vcol .vsub { color: var(--ink-2); font-size: 0.66em; margin-top: 8px; line-height: 1.4; }
+    .vcol .vstat + .vstat { margin-top: 22px; }
+
+    /* quote */
+    .quote { border-left: 4px solid var(--accent); padding: 6px 0 6px 34px; margin: 0 0 26px; }
+    .quote p { font-size: 1.12em; color: var(--ink); font-weight: 500; line-height: 1.32; font-style: italic; }
+    .quote .attr { color: var(--ink-3); font-size: 0.6em; font-style: normal; margin-top: 12px; letter-spacing: 0.04em; }
+
+    /* myth / rebuttal split */
+    .flip { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-radius: 18px; overflow: hidden; border: 1px solid var(--hair); }
+    .flip .side { padding: 40px 42px; }
+    .flip .myth { background: rgba(214,59,59,0.08); }
+    .flip .truth { background: rgba(47,208,189,0.08); }
+    .flip .lbl { font-size: 0.56em; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 18px; }
+    .flip .myth .lbl { color: #ef7a7a; }
+    .flip .truth .lbl { color: var(--accent); }
+    .flip p { font-size: 0.88em; line-height: 1.36; color: var(--ink); margin: 0; }
+
+    /* follow-the-sun */
+    .fts { display: flex; align-items: stretch; gap: 0; margin-top: 10px; border-radius: 16px; overflow: hidden; border: 1px solid var(--hair); }
+    .fts .leg { flex: 1; padding: 30px 26px; text-align: center; }
+    .fts .leg + .leg { border-left: 1px solid var(--hair); }
+    .fts .leg .rg { font-size: 0.95em; font-weight: 800; }
+    .fts .leg .tm { color: var(--ink-2); font-size: 0.58em; margin-top: 8px; letter-spacing: 0.04em; }
+    .fts .leg.apac { background: rgba(47,208,189,0.12); }
+    .fts .leg.apac .rg { color: var(--accent); }
+
+    /* diagram: agent InnerSource habit legs */
+    .legs { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .leg-card { border-radius: 16px; padding: 28px 26px; border: 1px solid var(--hair); background: rgba(255,255,255,0.02); }
+    .leg-card .st { font-size: 0.52em; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; }
+    .leg-card.done .st { color: var(--good); }
+    .leg-card.open .st { color: var(--accent); }
+    .leg-card h3 { font-size: 0.92em; margin-bottom: 10px; }
+    .leg-card p { color: var(--ink-2); font-size: 0.62em; line-height: 1.4; margin: 0; }
+    .leg-card.open { border: 1px solid rgba(47,208,189,0.5); background: rgba(47,208,189,0.06); }
+
+    /* takeaways */
+    .takeaways { display: grid; gap: 26px; }
+    .takeaway { display: grid; grid-template-columns: 64px 1fr; gap: 26px; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid var(--hair); border-left: 4px solid var(--accent); border-radius: 16px; padding: 30px 32px; }
+    .takeaway .tn { font-size: 1.8em; font-weight: 900; color: var(--accent); line-height: 1; }
+    .takeaway p { font-size: 0.92em; color: var(--ink); line-height: 1.34; margin: 0; }
+
+    /* progress bar accent */
+    .reveal .progress { color: var(--accent); height: 4px; }
+    .reveal .slide-number { background: transparent; color: var(--ink-3); font-size: 14px; }
+
+    .muted-note { color: var(--ink-3); font-size: 0.56em; margin-top: 22px; letter-spacing: 0.02em; }
+    .arrow { color: var(--accent); font-weight: 800; }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+  <!-- ============ OPEN ============ -->
+
+  <!-- 1. TITLE -->
+  <section data-background-color="#0a1420">
+    <div class="title-wrap">
+      <div class="title-main">
+        <div class="eyebrow">InnerSource Gathering Shanghai 2026 &middot; Keynote</div>
+        <h1>InnerSource in the <span class="accent">AI Era</span></h1>
+        <p style="font-size:1.05em;color:var(--ink-2);margin-top:22px;max-width:24ch;">A global update &mdash; and what comes next.</p>
+        <div class="byline">
+          <div class="name">Russell Rutledge</div>
+          <div class="role">Executive Director, InnerSource Commons</div>
+        </div>
+      </div>
+      <div class="title-portrait">
+        <img src="assets/russ.jpeg" alt="Russell Rutledge">
+        <div class="event"><b>Shanghai &middot; Sept 21&ndash;22, 2026</b>Hosted by the InnerSource China Community</div>
+      </div>
+    </div>
+    <aside class="notes">
+Good morning, and thank you - to Jerry Tan, and to the whole InnerSource China Community - for inviting me back.
+
+Last year Jerry invited me to give a video keynote to the Beijing Gathering; this year I'm glad to be with you again for Shanghai. I'm joining remotely, but I'm very much with you.
+    </aside>
+  </section>
+
+  <!-- 2. HOOK -->
+  <section>
+    <div class="grid wide-left">
+      <div class="stack">
+        <div class="kicker">A global movement</div>
+        <h1 style="font-size:1.9em;max-width:16ch;">This region isn't on the edge of InnerSource. It's near the <span class="accent">center</span>.</h1>
+        <p class="sub" style="margin-top:28px;max-width:34ch;font-size:0.86em;">A real, reciprocal relationship &mdash; and a vantage point on where the whole movement stands.</p>
+      </div>
+      <div class="stack">
+        <div class="cards">
+          <div class="card accent-edge">
+            <div class="n">2025</div>
+            <p style="font-size:0.78em;color:var(--ink);">Jerry invited me to keynote <b>InnerSource Gathering Beijing</b>.</p>
+          </div>
+          <div class="card accent-edge">
+            <div class="n">2026 &middot; Today</div>
+            <p style="font-size:0.78em;color:var(--ink);">Back with you for <b>Shanghai</b> &mdash; remote, but very much with you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> InnerSource Commons</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+I'll say this plainly: I'm proud of what the InnerSource China Community has built, and I feel a genuine affinity for this community.
+
+And that pride connects to something bigger. InnerSource is a genuinely global movement now - and this region isn't on the edge of it, it's near the center. I want to give you the view from that vantage point.
+    </aside>
+  </section>
+
+  <!-- 3. ROADMAP -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Where we're headed</div>
+      <div class="grid two" style="height:auto;margin-top:10px;">
+        <div class="card" style="padding:44px 40px;">
+          <div class="n">Part 1</div>
+          <h2 style="font-size:1.25em;margin-bottom:14px;">A global update</h2>
+          <p style="font-size:0.74em;">Where the movement stands, three patterns across large orgs, what ISC is building next, and the challenges to prepare for.</p>
+        </div>
+        <div class="card accent-edge" style="padding:44px 40px;">
+          <div class="n">Part 2</div>
+          <h2 style="font-size:1.25em;margin-bottom:14px;">How AI is reshaping InnerSource</h2>
+          <p style="font-size:0.74em;">The one question the whole community is asking at once &mdash; what does AI do to all of it?</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> InnerSource Commons</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+Here's where we're headed today, in two halves. First, a global update on where InnerSource stands. Then, the question the whole community is asking at once: what is AI doing to all of it?
+    </aside>
+  </section>
+
+  <!-- ============ PART 1 ============ -->
+
+  <!-- 4. DIVIDER -->
+  <section data-background-color="#0a1420">
+    <div class="divider">
+      <div class="num">PART 1</div>
+      <h1>The global update</h1>
+      <div class="meta">Executive Director's vantage &middot; ~6 minutes</div>
+    </div>
+    <aside class="notes">
+Let's start with where the movement stands.
+    </aside>
+  </section>
+
+  <!-- 5. LINKEDIN GROWTH -->
+  <section>
+    <div class="grid wide-right">
+      <div class="stack">
+        <div class="kicker">Where it stands</div>
+        <p class="lede" style="max-width:24ch;">From a promising practice to a <em>core strategy</em> &mdash; and the community keeps compounding.</p>
+        <p class="muted-note">Fastest-growing channel, by far.</p>
+      </div>
+      <div class="stack">
+        <div style="display:flex;align-items:baseline;gap:20px;">
+          <div class="hero-num">30&times;</div>
+          <div style="color:var(--ink-2);font-size:0.8em;line-height:1.35;">LinkedIn following, up<br><b style="color:var(--ink);">~30-fold</b> over the Foundation's life</div>
+        </div>
+        <!-- growth sparkline -->
+        <svg viewBox="0 0 520 150" style="width:100%;max-width:560px;margin-top:34px;" role="img" aria-label="Compounding growth curve">
+          <defs>
+            <linearGradient id="gGrow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="rgba(47,208,189,0.35)"/>
+              <stop offset="100%" stop-color="rgba(47,208,189,0)"/>
+            </linearGradient>
+          </defs>
+          <path d="M6,140 C130,132 250,118 340,86 C410,60 470,30 514,12 L514,148 L6,148 Z" fill="url(#gGrow)"/>
+          <path d="M6,140 C130,132 250,118 340,86 C410,60 470,30 514,12" fill="none" stroke="#2fd0bd" stroke-width="3.5"/>
+          <circle cx="514" cy="12" r="7" fill="#2fd0bd"/>
+        </svg>
+        <div class="tile" style="margin-top:26px;max-width:300px;">
+          <div class="v teal">~15%</div>
+          <div class="l">year-over-year growth, and still climbing</div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+InnerSource has moved from a promising practice to a core strategy for how large enterprises build software together - and the community around it keeps compounding.
+
+One clean line: our LinkedIn following is up roughly thirty-fold over the life of the Foundation, and it's still growing about fifteen percent year over year. It's our fastest-growing channel by far.
+    </aside>
+  </section>
+
+  <!-- 6. GLOBAL / APAC OUT IN FRONT -->
+  <section>
+    <div class="stack">
+      <div class="kicker">A genuinely global movement</div>
+      <h2 style="max-width:24ch;margin-bottom:34px;">This region is <span class="accent">out in front</span> &mdash; not catching up.</h2>
+      <div class="grid two" style="height:auto;align-items:stretch;">
+        <div class="card">
+          <p style="font-size:0.82em;color:var(--ink);line-height:1.42;">In our own audience data, <b>Japan is consistently a top-two country</b> for engagement &mdash; trading the number-one spot with the United States month to month, well ahead of everyone else.</p>
+          <div class="tags">
+            <span class="tag on">Japan</span>
+            <span class="tag on">United States</span>
+            <span class="tag">Germany</span>
+            <span class="tag">United Kingdom</span>
+            <span class="tag">India</span>
+          </div>
+        </div>
+        <div class="card accent-edge">
+          <p style="font-size:0.82em;color:var(--ink);line-height:1.42;">Our <b>Japanese-language content</b> is among the most-read we publish &mdash; a signal of how deep engagement runs across APAC.</p>
+          <p class="muted-note" style="margin-top:22px;">Leading countries by community engagement.</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+And it's a genuinely global movement, with this region out in front rather than catching up.
+
+In our own audience data, Japan is consistently one of our top two countries for engagement - trading the number-one spot with the United States month to month, and well ahead of everyone else. Germany, the UK, and India round out the leading set. And our Japanese-language content is among the most-read we publish.
+    </aside>
+  </section>
+
+  <!-- 7. MEMBERSHIP BENCH -->
+  <section>
+    <div class="stack">
+      <div class="kicker">The community's own bench</div>
+      <h2 style="max-width:26ch;margin-bottom:14px;">Foundation membership is individual and merit-based &mdash; you're <span class="accent">elected in</span>.</h2>
+      <p class="sub" style="max-width:52ch;margin-bottom:30px;font-size:0.72em;">The APAC contingent is deep &mdash; this region isn't just consuming InnerSource, it's helping lead the Foundation.</p>
+      <div class="grid two" style="height:auto;align-items:stretch;">
+        <div class="card">
+          <div class="n">Yokohama Summit 2025</div>
+          <p style="font-size:0.76em;color:var(--ink);"><b>Chen Wei</b>, Senior Project Director, Huawei InnerSource Office &mdash; presented <em>"Huawei InnerSource Culture and Value Closed-Loop Practice."</em></p>
+        </div>
+        <div class="card">
+          <div class="n">Elected September 2026</div>
+          <p style="font-size:0.76em;color:var(--ink);"><b>Shingo Oidate</b>, who runs Mitsubishi Electric's Open Source Program Office &mdash; elected a Foundation Member this month.</p>
+        </div>
+      </div>
+      <div class="tags" style="margin-top:26px;">
+        <span class="tag">Jerry Tan</span>
+        <span class="tag">Yuki Hattori</span>
+        <span class="tag">Yoshitake Kobayashi</span>
+        <span class="tag">Ada Dai</span>
+        <span class="tag">Willem Jiang</span>
+        <span class="tag" style="color:var(--ink-3);">&amp; others</span>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+The community's own bench reflects that. Foundation membership is individual and merit-based - you're elected in, the way Apache does it - and the APAC contingent is deep.
+
+Chen Wei, Senior Project Director of Huawei's InnerSource Office, presented "Huawei InnerSource Culture and Value Closed-Loop Practice" at our 2025 Summit in Yokohama. Shingo Oidate, who runs Mitsubishi Electric's Open Source Program Office, was elected a Foundation Member just this month.
+
+They join a strong roster - Jerry Tan, Yuki Hattori, Yoshitake Kobayashi, Ada Dai, Willem Jiang, and others. This region isn't just consuming InnerSource; it's helping lead the Foundation.
+    </aside>
+  </section>
+
+  <!-- 8. WHY IT SPREADS - ADOPTION CHART -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Why it spreads &middot; State of InnerSource 2025</div>
+      <div class="grid wide-left" style="height:auto;align-items:center;">
+        <div class="barchart" style="max-width:none;">
+          <div class="bar-row"><div class="cap"><b>Code reuse</b></div><div class="track"><div class="fill teal" style="width:84%;">84%</div></div></div>
+          <div class="bar-row"><div class="cap"><b>Development speed</b></div><div class="track"><div class="fill s1" style="width:81%;">81%</div></div></div>
+          <div class="bar-row"><div class="cap"><b>Knowledge sharing</b></div><div class="track"><div class="fill s1" style="width:79%;">79%</div></div></div>
+          <div class="bar-row"><div class="cap"><b>Breaking down silos</b></div><div class="track"><div class="fill s1" style="width:77%;">77%</div></div></div>
+        </div>
+        <div class="stack" style="padding-left:20px;">
+          <p class="sub" style="font-size:0.74em;margin-bottom:24px;">Top reasons organizations adopt InnerSource. <span style="color:var(--ink-3)">~120 organizations surveyed.</span></p>
+          <div class="tiles c2">
+            <div class="tile"><div class="v teal">~1/3</div><div class="l">have a formal program or program office</div></div>
+            <div class="tile"><div class="v">~1/3</div><div class="l">running InnerSource informally</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+Why does it spread? The most recent State of InnerSource report - about 120 organizations - is clear: the top reasons are code reuse, at eighty-four percent; development speed, eighty-one; knowledge sharing, seventy-nine; and breaking down silos, seventy-seven.
+
+Formal programs or program offices now exist at about a third of organizations, with another third running informally.
+    </aside>
+  </section>
+
+  <!-- 9. THREE PATTERNS -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Three patterns across large-org journeys</div>
+      <div class="cards" style="grid-template-columns:1fr;gap:20px;margin-top:6px;">
+        <div class="card accent-edge">
+          <div style="display:grid;grid-template-columns:56px 1fr;gap:22px;align-items:start;">
+            <div style="font-size:1.5em;font-weight:900;color:var(--accent);">1</div>
+            <div><h3>Consolidation</h3><p>InnerSource is increasingly funded and housed alongside a partner function &mdash; an OSPO, developer-experience, or platform-engineering. Natural partners; the thing to get right is <b>scope</b>: fund through a partner, keep the mandate company-wide.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="display:grid;grid-template-columns:56px 1fr;gap:22px;align-items:start;">
+            <div style="font-size:1.5em;font-weight:900;color:var(--ink-3);">2</div>
+            <div><h3>Scaffolding beats enthusiasm</h3><p>What separates programs that scale from ones that stall isn't grassroots energy &mdash; it's concrete scaffolding: consistent tooling, contribution guidelines, a discoverability layer, explicit governance.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="display:grid;grid-template-columns:56px 1fr;gap:22px;align-items:start;">
+            <div style="font-size:1.5em;font-weight:900;color:var(--ink-3);">3</div>
+            <div><h3>The substrate for AI-native development</h3><p>Increasingly framed as essential infrastructure for building well with AI: shared prompts and context, collaborative internal AI tooling, well-structured code agents can find and reuse. <span class="accent">Hold onto this one.</span></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+Across the largest InnerSource journeys, I see three patterns worth naming.
+
+First - consolidation. InnerSource is increasingly funded and housed alongside a partner function rather than as a standalone line item. As budgets tighten and AI reshapes where engineering effort goes, InnerSource more and more sits with a related group - an OSPO, a developer-experience team, a platform-engineering org. Those are natural partners; they share InnerSource's cross-team, reuse-first instincts. The thing to get right is scope. A host function tends to fund InnerSource for what helps its own remit - but the whole premise of InnerSource is that it serves every team, not just the one paying for it. The programs that land this well fund through a partner function while keeping the mandate company-wide.
+
+Second - scaffolding beats enthusiasm. What separates programs that scale from ones that stall isn't grassroots energy; it's concrete scaffolding: consistent tooling and process, clear contribution guidelines, a discoverability layer, explicit governance.
+
+Third - InnerSource is becoming the substrate for AI-native development. The community increasingly frames InnerSource less as a nice-to-have and more as essential infrastructure for building well with AI: shared prompts and context, collaboratively built internal AI tooling, and well-structured internal code that agents can actually find and reuse. Hold onto that one - it's where the second half of this talk goes.
+    </aside>
+  </section>
+
+  <!-- 10. MATURITY GAP CHART -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Pattern 2, in the data &middot; the maturity gap</div>
+      <h2 style="max-width:26ch;margin-bottom:34px;">Adoption is running <span class="accent">ahead of</span> operational maturity.</h2>
+      <div class="barchart">
+        <div class="bar-row"><div class="cap"><b>Run shared repositories</b></div><div class="track"><div class="fill teal" style="width:86%;">~86%</div></div></div>
+        <div class="bar-row"><div class="cap"><b>Have InnerSource docs</b></div><div class="track"><div class="fill s1" style="width:60%;">~60%</div></div></div>
+        <div class="bar-row"><div class="cap" style="color:var(--ink-3)">Portals &middot; training &middot; metrics</div><div class="track"><div class="fill muted" style="width:38%;">lag further behind</div></div></div>
+      </div>
+      <p class="muted-note" style="margin-top:30px;">State of InnerSource 2025 &middot; the plumbing lags the enthusiasm.</p>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+The survey shows the scaffolding gap plainly - about eighty-six percent run shared repositories, but only about sixty percent have InnerSource documentation, and portals, training, and metrics lag further behind. Adoption is running ahead of operational maturity.
+    </aside>
+  </section>
+
+  <!-- 11. INVESTING NEXT - SUMMIT -->
+  <section>
+    <div class="stack">
+      <div class="kicker">What ISC is investing in next</div>
+      <h2 style="max-width:24ch;margin-bottom:10px;">Summit 2026 &mdash; built for exactly this room.</h2>
+      <p class="sub" style="font-size:0.76em;margin-bottom:24px;max-width:50ch;">A single continuous 22-hour <em>follow-the-sun</em> virtual event on <b style="color:var(--ink)">November 12, 2026</b>. Theme: <em>InnerSource in Motion &mdash; Navigating the Shifting Tides.</em></p>
+      <div class="fts">
+        <div class="leg apac"><div class="rg">APAC</div><div class="tm">opens the global day</div></div>
+        <div class="leg"><div class="rg">EMEA</div><div class="tm">hands off next</div></div>
+        <div class="leg"><div class="rg">Americas</div><div class="tm">closes the loop</div></div>
+      </div>
+      <div class="tags" style="margin-top:30px;">
+        <span class="tag">Cultural Elasticity</span>
+        <span class="tag">Follow-the-Sun Collaboration</span>
+        <span class="tag">Evolving Developer Experience</span>
+        <span class="tag on">Scott Hanselman &middot; confirmed keynote</span>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+What are we investing in next? The flagship is the 2026 Summit, and it's built for exactly this room: a single continuous twenty-two-hour follow-the-sun virtual event on November twelfth, opening in APAC before handing off to EMEA and then the Americas. Your region kicks off the global day.
+
+The theme is "InnerSource in Motion: Navigating the Shifting Tides," across three tracks - Cultural Elasticity, Follow-the-Sun Collaboration, and the Evolving Developer Experience - with AI running through all of them. Scott Hanselman is a confirmed keynote.
+    </aside>
+  </section>
+
+  <!-- 12. INVESTING - BUILDING + IN PERSON -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Beyond the Summit</div>
+      <ul class="featurelist" style="margin-top:6px;">
+        <li><b>Actively building:</b> a new public InnerSource Pattern for keeping AI-generated code aligned with a project's own conventions.</li>
+        <li><b>Standing peer working groups</b> &mdash; for InnerSource practice, and for program offices.</li>
+        <li><b>Back in the room together:</b> the aim for 2027 is more regular in-person regional events &mdash; <span class="accent">including a presence here in this region.</span></li>
+      </ul>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+Beyond the Summit, the community is actively building: a new public InnerSource Pattern for keeping AI-generated code aligned with a project's own conventions, and standing peer working groups for practice and for program offices.
+
+And the direction is toward getting back in the room together - the aim for 2027 is more regular in-person regional events, including a presence here in this region.
+    </aside>
+  </section>
+
+  <!-- 13. CHALLENGE 1 - TIME vs CULTURE -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Challenge 1 &middot; the number-one blocker changed</div>
+      <h2 style="max-width:26ch;margin-bottom:32px;">It's no longer culture. It's <span class="accent">time</span>.</h2>
+      <div class="grid wide-left" style="height:auto;align-items:center;">
+        <div class="barchart">
+          <div class="bar-row"><div class="cap"><b>Lack of time &amp; resources</b><span style="color:var(--accent);font-size:0.86em;">now #1</span></div><div class="track"><div class="fill teal" style="width:84%;">84%</div></div></div>
+          <div class="bar-row"><div class="cap"><b>Culture &amp; silo thinking</b><span style="color:var(--ink-3);font-size:0.86em;">was #1</span></div><div class="track"><div class="fill muted" style="width:74%;">74%</div></div></div>
+        </div>
+        <div class="tiles c3" style="padding-left:16px;">
+          <div class="tile"><div class="v">22%</div><div class="l">give time to contribute</div></div>
+          <div class="tile"><div class="v">15%</div><div class="l">reward contributions</div></div>
+          <div class="tile"><div class="v">14%</div><div class="l">factor it into promotion</div></div>
+        </div>
+      </div>
+      <p class="muted-note" style="margin-top:30px;">People are convinced. They just have no room to act on it.</p>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+Two challenges to prepare for. The first is a real shift: the number-one blocker is no longer culture - it's time. For the first time, "lack of time and resources," at eighty-four percent, overtook culture and silo thinking, at seventy-four, as the top perceived blocker.
+
+And the supporting numbers are stark: only about twenty-two percent of organizations give employees time to contribute, about fifteen percent reward it, and about fourteen percent factor it into promotion. People are convinced. They just have no room to act on it.
+    </aside>
+  </section>
+
+  <!-- 14. CHALLENGE 2 - ROI -->
+  <section>
+    <div class="grid wide-right">
+      <div class="stack">
+        <div class="kicker">Challenge 2 &middot; ROI</div>
+        <p class="lede" style="max-width:22ch;">The value is obvious. The <em>investment</em> isn't &mdash; because it's hard to measure.</p>
+      </div>
+      <div class="stack">
+        <div class="tiles c2" style="margin-bottom:22px;">
+          <div class="tile"><div class="v red">&lt; half</div><div class="l">of orgs measure InnerSource at all</div></div>
+          <div class="tile"><div class="v red">~1 in 7</div><div class="l">programs were ramping down last year</div></div>
+        </div>
+        <div class="card accent-edge">
+          <div class="n">The community is building the answer</div>
+          <p style="font-size:0.74em;color:var(--ink);"><b>Chamindra de Silva</b> and <b>Daniel Izquierdo</b> &mdash; <em>The Business Impact of Inner Source and How to Quantify It.</em> The credible ROI reference this challenge has been missing.</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 1 &middot; The global update</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+The second challenge: the value is obvious, but the investment isn't - largely because it's hard to measure. Fewer than half of organizations measure InnerSource at all, and the methods that exist are immature. Without a credible ROI story, programs stall - roughly one in seven were ramping down last year.
+
+The encouraging part is that the community is building the answer: Chamindra de Silva and Daniel Izquierdo have put real rigor into quantifying the business impact of InnerSource. If you need the ROI reference this challenge has been missing, that's it.
+    </aside>
+  </section>
+
+  <!-- 15. BRIDGE -->
+  <section data-background-color="#0a1420">
+    <div class="stack center" style="text-align:center;align-items:center;">
+      <h1 style="font-size:2.3em;max-width:20ch;text-align:center;">The patterns. The investments. The challenges.</h1>
+      <p style="font-size:1.2em;color:var(--ink-2);margin-top:34px;max-width:30ch;">They all now run into a single question the whole community is asking at once.</p>
+      <p style="font-size:1.5em;color:var(--accent);font-weight:800;margin-top:30px;">What does AI do to all of it?</p>
+    </div>
+    <aside class="notes">
+Every one of these - the patterns, the investments, the challenges - now runs into a single question the whole community is asking at once: what does AI do to all of it? That's the second half.
+    </aside>
+  </section>
+
+  <!-- ============ PART 2 ============ -->
+
+  <!-- 16. DIVIDER -->
+  <section data-background-color="#0a1420">
+    <div class="divider">
+      <div class="num">PART 2</div>
+      <h1>How AI is reshaping InnerSource</h1>
+      <div class="meta">What I'm seeing across the community &middot; ~6 minutes</div>
+    </div>
+    <aside class="notes">
+Let's turn to the second half of what I promised - what I'm actually seeing, across the community, as AI meets InnerSource in practice.
+    </aside>
+  </section>
+
+  <!-- 17. THE MYTH -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Name it directly</div>
+      <div class="flip" style="margin-top:6px;">
+        <div class="side myth">
+          <div class="lbl">The myth</div>
+          <p>InnerSource existed because writing code was <b>expensive</b>. If AI makes writing code nearly free &mdash; doesn't that quietly end the argument for InnerSource?</p>
+        </div>
+        <div class="side truth">
+          <div class="lbl">Why it doesn't hold</div>
+          <p>AI collapses the cost of code that <b>compiles</b>. It does nothing about the cost of code that's <b>correct</b> &mdash; available, secure, tested against every edge case you already learned the hard way.</p>
+        </div>
+      </div>
+      <p style="font-size:1.0em;color:var(--ink);margin-top:36px;max-width:44ch;">Make something cheap, and you get more of it. <b>That includes duplication.</b> The myth mistakes <em>"cheap to write"</em> for <em>"cheap,"</em> full stop.</p>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 2 &middot; AI &amp; InnerSource</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+Here's a story a lot of us are telling ourselves right now, and I want to name it directly before I push back on it. InnerSource exists because writing code used to be expensive. If two teams both need the same thing, it's cheaper for the company if one team builds it and the other reuses it. That was the whole premise: don't duplicate, work together, because duplication was costly.
+
+Now AI comes along and writes code in seconds. So the myth goes: if creating code is basically free, what exactly are we saving by not duplicating it anymore? Doesn't AI just quietly end the argument for InnerSource?
+
+Here's why that's wrong. AI collapses the cost of writing code that compiles and looks right. It does nothing - nothing - about the cost of writing code that's actually correct: available, secure, and tested against every edge case your organization already learned the hard way. And when you make something cheap, you get more of it. That includes duplication. The myth mistakes "cheap to write" for "cheap," full stop. It isn't. It just moved the bill to later, and to someone else.
+    </aside>
+  </section>
+
+  <!-- 18. THE TRAP - QUOTES -->
+  <section>
+    <div class="stack">
+      <div class="kicker">The trap is already happening &middot; in their own words</div>
+      <p class="sub" style="font-size:0.78em;margin-bottom:30px;max-width:56ch;">A team at a large e-commerce company. Their own AI tooling found the capability &mdash; it already existed, built and working, elsewhere in the company. They built it again anyway.</p>
+      <div class="quote"><p>&ldquo;The friction of contributing back felt too high.&rdquo;</p></div>
+      <div class="quote"><p>&ldquo;Raw AI efficiency can inadvertently bypass and starve out collaboration loops if governance isn't adapted to match the speed.&rdquo;</p><div class="attr">Survey respondent &middot; large e-commerce company &middot; anonymized per stated terms</div></div>
+      <p style="font-size:0.92em;color:var(--ink);margin-top:8px;">Was that team's call actually wrong &mdash; in the moment, on deadline? <span class="accent">Probably not.</span> Which is what makes the next point land.</p>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 2 &middot; AI &amp; InnerSource</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+I want to give you a real example, from inside a large e-commerce company I talked to preparing this talk. A team needed a capability. Their own AI tooling found it - it already existed, built and working, somewhere else in the company. And the team built it again anyway. Here's how the person who told me this put it: "the friction of contributing back felt too high." So they had AI spin up a duplicate from scratch instead.
+
+Their own words on what that actually cost the organization: "raw AI efficiency can inadvertently bypass and starve out collaboration loops if governance isn't adapted to match the speed." And then, almost as an aside, the line that's stuck with me since I read it: "the value of cooperating and participating alongside communities is no longer recognized, making it practically prohibitive during working hours." That's not a system failing quietly in the background. That's someone who cares about this, watching it happen, and saying so.
+
+Now - here's the question worth sitting with. Was that team's call actually wrong? In the moment, for them, on that day - probably not. They had a deadline. They shipped.
+    </aside>
+  </section>
+
+  <!-- 19. TWO COSTS -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Why it matters &middot; be precise about the cost</div>
+      <div class="grid two" style="height:auto;align-items:stretch;margin-top:6px;">
+        <div class="card accent-edge">
+          <div class="n">Cost 1</div>
+          <h3 style="font-size:1.15em;margin-bottom:12px;">Tokens</h3>
+          <p style="font-size:0.76em;">An agent re-deriving something that already exists burns real compute &mdash; reasoning through a problem the company already solved, from scratch, on every team, every sprint. That compounds.</p>
+        </div>
+        <div class="card accent-edge">
+          <div class="n">Cost 2</div>
+          <h3 style="font-size:1.15em;margin-bottom:12px;">Correctness</h3>
+          <p style="font-size:0.76em;">The original earned <b>years of hardening</b> &mdash; every edge case, security patch, and outage baked in. The duplicate starts back at zero, no matter how confident it looks on day one.</p>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:1.05em;color:var(--ink);margin-top:36px;"><em>Cheap to write, expensive to own</em> &mdash; and the bill arrives after everyone's stopped paying attention.</p>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 2 &middot; AI &amp; InnerSource</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+Let's be exact about why that decision is still a problem, because "it's technically inefficient" isn't going to move anyone. Two concrete costs.
+
+First: tokens. Every time an agent duplicates something instead of finding it, it's burning real compute, reasoning its way through a problem the company already solved, from scratch, on every team, on every task. That's not a rounding error. That compounds, sprint over sprint, across a company the size of the one in that story.
+
+Second: correctness. The original component didn't just compile - it earned years of hardening. Every edge case, every security patch, every outage that taught somebody something, all baked in. None of that transfers to a duplicate. The copy starts back at zero, no matter how confident it looks on day one. That duplicate has a lifespan. Someone has to patch it, secure it, keep it running for years - and they're re-earning correctness the original component already paid for once.
+
+That's the trap, precisely: cheap to write, expensive to own, and the bill arrives after everyone's stopped paying attention.
+    </aside>
+  </section>
+
+  <!-- 20. BACKING DATA - DUPLICATION -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Not just anecdote &middot; the general data</div>
+      <div class="grid two" style="height:auto;align-items:center;">
+        <div class="stack">
+          <div style="display:flex;align-items:baseline;gap:18px;">
+            <div class="hero-num red">+81%</div>
+          </div>
+          <p class="sub" style="font-size:0.78em;margin-top:14px;max-width:26ch;">Rise in <b style="color:var(--ink)">duplicated code blocks</b> across a large-scale, multi-year code-change analysis.</p>
+        </div>
+        <div class="stack">
+          <p class="sub" style="font-size:0.72em;margin-bottom:16px;">Meanwhile, refactored / reused code as a share of all changes:</p>
+          <div class="barchart">
+            <div class="bar-row"><div class="cap"><b>Then</b></div><div class="track"><div class="fill s1" style="width:70%;">21%</div></div></div>
+            <div class="bar-row"><div class="cap"><b>Now</b></div><div class="track"><div class="fill red" style="width:13%;">3.8%</div></div></div>
+          </div>
+          <p class="muted-note" style="margin-top:22px;">And Google's DORA research paired rising AI use with a measurable drop in delivery <b style="color:var(--ink-2)">stability</b>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 2 &middot; AI &amp; InnerSource</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+And this isn't just one anecdote. A large-scale code-change analysis found duplicated code blocks up eighty-one percent, while refactored and reused code collapsed from twenty-one percent to under four percent of all changes over three years. Google's own DORA research found increased AI usage paired with a measurable drop in delivery stability. The pattern in that one team's story is showing up in the aggregate.
+    </aside>
+  </section>
+
+  <!-- 21. REVIEW CAPACITY - CURL -->
+  <section>
+    <div class="stack">
+      <div class="kicker">Where it's breaking things &middot; review capacity</div>
+      <p class="sub" style="font-size:0.82em;margin-bottom:28px;max-width:58ch;">The single loudest theme across the community I surveyed: <b style="color:var(--ink)">AI can produce contributions faster than any organization can review them.</b> Zoom out to <em>curl</em> &mdash; one of the most widely used pieces of software on Earth.</p>
+      <div class="tiles c3">
+        <div class="tile"><div class="v">~1 in 5</div><div class="l">security reports were AI-assisted</div></div>
+        <div class="tile"><div class="v">~1 in 20</div><div class="l">was a genuine vulnerability</div></div>
+        <div class="tile"><div class="v red">0</div><div class="l">AI-generated reports found a real vuln in 6 years</div></div>
+      </div>
+      <div class="card" style="margin-top:26px;border-left:4px solid var(--critical);">
+        <p style="font-size:0.88em;color:var(--ink);margin:0;">In <b>January 2026</b>, curl shut its bug bounty program down <span style="color:#ef7a7a;font-weight:700;">entirely.</span></p>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 2 &middot; AI &amp; InnerSource</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+So if the temptation to duplicate is understandable, the honest question is: why is the review path so heavy in the first place? Here the answer is almost universal. I surveyed people across this community preparing for today, and the single loudest theme, independent of industry, independent of company size, was this: AI can now produce contributions faster than any organization can review them. One respondent told me about a high-profile internal project that shut down entirely - closed its source - because it couldn't handle the flood of AI-generated pull requests hitting it.
+
+This isn't just an internal problem. It's happening in public, right now, in open source. Take curl - one of the most widely used pieces of software on Earth. By last year, roughly one in five security reports to curl were AI-assisted. The real vulnerability rate in that same pile had fallen to about one in twenty. And across six years of watching this, the maintainer's own count is zero - zero AI-generated reports that ever found a real vulnerability. In January of this year, curl shut its bug bounty program down entirely.
+    </aside>
+  </section>
+
+  <!-- 22. WHAT HELPS -->
+  <section>
+    <div class="stack">
+      <div class="kicker">What actually helps</div>
+      <div class="verdict" style="margin-top:6px;">
+        <div class="vcol good">
+          <div class="vh"><span>&#10003;</span> Force multiplier for attention</div>
+          <div class="vstat">25&ndash;35%</div>
+          <div class="vsub">of merged PRs authored by one team's agent pipeline &mdash; doing reproduction and verification first.</div>
+          <div class="vstat">70&ndash;80%</div>
+          <div class="vsub">of incoming issues closed the same way, before a human ever looked.</div>
+        </div>
+        <div class="vcol bad">
+          <div class="vh"><span>&#10007;</span> Not a replacement for judgment</div>
+          <div class="vstat">&frac12; noise</div>
+          <div class="vsub">one project's AI-reviewer trial &mdash; half its output noise. They turned it off.</div>
+          <div class="vstat">2 in 3</div>
+          <div class="vsub">engineers surveyed won't merge on an AI review alone.</div>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:0.98em;color:var(--ink);margin-top:30px;">Automation multiplies a human's <em>attention</em>. It does not, yet, replace a human's <em>judgment</em>.</p>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 2 &middot; AI &amp; InnerSource</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+So does better tooling fix this? I went looking. The honest answer is: sometimes, and the line is sharp. Where automation works, it's doing the boring part - reproducing an issue, verifying it, narrowing it down - before a human ever has to look. One team building AI tooling reported an agent pipeline authoring a third of their merged pull requests and closing three-quarters of incoming issues, in a month, just by doing that first pass.
+
+Where it doesn't work is asking AI to replace the judgment call. One open source project tried an AI reviewer, found half of what it said was noise and a quarter was pointless nitpicking, and turned it off. A survey of seven thousand engineers this year found two-thirds of them won't merge code on an AI review's word alone.
+
+So here's the line: automation is a genuine force multiplier for a human's attention. It is not, yet, a replacement for a human's judgment. You still need someone accountable for the call. No tool has changed that.
+    </aside>
+  </section>
+
+  <!-- 23. THE FRONTIER - THREE LEGS -->
+  <section>
+    <div class="stack">
+      <div class="kicker">The real frontier</div>
+      <h2 style="max-width:30ch;margin-bottom:30px;">Teach agents themselves the <span class="accent">InnerSource habit</span>.</h2>
+      <div class="legs">
+        <div class="leg-card done">
+          <div class="st">&#10003; Shipping in the wild</div>
+          <h3>Reuse the shared piece</h3>
+          <p>A shared-spec pattern &mdash; one team owns requirements, others consume them read-only, right where the coding agent reads them.</p>
+        </div>
+        <div class="leg-card done">
+          <div class="st">&#10003; Shipping in the wild</div>
+          <h3>Publish back what's new</h3>
+          <p>Shell's Project Fleming &mdash; an AI-powered discovery layer finding code that's merely <em>adjacent</em> to what you asked for.</p>
+        </div>
+        <div class="leg-card open">
+          <div class="st">&#9633; Still wide open</div>
+          <h3>Search before you build</h3>
+          <p>The third leg &mdash; agents that look first, before re-deriving. That's the opportunity in front of this community, starting today.</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Part 2 &middot; AI &amp; InnerSource</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+And that's really the frontier. Not managing the flood - that's triage, that's plumbing. The real prize is teaching agents themselves the InnerSource habit: look before you build, pull the shared piece instead of re-deriving it, and when you build something genuinely new and reusable, push it back.
+
+I've found real, live examples of parts of that happening already, without anyone calling it InnerSource - a shared-spec pattern where one team owns requirements and others consume them read-only, right where their coding agent can read them. Shell's own AI-powered discovery tool, finding code that's merely adjacent to what you asked for, not just a keyword match.
+
+Two of the three legs - reuse, and publishing back - are already being built, out there, right now. The third leg - agents that actually search before they build - is still wide open. That's not a gap to be anxious about. That's the opportunity in front of this community, starting today.
+    </aside>
+  </section>
+
+  <!-- ============ CLOSE ============ -->
+
+  <!-- 24. SOURCE OF KNOWLEDGE -->
+  <section data-background-color="#0a1420">
+    <div class="stack center" style="text-align:center;align-items:center;">
+      <div class="kicker" style="justify-content:center;">What comes next</div>
+      <h1 style="font-size:2.2em;max-width:22ch;text-align:center;">The &ldquo;Source&rdquo; in InnerSource is becoming a <span class="accent">Source of Knowledge</span>.</h1>
+      <p style="font-size:1.05em;color:var(--ink-2);margin-top:32px;max-width:38ch;">Not just code &mdash; the context, patterns, and decisions a team accumulates. Which is exactly the substrate agents need too.</p>
+      <p class="muted-note" style="margin-top:24px;">Several in this community converged on this framing independently. It isn't just my read.</p>
+    </div>
+    <aside class="notes">
+So where does this leave us? Agents that search before they build - that's the frontier still wide open. And it points at the real evolution: the "Source" in InnerSource is becoming a "Source of Knowledge." Not just code, but the context, the patterns, the decisions a team accumulates - which is exactly the substrate agents need too. Several people in this community have converged on that framing independently, unprompted. It isn't just my read.
+    </aside>
+  </section>
+
+  <!-- 25. TWO TAKEAWAYS -->
+  <section>
+    <div class="stack">
+      <div class="kicker">If you take two things from today</div>
+      <div class="takeaways" style="margin-top:6px;">
+        <div class="takeaway">
+          <div class="tn">1</div>
+          <p>InnerSource <b>isn't obsolete</b> in the AI era. AI makes the problem InnerSource solves <em>bigger and faster</em> &mdash; not smaller.</p>
+        </div>
+        <div class="takeaway">
+          <div class="tn">2</div>
+          <p>The next frontier isn't managing the flood. It's teaching AI agents themselves the InnerSource habit: <em>search before building, reuse, and contribute back.</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> What comes next</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+If you take two things from today, take these. First: InnerSource isn't obsolete in the AI era. AI makes the problem InnerSource solves bigger and faster, not smaller. Second: the next frontier isn't managing the flood - it's teaching AI agents themselves the InnerSource habit. Search before building, reuse, and contribute back.
+    </aside>
+  </section>
+
+  <!-- 26. THANK YOU / CTA -->
+  <section data-background-color="#0a1420">
+    <div class="grid wide-left">
+      <div class="stack">
+        <div class="kicker">Thank you</div>
+        <h1 style="font-size:2.0em;max-width:16ch;">To Jerry Tan, and the entire <span class="accent">InnerSource China Community</span>.</h1>
+        <p style="font-size:0.95em;color:var(--ink-2);margin-top:26px;max-width:32ch;">It's an honor to be part of what you're building here. Enjoy the rest of the Gathering.</p>
+      </div>
+      <div class="stack">
+        <div class="card accent-edge" style="margin-bottom:20px;">
+          <div class="n">Where to go next</div>
+          <p style="font-size:0.82em;color:var(--ink);">innersourcecommons.org</p>
+        </div>
+        <div class="card">
+          <div class="n">Summit 2026</div>
+          <p style="font-size:0.82em;color:var(--ink);"><b>November 12</b> &middot; follow-the-sun.<br><span class="accent">Your region opens the global day.</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span class="brand"><span class="dot"></span> Russell Rutledge &middot; Executive Director, InnerSource Commons</span><span>InnerSource in the AI Era</span></div>
+    <aside class="notes">
+Where to go next: the InnerSource Commons site, and the 2026 Summit on November twelfth - follow-the-sun, and your region opens the global day. I'd love to see you there.
+
+Thank you again - to Jerry Tan, and to the entire InnerSource China Community. It's an honor to be part of what you're building here. Enjoy the rest of the Gathering.
+    </aside>
+  </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    width: 1920,
+    height: 1080,
+    margin: 0,
+    minScale: 0.2,
+    maxScale: 2.0,
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'fade',
+    transitionSpeed: 'default',
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>
