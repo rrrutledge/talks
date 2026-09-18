@@ -29,7 +29,6 @@
       background: radial-gradient(1300px 760px at 82% -14%, rgba(47,208,189,0.12), transparent 60%),
                   linear-gradient(158deg, var(--bg-1), var(--bg-0));
     }
-    /* brighter photo treatment */
     .reveal .slides section > .bg { position:absolute; inset:0; background-size:cover; background-position:center; z-index:0; }
     .reveal .slides section > .scrim { position:absolute; inset:0; z-index:1; }
     .reveal .slides section > *:not(.bg):not(.scrim) { position:relative; z-index:2; }
@@ -52,7 +51,6 @@
     .sub { color:var(--ink-2); font-size:1.0em; line-height:1.3; }
     .stack { display:flex; flex-direction:column; justify-content:center; height:100%; }
 
-    /* citation strip (link-ready) */
     .cite { position:absolute; left:92px; bottom:40px; right:300px; z-index:3; font-size:0.4em; color:var(--ink-3); letter-spacing:0.02em; line-height:1.35; }
     .cite b { color:var(--ink-2); font-weight:600; }
     .cite a.clink { color:var(--accent-2); text-decoration:none; border-bottom:1px solid rgba(127,227,214,0.5); }
@@ -99,12 +97,12 @@
     .hero-num { font-size:8.4em; font-weight:900; letter-spacing:-0.04em; line-height:0.85; color:var(--accent); }
     .hero-num.red { color:var(--critical); }
 
-    .barchart { display:flex; flex-direction:column; gap:26px; width:100%; }
+    .barchart { display:flex; flex-direction:column; gap:22px; width:100%; }
     .bar-row { display:grid; grid-template-columns:340px 1fr; align-items:center; gap:26px; }
-    .bar-row .cap { color:var(--ink); font-size:0.82em; text-align:right; line-height:1.15; font-weight:700; }
+    .bar-row .cap { color:var(--ink); font-size:0.78em; text-align:right; line-height:1.15; font-weight:700; }
     .bar-row .cap span { display:block; font-weight:600; font-size:0.7em; }
-    .track { position:relative; height:52px; background:rgba(255,255,255,0.07); border-radius:10px; overflow:hidden; }
-    .fill { position:absolute; left:0; top:0; bottom:0; border-radius:10px; display:flex; align-items:center; justify-content:flex-end; padding-right:20px; font-weight:900; font-size:0.8em; color:#fff; }
+    .track { position:relative; height:46px; background:rgba(255,255,255,0.07); border-radius:10px; overflow:hidden; }
+    .fill { position:absolute; left:0; top:0; bottom:0; border-radius:10px; display:flex; align-items:center; justify-content:flex-end; padding-right:18px; font-weight:900; font-size:0.72em; color:#fff; }
     .fill.s1 { background:linear-gradient(90deg, rgba(57,135,229,0.55), var(--series-1)); }
     .fill.teal { background:linear-gradient(90deg, rgba(47,208,189,0.5), var(--accent)); color:#05201d; }
     .fill.muted { background:linear-gradient(90deg, rgba(147,164,188,0.35), #5a6a82); }
@@ -114,10 +112,12 @@
     .tag { font-size:0.6em; font-weight:700; color:var(--ink-2); background:rgba(22,40,63,0.6); border:1px solid var(--hair); border-radius:999px; padding:12px 22px; }
     .tag.on { color:var(--accent); border-color:rgba(47,208,189,0.55); background:rgba(47,208,189,0.12); }
 
-    .people { display:grid; grid-template-columns:1fr 1fr; gap:18px; max-width:1180px; }
-    .person { background:rgba(14,26,43,0.82); border:1px solid var(--hair); border-left:5px solid var(--accent); border-radius:16px; padding:24px 26px; }
-    .person .nm { font-size:0.92em; font-weight:800; color:var(--ink); }
-    .person .og { font-size:0.6em; color:var(--accent-2); margin-top:6px; }
+    .people { display:grid; grid-template-columns:1fr 1fr; gap:16px; max-width:1120px; }
+    .person { background:rgba(14,26,43,0.82); border:1px solid var(--hair); border-left:5px solid var(--accent); border-radius:14px; padding:20px 24px; }
+    .person .nm { font-size:0.86em; font-weight:800; color:var(--ink); }
+    .person .og { font-size:0.56em; color:var(--accent-2); margin-top:5px; }
+    .callout { margin-top:22px; display:inline-flex; align-items:center; gap:14px; background:rgba(47,208,189,0.12); border:1px solid rgba(47,208,189,0.5); border-radius:14px; padding:18px 26px; font-size:0.72em; font-weight:700; color:var(--ink); }
+    .callout b { color:var(--accent); font-size:1.5em; font-weight:900; }
 
     .verdict { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
     .vcol { border-radius:20px; padding:36px 36px; border:1px solid var(--hair); background:rgba(22,40,63,0.6); }
@@ -174,7 +174,6 @@
     .featurelist li::before { content:""; position:absolute; left:0; top:4px; width:24px; height:24px; border-radius:7px; background:rgba(47,208,189,0.2); border:2px solid var(--accent); }
     .featurelist li b { color:var(--ink); font-weight:800; }
 
-    /* split-box diagram (ROI reporting) */
     .split { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
     .sbox { background:rgba(14,26,43,0.8); border:1px solid var(--hair); border-radius:20px; padding:34px 34px; }
     .sbox .st { font-size:0.56em; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:18px; }
@@ -192,6 +191,10 @@
     .punch { margin-top:32px; background:rgba(47,208,189,0.1); border:1px solid rgba(47,208,189,0.4); border-radius:16px; padding:26px 34px; font-size:0.92em; font-weight:700; color:var(--ink); }
     .punch b { color:var(--accent); }
 
+    .shot { background:#fff; border-radius:14px; padding:16px; box-shadow:0 22px 55px rgba(0,0,0,0.5); max-width:470px; }
+    .shot img { width:100%; border-radius:6px; display:block; }
+    .shot .cap { text-align:center; font-size:0.46em; color:#33475b; font-weight:700; margin-top:10px; letter-spacing:0.02em; }
+
     .reveal .progress { color:var(--accent); height:5px; }
     .reveal .slide-number { background:transparent; color:var(--ink-3); font-size:15px; }
     .brandchip { position:absolute; top:46px; left:92px; z-index:3; height:62px; background:#fff; border-radius:13px; padding:11px 20px; box-sizing:border-box; box-shadow:0 8px 26px rgba(0,0,0,0.4); }
@@ -202,7 +205,7 @@
 <div class="reveal">
   <div class="slides">
 
-  <!-- 1. TITLE -->
+  <!-- 1. TITLE :: global-network -->
   <section>
     <div class="bg" style="background-image:url(assets/img/global-network.jpg)"></div>
     <div class="scrim left"></div>
@@ -229,9 +232,9 @@ Last year Jerry invited me to give a video keynote to the Beijing Gathering; thi
     </aside>
   </section>
 
-  <!-- 2. HOOK -->
+  <!-- 2. HOOK :: handshake -->
   <section>
-    <div class="bg" style="background-image:url(assets/img/shanghai.jpg)"></div>
+    <div class="bg" style="background-image:url(assets/img/handshake.jpg)"></div>
     <div class="scrim left"></div>
     <div class="stack">
       <div class="kicker">A global movement</div>
@@ -246,9 +249,9 @@ And that pride connects to something bigger. InnerSource is a genuinely global m
     </aside>
   </section>
 
-  <!-- 3. ROADMAP -->
+  <!-- 3. ROADMAP :: crossroads -->
   <section>
-    <div class="bg" style="background-image:url(assets/img/ai-abstract.jpg)"></div>
+    <div class="bg" style="background-image:url(assets/img/crossroads.jpg)"></div>
     <div class="scrim left"></div>
     <div class="stack">
       <div class="kicker">Two halves</div>
@@ -271,9 +274,9 @@ Here's where we're headed today, in two halves. First, a global update on where 
     </aside>
   </section>
 
-  <!-- 4. PART 1 DIVIDER -->
+  <!-- 4. PART 1 DIVIDER :: growth -->
   <section>
-    <div class="bg" style="background-image:url(assets/img/global-network.jpg)"></div>
+    <div class="bg" style="background-image:url(assets/img/growth.jpg)"></div>
     <div class="scrim center"></div>
     <div class="divider">
       <div class="num">PART 1</div>
@@ -285,7 +288,7 @@ Let's start with where the movement stands.
     </aside>
   </section>
 
-  <!-- 5. LINKEDIN GROWTH (chart, no photo) -->
+  <!-- 5. LINKEDIN GROWTH :: chart -->
   <section>
     <div class="grid wide-right">
       <div class="stack">
@@ -327,53 +330,30 @@ One clean line: our LinkedIn following is up roughly thirty-fold over the life o
     </aside>
   </section>
 
-  <!-- 6. CHINA AT THE CENTER -->
+  <!-- 6. CHINA :: shanghai -->
   <section>
     <div class="bg" style="background-image:url(assets/img/shanghai.jpg)"></div>
     <div class="scrim left"></div>
     <div class="stack">
       <div class="kicker">A global movement - running through China</div>
-      <h1 style="font-size:2.0em;max-width:20ch;margin-bottom:34px;">China is helping <span class="accent">lead</span> the Foundation.</h1>
+      <h1 style="font-size:1.95em;max-width:20ch;">China is helping <span class="accent">lead</span> the Foundation.</h1>
+      <p class="sub" style="margin-top:18px;margin-bottom:26px;max-width:38ch;font-size:0.82em;">Membership is merit-based - you're elected in, the way Apache does it.</p>
       <div class="people">
         <div class="person"><div class="nm">Jerry Tan</div><div class="og">InnerSource China Community &middot; Foundation Member</div></div>
         <div class="person"><div class="nm">Willem Jiang</div><div class="og">Huawei &middot; Foundation Member</div></div>
         <div class="person"><div class="nm">Ada Dai</div><div class="og">Tencent &middot; Foundation Member</div></div>
         <div class="person"><div class="nm">Chen Wei</div><div class="og">Huawei InnerSource Office &middot; 2025 Global Summit speaker</div></div>
       </div>
+      <div class="callout"><b>2</b> of Summit 2026's speakers come from China.</div>
     </div>
-    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org" target="_blank" rel="noopener">InnerSource Commons</a> Foundation members (public); ISC Global Summit 2025, Yokohama.</div>
+    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org/about/members/" target="_blank" rel="noopener">InnerSource Commons</a> Foundation members (public); ISC Global Summit 2025, Yokohama.</div>
     <div class="foot"><span class="dot"></span> Part 1</div>
     <aside class="notes">
-And it's a truly worldwide movement - one that runs right through China. The InnerSource Commons Foundation counts real Chinese leadership: Jerry Tan, who leads the InnerSource China Community; Willem Jiang at Huawei; Ada Dai at Tencent - all elected Foundation Members. And at our 2025 Global Summit in Yokohama, Chen Wei of Huawei's InnerSource Office presented "Huawei InnerSource Culture and Value Closed-Loop Practice." China isn't following this movement; it's helping lead it.
+And it's a truly worldwide movement - one that runs right through China. Foundation membership is individual and merit-based - you're elected in, the way Apache does it - and China's bench is deep: Jerry Tan, who leads the InnerSource China Community; Willem Jiang at Huawei; Ada Dai at Tencent. At our 2025 Global Summit in Yokohama, Chen Wei of Huawei's InnerSource Office presented "Huawei InnerSource Culture and Value Closed-Loop Practice." And two of this year's Summit speakers come from China. China isn't following this movement; it's helping lead it.
     </aside>
   </section>
 
-  <!-- 7. MERIT-BASED, GLOBAL -->
-  <section>
-    <div class="bg" style="background-image:url(assets/img/community.jpg)"></div>
-    <div class="scrim left"></div>
-    <div class="stack">
-      <div class="kicker">The community's own bench</div>
-      <h1 style="font-size:2.0em;max-width:18ch;">You're <span class="accent">elected in</span>. The way Apache does it.</h1>
-      <p class="sub" style="margin-top:30px;max-width:30ch;font-size:1.1em;font-weight:600;">Membership is individual and merit-based - and the roster spans the world.</p>
-      <div class="tags" style="margin-top:36px;">
-        <span class="tag on">China</span>
-        <span class="tag">Japan</span>
-        <span class="tag">Germany</span>
-        <span class="tag">United States</span>
-        <span class="tag">India</span>
-        <span class="tag" style="color:var(--ink-3);">&amp; more</span>
-      </div>
-      <p class="muted-note" style="max-width:40ch;">Shingo Oidate (Mitsubishi Electric OSPO) was elected a Foundation Member this month.</p>
-    </div>
-    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org" target="_blank" rel="noopener">InnerSource Commons</a> Foundation members (public), 2026.</div>
-    <div class="foot"><span class="dot"></span> Part 1</div>
-    <aside class="notes">
-That leadership is earned, not bought. Foundation membership is individual and merit-based - you're elected in, the way Apache does it - and the roster spans the world: members across China, Japan, Europe, the Americas. Shingo Oidate, who runs Mitsubishi Electric's Open Source Program Office, was elected just this month. This is a global community electing its own leaders.
-    </aside>
-  </section>
-
-  <!-- 8. WHY IT SPREADS (chart, no photo) -->
+  <!-- 7. WHY IT SPREADS :: chart -->
   <section>
     <div class="stack">
       <div class="kicker">Why it spreads</div>
@@ -393,13 +373,13 @@ That leadership is earned, not bought. Foundation membership is individual and m
     <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons.</div>
     <div class="foot"><span class="dot"></span> Part 1</div>
     <aside class="notes">
-Why does it spread? The most recent State of InnerSource report - about 120 organizations - is clear: the top reasons are code reuse, at eighty-four percent; development speed, eighty-one; knowledge sharing, seventy-nine; and breaking down silos, seventy-seven.
+Why does it spread? The most recent State of InnerSource report is clear: the top reasons are code reuse, at eighty-four percent; development speed, eighty-one; knowledge sharing, seventy-nine; and breaking down silos, seventy-seven.
 
 Formal programs or program offices now exist at about a third of organizations, with another third running informally.
     </aside>
   </section>
 
-  <!-- 9. THREE PATTERNS -->
+  <!-- 8. THREE PATTERNS :: scaffolding -->
   <section>
     <div class="bg" style="background-image:url(assets/img/scaffolding.jpg)"></div>
     <div class="scrim left"></div>
@@ -426,7 +406,7 @@ Formal programs or program offices now exist at about a third of organizations, 
         </div>
       </div>
     </div>
-    <div class="cite">Source: Executive Director observations; <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons.</div>
+    <div class="cite">Source: Executive Director observations; <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a>.</div>
     <div class="foot"><span class="dot"></span> Part 1</div>
     <aside class="notes">
 Across the largest InnerSource journeys, I see three patterns worth naming.
@@ -439,28 +419,30 @@ Third - InnerSource is becoming the substrate for AI-native development: shared 
     </aside>
   </section>
 
-  <!-- 10. MATURITY GAP (chart, no photo) -->
+  <!-- 9. MATURITY GAP :: chart (real numbers) -->
   <section>
     <div class="stack">
       <div class="kicker">The maturity gap</div>
-      <h1 style="font-size:1.9em;max-width:22ch;margin-bottom:40px;">The basics are common. The <span class="accent">support system</span> isn't.</h1>
+      <h1 style="font-size:1.85em;max-width:22ch;margin-bottom:32px;">The basics are common. The <span class="accent">support system</span> isn't.</h1>
       <div class="barchart">
-        <div class="bar-row"><div class="cap">Share code in shared repos</div><div class="track"><div class="fill teal" style="width:86%;">~86%</div></div></div>
-        <div class="bar-row"><div class="cap">Have written InnerSource docs</div><div class="track"><div class="fill s1" style="width:60%;">~60%</div></div></div>
-        <div class="bar-row"><div class="cap">Portals, training, metrics</div><div class="track"><div class="fill muted" style="width:36%;">fewer still</div></div></div>
+        <div class="bar-row"><div class="cap">Shared code repositories</div><div class="track"><div class="fill teal" style="width:86%;">86%</div></div></div>
+        <div class="bar-row"><div class="cap">InnerSource documentation</div><div class="track"><div class="fill s1" style="width:60%;">60%</div></div></div>
+        <div class="bar-row"><div class="cap">Discovery portal</div><div class="track"><div class="fill muted" style="width:46%;">46%</div></div></div>
+        <div class="bar-row"><div class="cap">Training</div><div class="track"><div class="fill muted" style="width:44%;">44%</div></div></div>
+        <div class="bar-row"><div class="cap">Monitoring / metrics</div><div class="track"><div class="fill muted" style="width:32%;">32%</div></div></div>
       </div>
-      <p class="sub" style="margin-top:34px;font-size:0.9em;max-width:44ch;">Teams are sharing code faster than they're building the docs, portals, and training that keep it usable.</p>
+      <p class="sub" style="margin-top:26px;font-size:0.86em;max-width:46ch;">Teams share code faster than they build the docs, portals, and training that keep it usable.</p>
     </div>
-    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons.</div>
+    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons (n=57).</div>
     <div class="foot"><span class="dot"></span> Part 1</div>
     <aside class="notes">
-The survey shows the gap plainly. About eighty-six percent share code in shared repositories - the basic move. But only about sixty percent have written InnerSource documentation, and portals, training, and metrics are rarer still.
+The survey shows the gap plainly. About eighty-six percent share code in shared repositories - the basic move. But only about sixty percent have written InnerSource documentation, and it drops from there: discovery portals at forty-six percent, training at forty-four, monitoring and metrics at thirty-two.
 
 In plain terms: teams are sharing code faster than they're building the support system - the docs, the portals, the training - that keeps that code usable.
     </aside>
   </section>
 
-  <!-- 11. SUMMIT + QR -->
+  <!-- 10. SUMMIT + QR :: sunrise-earth -->
   <section>
     <div class="bg" style="background-image:url(assets/img/sunrise-earth.jpg)"></div>
     <div class="scrim left"></div>
@@ -491,7 +473,7 @@ The theme is "InnerSource in Motion: Navigating the Shifting Tides," with three 
     </aside>
   </section>
 
-  <!-- 12. INVESTING MORE -->
+  <!-- 11. INVESTING MORE :: community -->
   <section>
     <div class="bg" style="background-image:url(assets/img/community.jpg)"></div>
     <div class="scrim left"></div>
@@ -512,7 +494,7 @@ And the direction is toward getting back in the room together - the aim for 2027
     </aside>
   </section>
 
-  <!-- 13. CHALLENGE 1: TIME (chart, no photo) -->
+  <!-- 12. CHALLENGE 1: TIME :: chart -->
   <section>
     <div class="stack">
       <div class="kicker">Challenge 1 - the #1 blocker changed</div>
@@ -539,7 +521,7 @@ And the supporting numbers are stark: only about twenty-two percent of organizat
     </aside>
   </section>
 
-  <!-- 14. CHALLENGE 2: ROI (stats, no photo) -->
+  <!-- 13. CHALLENGE 2: ROI :: stats -->
   <section>
     <div class="grid wide-right">
       <div class="stack">
@@ -558,16 +540,16 @@ And the supporting numbers are stark: only about twenty-two percent of organizat
         </div>
       </div>
     </div>
-    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons; ROI research by de Silva &amp; Izquierdo.</div>
+    <div class="cite">Source: <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons; de Silva &amp; Izquierdo (ROI research).</div>
     <div class="foot"><span class="dot"></span> Part 1</div>
     <aside class="notes">
 The second challenge: the value is obvious, but the investment isn't - largely because it's hard to measure. Under fifty percent of organizations measure InnerSource at all, and the methods that exist are immature. Without a credible ROI story, programs stall - roughly one in seven were ramping down last year.
 
-And the community is building the answer: Chamindra de Silva and Daniel Izquierdo have put real rigor into quantifying the business impact of InnerSource. If you need the ROI reference this challenge has been missing, that's it.
+And the community is building the answer: de Silva and Izquierdo have put real rigor into quantifying the business impact of InnerSource. If you need the ROI reference this challenge has been missing, that's it.
     </aside>
   </section>
 
-  <!-- 15. ROI - DIFFERENT BOXES (diagram, no photo) -->
+  <!-- 14. ROI - DIFFERENT BOXES :: diagram -->
   <section>
     <div class="stack">
       <div class="kicker">Why the numbers hide it</div>
@@ -597,7 +579,7 @@ And the community is building the answer: Chamindra de Silva and Daniel Izquierd
       </div>
       <div class="punch">Measured quarter-by-quarter, team-by-team, InnerSource never pencils out. So <b>reward and recognize contribution beyond the quarter, and beyond the team.</b></div>
     </div>
-    <div class="cite">Source: Executive Director observation; supporting reward/recognition data in <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a> - InnerSource Commons.</div>
+    <div class="cite">Source: Executive Director observation; supporting reward/recognition data in <a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" target="_blank" rel="noopener">State of InnerSource 2025</a>.</div>
     <div class="foot"><span class="dot"></span> Part 1</div>
     <aside class="notes">
 And there's a deeper reason the investment lags - the way most organizations measure. The investment and the return live in different boxes.
@@ -608,9 +590,9 @@ Now, most places measure quarter by quarter, team by team. So as each team optim
     </aside>
   </section>
 
-  <!-- 16. BRIDGE -->
+  <!-- 15. BRIDGE :: compass -->
   <section>
-    <div class="bg" style="background-image:url(assets/img/ai-abstract.jpg)"></div>
+    <div class="bg" style="background-image:url(assets/img/compass.jpg)"></div>
     <div class="scrim center"></div>
     <div class="stack" style="align-items:center;text-align:center;">
       <h1 style="font-size:2.4em;max-width:18ch;text-align:center;">The patterns. The investments. The challenges.</h1>
@@ -622,7 +604,7 @@ Every one of these - the patterns, the investments, the challenges - now runs in
     </aside>
   </section>
 
-  <!-- 17. PART 2 DIVIDER -->
+  <!-- 16. PART 2 DIVIDER :: ai-abstract -->
   <section>
     <div class="bg" style="background-image:url(assets/img/ai-abstract.jpg)"></div>
     <div class="scrim center"></div>
@@ -636,7 +618,7 @@ Let's turn to the second half of what I promised - what I'm actually seeing, acr
     </aside>
   </section>
 
-  <!-- 18. THE MYTH -->
+  <!-- 17. THE MYTH :: mirage -->
   <section>
     <div class="bg" style="background-image:url(assets/img/mirage.jpg)"></div>
     <div class="scrim left"></div>
@@ -664,7 +646,7 @@ Here's why that's wrong. AI collapses the cost of writing code that compiles and
     </aside>
   </section>
 
-  <!-- 19. THE TRAP -->
+  <!-- 18. THE TRAP :: duplicate -->
   <section>
     <div class="bg" style="background-image:url(assets/img/duplicate.jpg)"></div>
     <div class="scrim left"></div>
@@ -686,9 +668,9 @@ Now - the question worth sitting with. Was that team's call actually wrong? In t
     </aside>
   </section>
 
-  <!-- 20. TWO COSTS -->
+  <!-- 19. TWO COSTS :: measure -->
   <section>
-    <div class="bg" style="background-image:url(assets/img/duplicate.jpg)"></div>
+    <div class="bg" style="background-image:url(assets/img/measure.jpg)"></div>
     <div class="scrim left"></div>
     <div class="stack">
       <div class="kicker">Why it matters - be precise</div>
@@ -718,54 +700,52 @@ That's the trap, precisely: cheap to write, expensive to own, and the bill arriv
     </aside>
   </section>
 
-  <!-- 21. DUPLICATION DATA (chart, no photo) -->
+  <!-- 20. DUPLICATION DATA :: GitClear source screenshot -->
   <section>
-    <div class="stack">
-      <div class="grid two">
-        <div class="stack">
-          <div class="kicker">Not just anecdote</div>
-          <div class="hero-num red">+81%</div>
-          <p class="sub" style="font-size:1.0em;margin-top:18px;max-width:20ch;font-weight:600;">Rise in <b style="color:var(--ink)">duplicated code blocks</b>.</p>
-        </div>
-        <div class="stack">
-          <p class="sub" style="font-size:0.86em;margin-bottom:20px;">Meanwhile, reused / refactored code - as a share of all changes:</p>
-          <div class="barchart">
-            <div class="bar-row"><div class="cap">Then (2022)</div><div class="track"><div class="fill s1" style="width:70%;">21%</div></div></div>
-            <div class="bar-row"><div class="cap">Now (2026)</div><div class="track"><div class="fill red" style="width:13%;">3.8%</div></div></div>
-          </div>
-          <p class="sub" style="margin-top:26px;font-size:0.78em;color:var(--ink-2);">Google's DORA: more AI use paired with a measurable drop in delivery <b style="color:var(--ink)">stability</b>.</p>
+    <div class="grid wide-right">
+      <div class="stack">
+        <div class="kicker">Not just anecdote - from the source</div>
+        <div class="hero-num red" style="font-size:6.4em;">+81%</div>
+        <p class="sub" style="font-size:1.0em;margin-top:14px;max-width:20ch;font-weight:600;">Rise in <b style="color:var(--ink)">duplicated code blocks</b>.</p>
+        <p class="sub" style="margin-top:24px;font-size:0.8em;max-width:26ch;">Reused / refactored code fell from <b style="color:var(--ink)">21% to 3.8%</b> of changes. And DORA paired more AI use with a drop in delivery stability.</p>
+      </div>
+      <div class="stack" style="align-items:center;">
+        <div class="shot">
+          <img src="assets/img/src-gitclear-crop.png" alt="GitClear Maintainability Gap report">
+          <div class="cap">GitClear - The Maintainability Gap, 2026 (623M changes)</div>
         </div>
       </div>
     </div>
-    <div class="cite">Source: <a class="clink" href="https://www.gitclear.com/the_ai_code_quality_maintainability_gap" target="_blank" rel="noopener">GitClear</a> code-quality research, 2026 (623M code changes); <a class="clink" href="https://dora.dev/research/2024/dora-report/" target="_blank" rel="noopener">Google DORA</a> 2024.</div>
+    <div class="cite">Source: <a class="clink" href="https://www.gitclear.com/the_ai_code_quality_maintainability_gap" target="_blank" rel="noopener">GitClear</a> code-quality research, 2026; <a class="clink" href="https://dora.dev/research/2024/dora-report/" target="_blank" rel="noopener">Google DORA</a> 2024.</div>
     <div class="foot"><span class="dot"></span> Part 2</div>
     <aside class="notes">
 And this isn't just one anecdote. A large-scale code-change analysis - over six hundred million changes - found duplicated code blocks up eighty-one percent, while refactored and reused code collapsed from twenty-one percent to under four percent of all changes. Google's own DORA research found increased AI usage paired with a measurable drop in delivery stability. The pattern in that one team's story is showing up in the aggregate.
     </aside>
   </section>
 
-  <!-- 22. REVIEW CAPACITY / CURL (stats, no photo) -->
+  <!-- 21. REVIEW CAPACITY / CURL :: stats -->
   <section>
     <div class="stack">
       <div class="kicker">Where it's breaking - review capacity</div>
-      <h1 style="font-size:1.8em;max-width:28ch;margin-bottom:32px;">AI produces faster than anyone can <span class="accent">review</span>.</h1>
+      <h1 style="font-size:1.7em;max-width:30ch;margin-bottom:14px;">Producing a contribution now costs almost nothing. <span class="accent">Reviewing one costs the same as ever.</span></h1>
+      <p class="sub" style="font-size:0.82em;margin-bottom:30px;max-width:44ch;">Zoom out to curl - one of the most-used pieces of software on Earth:</p>
       <div class="tiles c3">
-        <div class="tile"><div class="v">~1 in 5</div><div class="l">curl security reports were AI-assisted</div></div>
-        <div class="tile"><div class="v">~1 in 20</div><div class="l">was a genuine vulnerability</div></div>
-        <div class="tile"><div class="v red">0</div><div class="l">AI reports found a real vuln in 6 years</div></div>
+        <div class="tile"><div class="v">~1 in 5</div><div class="l">of reports were AI-assisted</div></div>
+        <div class="tile"><div class="v">~1 in 20</div><div class="l">of all reports was a genuine vulnerability</div></div>
+        <div class="tile"><div class="v red">0</div><div class="l">came from AI - every real one was human-found (6 yrs)</div></div>
       </div>
-      <p class="sub" style="margin-top:30px;font-size:1.05em;font-weight:700;">January 2026: curl shut its bug bounty program down <span style="color:#f08a8a;">entirely.</span></p>
+      <p class="sub" style="margin-top:28px;font-size:1.0em;font-weight:700;">January 2026: curl shut its bug bounty program down <span style="color:#f08a8a;">(later reopened as slop subsided).</span></p>
     </div>
     <div class="cite">Source: <a class="clink" href="https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/" target="_blank" rel="noopener">Daniel Stenberg / curl</a> (HackerOne), 2025&ndash;2026; community survey 2026.</div>
     <div class="foot"><span class="dot"></span> Part 2</div>
     <aside class="notes">
-So if the temptation to duplicate is understandable, the honest question is: why is the review path so heavy in the first place? Here the answer is almost universal. Across this community, independent of industry or company size, the loudest theme was this: AI can now produce contributions faster than any organization can review them. One respondent told me about a high-profile internal project that shut down entirely - closed its source - because it couldn't handle the flood of AI-generated pull requests.
+So if the temptation to duplicate is understandable, the honest question is: why is the review path so heavy in the first place? Here's the core of it, and it's almost universal across the community I surveyed: the cost of producing a contribution has dropped to near zero, but the cost of reviewing one hasn't moved at all. AI can now produce contributions faster than any organization can review them. One respondent told me about a high-profile internal project that shut down entirely - closed its source - because it couldn't handle the flood of AI-generated pull requests.
 
-This isn't just internal. It's happening in public, in open source. Take curl - one of the most widely used pieces of software on Earth. By last year, roughly one in five security reports to curl were AI-assisted. The real vulnerability rate in that same pile had fallen to about one in twenty. And across six years, the maintainer's count is zero - zero AI-generated reports that ever found a real vulnerability. In January of this year, curl shut its bug bounty program down entirely.
+This isn't just internal. Take curl - one of the most widely used pieces of software on Earth. By last year, roughly one in five security reports to curl were AI-assisted. Of all reports, about one in twenty was a genuine vulnerability - and every one of those real ones came from a human. Across six years, the number of AI-generated reports that found a real vulnerability is zero. In January of this year, curl shut its bug bounty program down - though it later reopened as the AI slop subsided.
     </aside>
   </section>
 
-  <!-- 23. WHAT HELPS (data cards, no photo) -->
+  <!-- 22. WHAT HELPS :: stats -->
   <section>
     <div class="stack">
       <div class="kicker">What actually helps</div>
@@ -792,15 +772,15 @@ This isn't just internal. It's happening in public, in open source. Take curl - 
     <aside class="notes">
 So does better tooling fix this? I went looking. The honest answer is: sometimes, and the line is sharp. Where automation works, it's doing the boring part - reproducing an issue, verifying it, narrowing it - before a human has to look. Vercel's AI SDK team reported an agent pipeline authoring a quarter to a third of their merged pull requests and closing seventy to eighty percent of incoming issues, just by doing that first pass.
 
-Where it doesn't work is asking AI to replace the judgment call. The Cockpit project tried an AI reviewer, found half of what it said was noise, and turned it off. And a SonarSource survey found ninety-six percent of developers don't fully trust AI-generated code.
+Where it doesn't work is asking AI to replace the judgment call. One Red Hat project tried an AI reviewer, found half of what it said was noise, and turned it off. And a SonarSource survey found ninety-six percent of developers don't fully trust AI-generated code.
 
 So here's the line: automation is a genuine force multiplier for a human's attention. It is not, yet, a replacement for a human's judgment. You still need someone accountable for the call. No tool has changed that.
     </aside>
   </section>
 
-  <!-- 24. THE FRONTIER -->
+  <!-- 23. THE FRONTIER :: doorway -->
   <section>
-    <div class="bg" style="background-image:url(assets/img/crossroads.jpg)"></div>
+    <div class="bg" style="background-image:url(assets/img/doorway.jpg)"></div>
     <div class="scrim left"></div>
     <div class="stack">
       <div class="kicker">The real frontier</div>
@@ -834,7 +814,7 @@ Two of the three legs - reuse, and publishing back - are already being built, ri
     </aside>
   </section>
 
-  <!-- 25. SOURCE OF KNOWLEDGE -->
+  <!-- 24. SOURCE OF KNOWLEDGE :: library -->
   <section>
     <div class="bg" style="background-image:url(assets/img/library.jpg)"></div>
     <div class="scrim center"></div>
@@ -848,9 +828,9 @@ So where does this leave us? Agents that search before they build - that's the f
     </aside>
   </section>
 
-  <!-- 26. TAKEAWAYS -->
+  <!-- 25. TAKEAWAYS :: horizon -->
   <section>
-    <div class="bg" style="background-image:url(assets/img/crossroads.jpg)"></div>
+    <div class="bg" style="background-image:url(assets/img/horizon.jpg)"></div>
     <div class="scrim left"></div>
     <div class="stack">
       <div class="kicker">Take two things</div>
@@ -871,9 +851,9 @@ If you take two things from today, take these. First: InnerSource isn't obsolete
     </aside>
   </section>
 
-  <!-- 27. THANK YOU + QR -->
+  <!-- 26. THANK YOU + QR :: bridge -->
   <section>
-    <div class="bg" style="background-image:url(assets/img/shanghai.jpg)"></div>
+    <div class="bg" style="background-image:url(assets/img/bridge.jpg)"></div>
     <div class="scrim left"></div>
     <div class="grid wide-left">
       <div class="stack">

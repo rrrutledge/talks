@@ -43,21 +43,15 @@ It's our fastest-growing channel by far.
 ---
 
 And it's a truly worldwide movement - one that runs right through China.
-The InnerSource Commons Foundation counts real Chinese leadership: Jerry Tan, who leads the InnerSource China Community; Willem Jiang at Huawei; Ada Dai at Tencent - all elected Foundation Members.
-And at our 2025 Global Summit in Yokohama, Chen Wei of Huawei's InnerSource Office presented "Huawei InnerSource Culture and Value Closed-Loop Practice."
+Foundation membership is individual and merit-based - you're elected in, the way Apache does it - and China's bench is deep: Jerry Tan, who leads the InnerSource China Community; Willem Jiang at Huawei; Ada Dai at Tencent.
+At our 2025 Global Summit in Yokohama, Chen Wei of Huawei's InnerSource Office presented "Huawei InnerSource Culture and Value Closed-Loop Practice."
+And two of this year's Summit speakers come from China.
 China isn't following this movement; it's helping lead it.
 
 ---
 
-That leadership is earned, not bought.
-Foundation membership is individual and merit-based - you're elected in, the way Apache does it - and the roster spans the world: members across China, Japan, Europe, the Americas.
-Shingo Oidate, who runs Mitsubishi Electric's Open Source Program Office, was elected just this month.
-This is a global community electing its own leaders.
-
----
-
 Why does it spread?
-The most recent State of InnerSource report - about 120 organizations - is clear: the top reasons are code reuse, at eighty-four percent; development speed, eighty-one; knowledge sharing, seventy-nine; and breaking down silos, seventy-seven.
+The most recent State of InnerSource report is clear: the top reasons are code reuse, at eighty-four percent; development speed, eighty-one; knowledge sharing, seventy-nine; and breaking down silos, seventy-seven.
 Formal programs or program offices now exist at about a third of organizations, with another third running informally.
 
 ---
@@ -84,7 +78,7 @@ Hold onto that one - it's where the second half of this talk goes.
 
 The survey shows the gap plainly.
 About eighty-six percent share code in shared repositories - the basic move.
-But only about sixty percent have written InnerSource documentation, and portals, training, and metrics are rarer still.
+But only about sixty percent have written InnerSource documentation, and it drops from there: discovery portals at forty-six percent, training at forty-four, monitoring and metrics at thirty-two.
 In plain terms: teams are sharing code faster than they're building the support system - the docs, the portals, the training - that keeps that code usable.
 
 ---
@@ -199,17 +193,17 @@ The pattern in that one team's story is showing up in the aggregate.
 ---
 
 So if the temptation to duplicate is understandable, the honest question is: why is the review path so heavy in the first place?
-Here the answer is almost universal.
-I surveyed people across this community preparing for today, and the single loudest theme, independent of industry, independent of company size, was this: AI can now produce contributions faster than any organization can review them.
+Here's the core of it, and it's almost universal across the community I surveyed: the cost of producing a contribution has dropped to near zero, but the cost of reviewing one hasn't moved at all.
+AI can now produce contributions faster than any organization can review them.
 One respondent told me about a high-profile internal project that shut down entirely - closed its source - because it couldn't handle the flood of AI-generated pull requests hitting it.
 
 This isn't just an internal problem.
 It's happening in public, right now, in open source.
 Take curl - one of the most widely used pieces of software on Earth.
 By last year, roughly one in five security reports to curl were AI-assisted.
-The real vulnerability rate in that same pile had fallen to about one in twenty.
-And across six years of watching this, the maintainer's own count is zero - zero AI-generated reports that ever found a real vulnerability.
-In January of this year, curl shut its bug bounty program down entirely.
+Of all reports, about one in twenty was a genuine vulnerability - and every one of those real ones came from a human.
+Across six years, the number of AI-generated reports that found a real vulnerability is zero.
+In January of this year, curl shut its bug bounty program down - though it later reopened as the AI slop subsided.
 
 ---
 
