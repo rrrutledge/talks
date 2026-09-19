@@ -2,7 +2,7 @@
 
 **Talk:** InnerSource in the AI Era - A Global Update and What Comes Next
 **Speaker:** Russell Rutledge, Executive Director, InnerSource Commons
-**Runtime target:** ~13 minutes for the main talk (Open ~1 &middot; Part 1 ~4.5 &middot; Part 2 ~6 &middot; Close ~1.5). The two challenge slides live in the appendix - reference only.
+**Runtime target:** ~15 minutes (Open ~1 &middot; Part 1 ~6 &middot; Part 2 ~6 &middot; Close ~2)
 
 One flowing teleprompter read.
 The same text lives in the Reveal.js speaker notes, so the deck itself is the prompter when you record - advance a slide at each `---`.
@@ -94,6 +94,28 @@ If you scan the code on screen, it takes you straight to signing up.
 
 Beyond the Summit, the community is actively building: a new public InnerSource Pattern for keeping AI-generated code aligned with a project's own conventions, and standing peer working groups for practice and for program offices.
 And the direction is toward getting back in the room together - the aim for 2027 is more regular in-person regional events, including a presence here in this region.
+
+---
+
+Two challenges to prepare for.
+The first is a real shift: the number-one blocker is no longer culture - it's time.
+For the first time, "lack of time and resources," at eighty-four percent, overtook culture and silo thinking, at seventy-four, as the top perceived blocker.
+And the supporting numbers are stark: only about twenty-two percent of organizations give employees time to contribute, about fifteen percent reward it, and about fourteen percent factor it into promotion.
+People are convinced.
+They just have no room to act on it.
+
+---
+
+The second: the value is obvious, but the investment isn't - largely because it's hard to measure.
+Under fifty percent of organizations measure InnerSource at all, and the methods that exist are immature.
+Without a credible ROI story, programs stall - roughly one in seven were ramping down last year.
+And the community is building the answer: Chamindra de Silva and Daniel Izquierdo have put real rigor into quantifying the business impact of InnerSource.
+If you need the ROI reference this challenge has been missing, that's it.
+
+---
+
+Every one of these - the patterns, the investments, the challenges - now runs into a single question the whole community is asking at once: what does AI do to all of it?
+That's the second half.
 
 ---
 
@@ -240,27 +262,3 @@ Scan the code, and I'd love to see you there.
 Thank you again - to Jerry Tan, and to the entire InnerSource China Community.
 It's an honor to be part of what you're building here.
 Enjoy the rest of the Gathering.
-
----
-
-## Appendix - Challenges to prepare for (reference, if needed)
-
-These two challenge slides sit at the end of the deck. Pull them in only if the room wants them.
-
-**Challenge 1 - time and resources.**
-The number-one blocker is no longer culture - it's time.
-For the first time, "lack of time and resources," at eighty-four percent, overtook culture and silo thinking, at seventy-four, as the top perceived blocker.
-Only about twenty-two percent of organizations give employees time to contribute, about fifteen percent reward it, and about fourteen percent factor it into promotion.
-People are convinced; they just have no room to act on it.
-
-**Challenge 2 - ROI.**
-The value is obvious, but the investment isn't - largely because it's hard to measure.
-Under fifty percent of organizations measure InnerSource at all.
-Without a credible ROI story, programs stall - roughly one in seven were ramping down last year.
-The community is building the answer: de Silva and Izquierdo, "Measuring InnerSource Value" (MSR 2025).
-
-**Why the numbers hide it.**
-The cost and the payoff land in different boxes.
-In time: you invest this quarter, but the return dribbles in across the year.
-In scope: the team that invests often isn't the team that reaps the benefit.
-Measured quarter-by-quarter, team-by-team, InnerSource never pencils out - so reward and recognize contribution beyond the quarter, and beyond the team.
