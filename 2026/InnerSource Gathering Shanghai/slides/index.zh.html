@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI 时代的内源</title>
+<meta content="InnerSource Gathering Shanghai 2026 主题演讲 - Russell Rutledge，InnerSource Commons 执行董事" name="description"/>
+<link href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --bg-0:#0a1420; --bg-1:#0e1a2b; --bg-2:#16283f;
+      --ink:#ffffff; --ink-2:#cdd8e6; --ink-3:#93a4bc;
+      --accent:#2fd0bd; --accent-2:#7fe3d6;
+      --hair:rgba(255,255,255,0.12); --scrim:10,20,32;
+      --series-1:#3987e5; --series-3:#199e70; --series-8:#e66767;
+      --good:#2bd07a; --critical:#e66767;
+    }
+    .reveal { font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight:400; color:var(--ink); font-size:38px; }
+    .reveal .slides { text-align:left; }
+    html.reveal-viewport, .reveal-viewport { background:#05090f; }
+
+    .reveal .slides section {
+      height:100%; padding:74px 92px 96px; box-sizing:border-box; overflow:hidden;
+      background: radial-gradient(1300px 760px at 82% -14%, rgba(47,208,189,0.12), transparent 60%),
+                  linear-gradient(158deg, var(--bg-1), var(--bg-0));
+    }
+    .reveal .slides section > .bg { position:absolute; inset:0; background-size:cover; background-position:center; z-index:0; }
+    .reveal .slides section > .scrim { position:absolute; inset:0; z-index:1; }
+    .reveal .slides section > *:not(.bg):not(.scrim) { position:relative; z-index:2; }
+    .scrim.left   { background: linear-gradient(90deg, rgba(var(--scrim),0.92) 0%, rgba(var(--scrim),0.72) 42%, rgba(var(--scrim),0.28) 100%), linear-gradient(0deg, rgba(var(--scrim),0.85) 0%, rgba(var(--scrim),0) 20%); }
+    .scrim.center { background: linear-gradient(180deg, rgba(var(--scrim),0.60) 0%, rgba(var(--scrim),0.78) 100%), radial-gradient(1500px 850px at 50% 42%, rgba(var(--scrim),0.20), rgba(var(--scrim),0.68)); }
+
+    .reveal h1,.reveal h2,.reveal h3 { color:var(--ink); font-weight:800; letter-spacing:-0.02em; margin:0; line-height:1.03; text-transform:none; }
+    .reveal h1 { font-size:2.3em; font-weight:900; }
+    .reveal h2 { font-size:1.75em; }
+    .reveal h3 { font-size:1.05em; }
+    .reveal p { line-height:1.32; margin:0 0 0.5em; }
+    .reveal strong { color:var(--ink); font-weight:700; }
+    .reveal em { color:var(--accent-2); font-style:normal; font-weight:700; }
+    .accent { color:var(--accent); }
+
+    .kicker { display:inline-flex; align-items:center; gap:16px; font-size:0.52em; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:34px; }
+    .kicker::before { content:""; width:46px; height:3px; background:var(--accent); border-radius:2px; }
+
+    .lede { font-size:1.55em; color:var(--ink); font-weight:700; max-width:20ch; line-height:1.14; letter-spacing:-0.01em; }
+    .sub { color:var(--ink-2); font-size:1.0em; line-height:1.3; }
+    .stack { display:flex; flex-direction:column; justify-content:center; height:100%; }
+
+    .cite { position:absolute; left:92px; bottom:40px; right:300px; z-index:3; font-size:0.4em; color:var(--ink-3); letter-spacing:0.02em; line-height:1.35; }
+    .cite b { color:var(--ink-2); font-weight:600; }
+    .cite a.clink { color:var(--accent-2); text-decoration:none; border-bottom:1px solid rgba(127,227,214,0.5); }
+    .foot { position:absolute; right:92px; bottom:40px; z-index:3; display:flex; align-items:center; gap:12px; font-size:0.4em; color:var(--ink-3); letter-spacing:0.06em; text-transform:uppercase; }
+    .dot { width:8px; height:8px; border-radius:50%; background:var(--accent); display:inline-block; }
+
+    .grid { display:grid; gap:48px; align-items:center; height:100%; }
+    .grid.two { grid-template-columns:1fr 1fr; }
+    .grid.wide-left { grid-template-columns:1.2fr 0.8fr; }
+    .grid.wide-right { grid-template-columns:0.82fr 1.18fr; }
+
+    .title-wrap { display:grid; grid-template-columns:1.3fr 0.7fr; gap:60px; height:100%; align-items:center; }
+    .title-main .eyebrow { color:var(--accent); font-weight:800; letter-spacing:0.16em; text-transform:uppercase; font-size:0.5em; margin-bottom:30px; }
+    .title-main h1 { font-size:2.9em; line-height:1.0; }
+    .title-main .byline { margin-top:48px; padding-top:32px; border-top:1px solid var(--hair); }
+    .title-main .byline .name { font-size:1.05em; font-weight:800; }
+    .title-main .byline .role { color:var(--ink-2); font-size:0.78em; margin-top:6px; }
+    .title-portrait { justify-self:center; text-align:center; }
+    .title-portrait img { width:330px; height:330px; object-fit:cover; border-radius:50%; border:3px solid var(--accent); box-shadow:0 0 0 12px rgba(47,208,189,0.12), 0 30px 60px rgba(0,0,0,0.5); }
+    .title-portrait .event { margin-top:32px; font-size:0.62em; color:var(--ink-2); line-height:1.5; }
+    .title-portrait .event b { color:var(--ink); font-weight:800; display:block; font-size:1.2em; }
+
+    .divider { display:flex; flex-direction:column; justify-content:center; height:100%; }
+    .divider .num { font-size:1.0em; font-weight:900; color:var(--accent); letter-spacing:0.32em; margin-bottom:26px; }
+    .divider h1 { font-size:3.4em; max-width:15ch; }
+    .divider .meta { margin-top:38px; color:var(--ink-2); font-size:0.86em; letter-spacing:0.02em; }
+
+    .cards { display:grid; gap:24px; }
+    .card { background:rgba(14,26,43,0.78); border:1px solid var(--hair); border-radius:20px; padding:32px 34px; }
+    .card .n { color:var(--accent); font-weight:800; font-size:0.56em; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:12px; }
+    .card h3 { font-size:1.15em; margin-bottom:10px; }
+    .card p { color:var(--ink-2); font-size:0.74em; line-height:1.4; margin:0; }
+    .card.accent-edge { border-left:5px solid var(--accent); }
+
+    .tiles { display:grid; gap:22px; }
+    .tiles.c2 { grid-template-columns:1fr 1fr; }
+    .tiles.c3 { grid-template-columns:repeat(3,1fr); }
+    .tile { background:rgba(22,40,63,0.85); border:1px solid var(--hair); border-radius:18px; padding:30px 30px; }
+    .tile .v { font-size:2.4em; font-weight:900; letter-spacing:-0.03em; color:var(--ink); line-height:0.95; }
+    .tile .v.teal { color:var(--accent); }
+    .tile .v.red { color:var(--critical); }
+    .tile .l { color:var(--ink-2); font-size:0.66em; margin-top:14px; line-height:1.3; }
+
+    .hero-num { font-size:8.4em; font-weight:900; letter-spacing:-0.04em; line-height:0.85; color:var(--accent); }
+    .hero-num.red { color:var(--critical); }
+
+    .barchart { display:flex; flex-direction:column; gap:22px; width:100%; }
+    .bar-row { display:grid; grid-template-columns:340px 1fr; align-items:center; gap:26px; }
+    .bar-row .cap { color:var(--ink); font-size:0.78em; text-align:right; line-height:1.15; font-weight:700; }
+    .bar-row .cap span { display:block; font-weight:600; font-size:0.7em; }
+    .track { position:relative; height:46px; background:rgba(255,255,255,0.07); border-radius:10px; overflow:hidden; }
+    .fill { position:absolute; left:0; top:0; bottom:0; border-radius:10px; display:flex; align-items:center; justify-content:flex-end; padding-right:18px; font-weight:900; font-size:0.72em; color:#fff; }
+    .fill.s1 { background:linear-gradient(90deg, rgba(57,135,229,0.55), var(--series-1)); }
+    .fill.teal { background:linear-gradient(90deg, rgba(47,208,189,0.5), var(--accent)); color:#05201d; }
+    .fill.muted { background:linear-gradient(90deg, rgba(147,164,188,0.35), #5a6a82); }
+    .fill.red { background:linear-gradient(90deg, rgba(230,103,103,0.5), var(--critical)); }
+
+    .tags { display:flex; flex-wrap:wrap; gap:14px; margin-top:30px; }
+    .tag { font-size:0.6em; font-weight:700; color:var(--ink-2); background:rgba(22,40,63,0.6); border:1px solid var(--hair); border-radius:999px; padding:12px 22px; }
+    .tag.on { color:var(--accent); border-color:rgba(47,208,189,0.55); background:rgba(47,208,189,0.12); }
+
+    .people { display:grid; grid-template-columns:1fr 1fr; gap:16px; max-width:1120px; }
+    .person { background:rgba(14,26,43,0.82); border:1px solid var(--hair); border-left:5px solid var(--accent); border-radius:14px; padding:20px 24px; }
+    .person .nm { font-size:0.86em; font-weight:800; color:var(--ink); }
+    .person .og { font-size:0.56em; color:var(--accent-2); margin-top:5px; }
+    .callout { margin-top:22px; display:inline-flex; align-items:center; gap:14px; background:rgba(47,208,189,0.12); border:1px solid rgba(47,208,189,0.5); border-radius:14px; padding:18px 26px; font-size:0.72em; font-weight:700; color:var(--ink); }
+    .callout b { color:var(--accent); font-size:1.5em; font-weight:900; }
+
+    .verdict { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+    .vcol { border-radius:20px; padding:36px 36px; border:1px solid var(--hair); background:rgba(22,40,63,0.6); }
+    .vcol.good { border-top:6px solid var(--good); }
+    .vcol.bad { border-top:6px solid var(--critical); }
+    .vcol .vh { display:flex; align-items:center; gap:14px; font-weight:800; font-size:0.92em; margin-bottom:24px; }
+    .vcol.good .vh { color:var(--good); }
+    .vcol.bad .vh { color:#f08a8a; }
+    .vcol .vstat { font-size:1.9em; font-weight:900; color:var(--ink); letter-spacing:-0.02em; line-height:1; }
+    .vcol .vsub { color:var(--ink-2); font-size:0.66em; margin-top:10px; line-height:1.35; }
+    .vcol .vstat.sp { margin-top:26px; }
+
+    .quote { border-left:5px solid var(--accent); padding:4px 0 4px 36px; margin:0 0 30px; }
+    .quote p { font-size:1.4em; color:var(--ink); font-weight:600; line-height:1.22; font-style:italic; }
+    .quote .attr { color:var(--ink-3); font-size:0.5em; font-style:normal; margin-top:14px; letter-spacing:0.03em; }
+
+    .flip { display:grid; grid-template-columns:1fr 1fr; gap:0; border-radius:22px; overflow:hidden; border:1px solid var(--hair); }
+    .flip .side { padding:46px 46px; }
+    .flip .myth { background:rgba(230,103,103,0.16); }
+    .flip .truth { background:rgba(47,208,189,0.16); }
+    .flip .lbl { font-size:0.6em; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; margin-bottom:22px; }
+    .flip .myth .lbl { color:#f08a8a; }
+    .flip .truth .lbl { color:var(--accent); }
+    .flip p { font-size:1.02em; line-height:1.26; color:var(--ink); margin:0; font-weight:500; }
+
+    .fts { display:flex; margin-top:14px; border-radius:18px; overflow:hidden; border:1px solid var(--hair); }
+    .fts .leg { flex:1; padding:34px 26px; text-align:center; background:rgba(14,26,43,0.7); }
+    .fts .leg + .leg { border-left:1px solid var(--hair); }
+    .fts .leg .rg { font-size:1.1em; font-weight:900; }
+    .fts .leg .tm { color:var(--ink-2); font-size:0.58em; margin-top:10px; }
+    .fts .leg.apac { background:rgba(47,208,189,0.18); }
+    .fts .leg.apac .rg { color:var(--accent); }
+
+    .legs { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .leg-card { border-radius:18px; padding:32px 30px; border:1px solid var(--hair); background:rgba(14,26,43,0.8); }
+    .leg-card .st { font-size:0.54em; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:16px; }
+    .leg-card.done .st { color:var(--good); }
+    .leg-card.open .st { color:var(--accent); }
+    .leg-card h3 { font-size:1.05em; margin-bottom:12px; }
+    .leg-card p { color:var(--ink-2); font-size:0.64em; line-height:1.36; margin:0; }
+    .leg-card.open { border:1px solid rgba(47,208,189,0.55); background:rgba(47,208,189,0.1); }
+
+    .takeaways { display:grid; gap:30px; }
+    .takeaway { display:grid; grid-template-columns:74px 1fr; gap:30px; align-items:center; background:rgba(14,26,43,0.78); border:1px solid var(--hair); border-left:6px solid var(--accent); border-radius:18px; padding:38px 40px; }
+    .takeaway .tn { font-size:2.4em; font-weight:900; color:var(--accent); line-height:1; }
+    .takeaway p { font-size:1.12em; color:var(--ink); line-height:1.24; margin:0; font-weight:600; }
+
+    .qr { display:flex; flex-direction:column; align-items:center; gap:14px; }
+    .qr img { width:210px; height:210px; border-radius:16px; border:8px solid #fff; background:#fff; }
+    .qr .lbl { font-size:0.56em; font-weight:800; color:var(--accent); letter-spacing:0.06em; text-align:center; text-transform:uppercase; }
+
+    .featurelist { list-style:none; margin:0; padding:0; }
+    .featurelist li { position:relative; padding-left:46px; margin-bottom:32px; color:var(--ink); font-size:1.02em; line-height:1.26; font-weight:500; }
+    .featurelist li::before { content:""; position:absolute; left:0; top:4px; width:24px; height:24px; border-radius:7px; background:rgba(47,208,189,0.2); border:2px solid var(--accent); }
+    .featurelist li b { color:var(--ink); font-weight:800; }
+
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+    .sbox { background:rgba(14,26,43,0.8); border:1px solid var(--hair); border-radius:20px; padding:34px 34px; }
+    .sbox .st { font-size:0.56em; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:18px; }
+    .sbox h3 { font-size:1.2em; margin-bottom:16px; }
+    .sbox p { font-size:0.72em; color:var(--ink-2); line-height:1.4; margin:0; }
+    .timeline { display:flex; gap:8px; margin:22px 0 6px; }
+    .timeline .q { flex:1; text-align:center; font-size:0.5em; font-weight:800; color:var(--ink-2); padding:14px 0; border-radius:8px; background:rgba(255,255,255,0.05); border:1px solid var(--hair); }
+    .timeline .q.inv { background:rgba(47,208,189,0.2); color:var(--accent); border-color:rgba(47,208,189,0.5); }
+    .timeline .q.ret { background:rgba(57,135,229,0.16); color:#8fbdf2; }
+    .flowrow { display:flex; align-items:center; gap:14px; margin:22px 0 6px; }
+    .flowrow .tm { flex:1; text-align:center; font-size:0.5em; font-weight:800; padding:16px 0; border-radius:10px; }
+    .flowrow .tm.pay { background:rgba(47,208,189,0.2); color:var(--accent); border:1px solid rgba(47,208,189,0.5); }
+    .flowrow .tm.gain { background:rgba(57,135,229,0.16); color:#8fbdf2; border:1px solid rgba(57,135,229,0.4); }
+    .flowrow .ar { color:var(--accent); font-size:0.9em; font-weight:900; }
+    .punch { margin-top:32px; background:rgba(47,208,189,0.1); border:1px solid rgba(47,208,189,0.4); border-radius:16px; padding:26px 34px; font-size:0.92em; font-weight:700; color:var(--ink); }
+    .punch b { color:var(--accent); }
+
+    .shot { background:#fff; border-radius:14px; padding:16px; box-shadow:0 22px 55px rgba(0,0,0,0.5); max-width:470px; }
+    .shot.wide { max-width:660px; }
+    .shot img { width:100%; border-radius:6px; display:block; }
+    .shot .cap { text-align:center; font-size:0.46em; color:#33475b; font-weight:700; margin-top:10px; letter-spacing:0.02em; }
+
+    .reveal .progress { color:var(--accent); height:5px; }
+    .reveal .slide-number { background:transparent; color:var(--ink-3); font-size:15px; }
+    .brandchip { position:absolute; top:46px; left:92px; z-index:3; height:62px; background:#fff; border-radius:13px; padding:11px 20px; box-sizing:border-box; box-shadow:0 8px 26px rgba(0,0,0,0.4); }
+    .muted-note { color:var(--ink-3); font-size:0.6em; margin-top:22px; }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/><style>.reveal, .reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal .kicker, .reveal .tile, .reveal .card, .reveal .sub { font-family: 'Noto Sans SC','Inter',system-ui,-apple-system,sans-serif; }</style></head>
+<body>
+<div class="reveal">
+<div class="slides">
+<!-- 1. TITLE :: global-network -->
+<section>
+<div class="bg" style="background-image:url(assets/img/global-network.jpg)"></div>
+<div class="scrim left"></div>
+<img alt="InnerSource Commons" class="brandchip" src="assets/img/isc-logo.png"/>
+<div class="title-wrap">
+<div class="title-main">
+<div class="eyebrow">2026 上海内源大会</div>
+<h1><span class="accent">AI 时代</span>的内源</h1>
+<p style="font-size:1.2em;color:var(--ink-2);margin-top:26px;font-weight:600;">全球最新进展，以及未来走向。</p>
+<div class="byline">
+<div class="name">Russell Rutledge</div>
+<div class="role">InnerSource Commons 执行董事</div>
+</div>
+</div>
+<div class="title-portrait">
+<img alt="Russell Rutledge" src="assets/russ.jpeg"/>
+<div class="event"><b>上海 · 2026 年 9 月 21–22 日</b>由内源中国社区主办</div>
+</div>
+</div>
+<aside class="notes">
+早上好，感谢 Jerry Tan，以及整个内源中国社区，再次邀请我到来。
+
+去年 Jerry 邀请我为北京大会做了一场视频主题演讲；今年很高兴能再次与各位相聚在上海。我虽是远程参与，但我的心与在座各位同在。
+    </aside>
+</section>
+<!-- 3. ROADMAP :: crossroads -->
+<section>
+<div class="bg" style="background-image:url(assets/img/crossroads.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">两个部分</div>
+<div class="grid two" style="height:auto;">
+<div class="card">
+<div class="n">第一部分</div>
+<h2 style="font-size:1.5em;margin-bottom:16px;">全球最新进展</h2>
+<p style="font-size:0.82em;">这场运动的现状、大型组织中的共性模式，以及需要为之做好的准备。</p>
+</div>
+<div class="card accent-edge">
+<div class="n">第二部分</div>
+<h2 style="font-size:1.5em;margin-bottom:16px;">AI 与内源</h2>
+<p style="font-size:0.82em;">整个社区此刻都在问的同一个问题 - AI 会给这一切带来什么？</p>
+</div>
+</div>
+</div>
+<div class="foot"><span class="dot"></span> InnerSource Commons</div>
+<aside class="notes">
+今天的内容分为两个部分。首先，是内源现状的全球最新进展。然后，是整个社区此刻都在问的同一个问题：AI 正在给这一切带来什么？
+    </aside>
+</section>
+<!-- 4. PART 1 DIVIDER :: growth -->
+<section>
+<div class="bg" style="background-image:url(assets/img/growth.jpg)"></div>
+<div class="scrim center"></div>
+<div class="divider">
+<div class="num">第一部分</div>
+<h1>全球最新进展</h1>
+<div class="meta">来自执行董事的视角</div>
+</div>
+<aside class="notes">
+我们先从这场运动的现状说起。
+    </aside>
+</section>
+<!-- 5. LINKEDIN GROWTH :: chart -->
+<section>
+<div class="grid wide-right">
+<div class="stack">
+<div class="kicker">现状</div>
+<p class="lede">从一种实践，走向<em>核心战略</em>。</p>
+<p class="sub" style="margin-top:24px;max-width:20ch;">而社区还在持续壮大。</p>
+<div style="display:flex;align-items:baseline;gap:20px;margin-top:36px;">
+<div class="hero-num" style="font-size:5.4em;">30×</div>
+<div style="color:var(--ink);font-size:0.82em;line-height:1.2;font-weight:700;">LinkedIn 关注者，<br/>基金会成立至今</div>
+</div>
+</div>
+<div class="stack">
+<svg aria-label="Compounding growth curve, up about 15% per year" role="img" style="width:100%;max-width:620px;" viewbox="0 0 560 300">
+<defs>
+<lineargradient id="gGrow" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="rgba(47,208,189,0.4)"></stop>
+<stop offset="100%" stop-color="rgba(47,208,189,0)"></stop>
+</lineargradient>
+</defs>
+<line stroke="rgba(255,255,255,0.14)" stroke-width="1.5" x1="8" x2="552" y1="252" y2="252"></line>
+<path d="M12,246 C150,238 300,214 400,150 C470,104 520,46 548,18 L548,252 L12,252 Z" fill="url(#gGrow)"></path>
+<path d="M12,246 C150,238 300,214 400,150 C470,104 520,46 548,18" fill="none" stroke="#2fd0bd" stroke-width="4"></path>
+<circle cx="548" cy="18" fill="#2fd0bd" r="8"></circle>
+<text fill="#93a4bc" font-size="18" font-weight="700" x="12" y="284">2020</text>
+<text fill="#93a4bc" font-size="18" font-weight="700" x="500" y="284">2026</text>
+</svg>
+<div class="tile" style="margin-top:24px;max-width:360px;">
+<div class="v teal">+15% <span style="font-size:0.36em;color:var(--ink-2);font-weight:700;">/ 年</span></div>
+<div class="l">仍在攀升 - 迄今增长最快的渠道</div>
+</div>
+</div>
+</div>
+<div class="cite">来源：<b>InnerSource Commons</b> 渠道分析（LinkedIn），2020–2026。</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+内源已经从一种颇具潜力的实践，发展成为大型企业协同构建软件的核心战略 - 而围绕它的社区还在持续壮大。
+
+一条简洁的曲线：自基金会成立以来，我们的 LinkedIn 关注者增长了约三十倍，并且仍以每年约百分之十五的速度增长。这是我们迄今增长最快的渠道。
+    </aside>
+</section>
+<!-- 6. CHINA :: shanghai -->
+<section>
+<div class="bg" style="background-image:url(assets/img/shanghai.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">一场全球运动 - 贯穿中国</div>
+<h1 style="font-size:1.95em;max-width:20ch;">中国正在帮助<span class="accent">引领</span>基金会。</h1>
+<p class="sub" style="margin-top:18px;margin-bottom:26px;max-width:38ch;font-size:0.82em;">会员资格以贡献为准 - 像 Apache 那样，通过选举加入。</p>
+<div class="people">
+<div class="person"><div class="nm">Jerry Tan</div><div class="og">内源中国社区 · 基金会成员</div></div>
+<div class="person"><div class="nm">Willem Jiang</div><div class="og">Huawei · 基金会成员</div></div>
+<div class="person"><div class="nm">Ada Dai</div><div class="og">Tencent · 基金会成员</div></div>
+<div class="person"><div class="nm">Chen Wei</div><div class="og">Huawei 内源办公室 · 2025 全球峰会演讲嘉宾</div></div>
+</div>
+<div class="callout">2026 峰会有 <b>2</b> 位演讲嘉宾来自中国。</div>
+</div>
+<div class="cite">来源：<a class="clink" href="https://innersourcecommons.org/about/members/" rel="noopener" target="_blank">InnerSource Commons</a> 基金会成员（公开）；ISC 全球峰会 2025，横滨。</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+而这是一场真正遍及全球的运动 - 而且正贯穿中国。基金会会员以个人身份、以贡献为准 - 像 Apache 那样通过选举加入 - 而中国的阵容非常深厚：领导内源中国社区的 Jerry Tan；来自 Huawei 的 Willem Jiang；来自 Tencent 的 Ada Dai。在横滨举办的 2025 全球峰会上，Huawei 内源办公室的 Chen Wei 分享了《华为内源文化与价值闭环实践》。今年的峰会还有两位演讲嘉宾来自中国。中国不是这场运动的追随者，而是在帮助引领它。
+    </aside>
+</section>
+<!-- 7. WHY IT SPREADS :: chart -->
+<section>
+<div class="stack">
+<div class="kicker">为何它能扩散</div>
+<div class="grid wide-left" style="height:auto;">
+<div class="barchart">
+<div class="bar-row"><div class="cap">代码复用</div><div class="track"><div class="fill teal" style="width:84%;">84%</div></div></div>
+<div class="bar-row"><div class="cap">开发速度</div><div class="track"><div class="fill s1" style="width:81%;">81%</div></div></div>
+<div class="bar-row"><div class="cap">知识共享</div><div class="track"><div class="fill s1" style="width:79%;">79%</div></div></div>
+<div class="bar-row"><div class="cap">打破孤岛</div><div class="track"><div class="fill s1" style="width:77%;">77%</div></div></div>
+</div>
+<div class="stack">
+<p class="sub" style="font-size:0.9em;margin-bottom:24px;font-weight:600;">组织采用内源的主要原因。</p>
+<div class="tile"><div class="v teal">约 1/3</div><div class="l">设有正式的项目或项目办公室</div></div>
+</div>
+</div>
+</div>
+<div class="cite">来源：<a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" rel="noopener" target="_blank">《2025 内源现状报告》</a> - InnerSource Commons。</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+它为什么能扩散？最新一期《内源现状报告》说得很清楚：主要原因是代码复用，占百分之八十四；开发速度，百分之八十一；知识共享，百分之七十九；打破孤岛，百分之七十七。
+
+如今约三分之一的组织设有正式的项目或项目办公室，另有三分之一以非正式的方式运作。
+    </aside>
+</section>
+<!-- NEW-A. CONSOLIDATION :: handshake -->
+<section>
+<div class="bg" style="background-image:url(assets/img/handshake.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">三大模式之一 - 贯穿大型组织的历程</div>
+<h1 style="font-size:2.1em;max-width:16ch;">整合。</h1>
+<p class="sub" style="margin-top:24px;max-width:34ch;font-size:1.05em;font-weight:600;">内源越来越多地与某个合作职能一同获得资金支持 - 比如 OSPO、开发者体验团队或平台工程团队。</p>
+<p class="sub" style="margin-top:22px;max-width:40ch;font-size:0.86em;">关键要拿捏好的是范围：可以通过合作方获得资金，但职责必须<b style="color:var(--ink)">覆盖全公司</b>。它的整个前提，就是服务于每一个团队 - 而不只是出钱的那一个。</p>
+</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+在那些规模最大的内源历程中，我看到了三个值得点明的模式。第一个是整合。
+
+内源越来越多地依托某个合作职能来获得资金和归属，而不再是一项独立的预算 - 比如 OSPO、开发者体验团队、平台工程组织。它们都是天然的合作伙伴。关键要拿捏好的是范围：牵头的职能往往只为对自身职责有帮助的部分给内源出资，但内源的整个前提是服务于每一个团队。做得好的项目，会通过合作方获得资金，同时让职责始终覆盖全公司。
+    </aside>
+</section>
+<!-- NEW-B. SCAFFOLDING + TIME :: chart -->
+<section>
+<div class="stack">
+<div class="kicker">三大模式之二 - 及其头号障碍</div>
+<h1 style="font-size:1.85em;max-width:24ch;">支撑体系胜过<span class="accent">热情</span>。</h1>
+<p class="sub" style="margin-top:14px;max-width:54ch;font-size:0.84em;">让项目得以扩展的不是自下而上的热情 - 而是工具、贡献指南、治理，以及管理者 / HR / 职业晋升通道的支持。而构建这一切的头号障碍不再是文化 - 而是时间。</p>
+<div class="grid wide-left" style="height:auto;margin-top:24px;">
+<div class="barchart">
+<div class="bar-row"><div class="cap">时间与资源 <span style="color:var(--accent);">现居第一</span></div><div class="track"><div class="fill teal" style="width:84%;">84%</div></div></div>
+<div class="bar-row"><div class="cap">文化与孤岛 <span style="color:var(--ink-3);">曾居第一</span></div><div class="track"><div class="fill muted" style="width:74%;">74%</div></div></div>
+</div>
+<div class="tiles c3">
+<div class="tile"><div class="v">22%</div><div class="l">给出贡献的时间</div></div>
+<div class="tile"><div class="v">15%</div><div class="l">为贡献给予奖励</div></div>
+<div class="tile"><div class="v">14%</div><div class="l">在晋升中予以认可</div></div>
+</div>
+</div>
+<p class="sub" style="margin-top:22px;font-size:0.92em;font-weight:600;">人们已经被说服。他们只是没有<em>时间</em>去付诸行动。</p>
+</div>
+<div class="cite">来源：<a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" rel="noopener" target="_blank">《2024 与 2025 内源现状报告》</a> - InnerSource Commons。</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+第二个模式 - 支撑体系胜过热情。让项目能扩展、而不是停滞的，不是自下而上的热情；而是实实在在的支撑体系：统一的工具、贡献指南、治理 - 还有同样重要的管理者和 HR 支持，让贡献真正能算进一个人的职业晋升通道里。
+
+随之而来的挑战是：构建这套支撑体系的头号障碍不再是文化 - 而是时间。第一次，“缺乏时间和资源”以百分之八十四，超过了以百分之七十四紧随其后的文化与孤岛思维。只有约百分之二十二的组织会给员工时间去做贡献，约百分之十五会给予奖励，百分之十四会在晋升时予以考量。人们已经被说服；他们只是没有余力去付诸行动。
+    </aside>
+</section>
+<!-- NEW-C. ROI :: diagram -->
+<section>
+<div class="stack">
+<div class="kicker">第三个挑战 - 投资回报</div>
+<h1 style="font-size:1.8em;max-width:26ch;">价值显而易见。<span class="accent">投入</span>却并非如此。</h1>
+<p class="sub" style="margin-top:14px;max-width:52ch;font-size:0.84em;">不到 50% 的组织会去衡量内源 - 因为成本和回报落在<b style="color:var(--ink)">不同的账本上</b>。</p>
+<div class="split" style="margin-top:22px;">
+<div class="sbox">
+<div class="st">不同的时间段</div>
+<h3>此刻投入，全年收获。</h3>
+<div class="timeline">
+<div class="q inv">Q1<br/>投入</div>
+<div class="q ret">Q2</div>
+<div class="q ret">Q3</div>
+<div class="q ret">Q4</div>
+</div>
+</div>
+<div class="sbox">
+<div class="st">不同的团队</div>
+<h3>你投入，别人收获。</h3>
+<div class="flowrow">
+<div class="tm pay">你的团队<br/>付出</div>
+<div class="ar">→</div>
+<div class="tm gain">其他团队<br/>受益</div>
+</div>
+</div>
+</div>
+<div class="punch">如果按季度、按团队去核算，这笔账永远算不平。所以要<b>跨越季度、跨越团队地去奖励贡献</b>。</div>
+</div>
+<div class="cite">来源：<a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" rel="noopener" target="_blank">《2025 内源现状报告》</a>；de Silva 与 Izquierdo，<a class="clink" href="https://2025.msrconf.org/details/msr-2025-industry-track/2/Measuring-InnerSource-Value" rel="noopener" target="_blank">Measuring InnerSource Value</a>（MSR 2025）。</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+第三个挑战 - 投资回报。价值显而易见，投入却不然，很大程度上是因为它难以衡量：不到百分之五十的组织会去衡量内源。
+
+还有一个更深层的原因。成本和回报落在不同的账本上。在时间上：你这个季度投入，回报却是全年一点点渗回来的。在范围上：投入的团队往往不是收获收益的团队。按季度、按团队去核算，内源这笔账永远算不太平 - 所以解法是跨越季度、跨越团队地去奖励并认可贡献。如果你需要严谨的投资回报参考文献，那就是 de Silva 与 Izquierdo 的《Measuring InnerSource Value》。
+    </aside>
+</section>
+<!-- 10. SUMMIT + QR :: sunrise-earth -->
+<section>
+<div class="bg" style="background-image:url(assets/img/sunrise-earth.jpg)"></div>
+<div class="scrim left"></div>
+<div class="grid wide-left">
+<div class="stack">
+<div class="kicker">ISC 接下来在打造什么</div>
+<h1 style="font-size:2.0em;max-width:16ch;">2026 峰会 - 为<span class="accent">在座各位</span>量身打造。</h1>
+<p class="sub" style="margin-top:24px;font-size:1.0em;max-width:34ch;">一场持续 22 小时、<em>追随太阳</em>的连续活动。<b style="color:var(--ink)">2026 年 11 月 12 日。</b></p>
+<div class="fts">
+<div class="leg apac"><div class="rg">亚太</div><div class="tm">开启全球这一天</div></div>
+<div class="leg"><div class="rg">欧洲中东非洲</div><div class="tm">随后接棒</div></div>
+<div class="leg"><div class="rg">美洲</div><div class="tm">收尾闭环</div></div>
+</div>
+</div>
+<div class="stack" style="align-items:center;">
+<div class="qr">
+<img alt="Scan to join Summit 2026" src="assets/img/qr-summit.png"/>
+<div class="lbl">扫码加入<br/>2026 峰会</div>
+</div>
+</div>
+</div>
+<div class="cite">来源：<a class="clink" href="https://innersourcecommons.org/events/isc-2026/" rel="noopener" target="_blank">InnerSource Commons Summit 2026</a>（主题：InnerSource in Motion）。Scott Hanselman，已确认的主题演讲嘉宾。</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+我们接下来要投入什么？旗舰项目是 2026 峰会，而它正是为在座各位量身打造的：一场在 11 月 12 日举行、持续 22 小时、追随太阳的连续线上活动，从亚太开场，再交棒给欧洲中东非洲，然后是美洲。各位所在的区域将开启全球这一天。
+
+主题是“InnerSource in Motion: Navigating the Shifting Tides”，设三条分会场轨道，AI 贯穿其中。Scott Hanselman 已确认担任主题演讲嘉宾。扫描那个二维码，就能直接进入报名页面。
+    </aside>
+</section>
+<!-- 11. INVESTING MORE :: community -->
+<section>
+<div class="bg" style="background-image:url(assets/img/community.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">峰会之外</div>
+<ul class="featurelist">
+<li><b>一个新的公开内源模式（Pattern）</b> - 让 AI 生成的代码与项目自身的约定保持一致。</li>
+<li><b>常设的同行工作组</b> - 面向内源实践，也面向项目办公室。</li>
+<li><b>重新齐聚一堂</b> - 2027 年的目标是定期举办线下区域活动，<span class="accent">也包括在这里。</span></li>
+</ul>
+</div>
+<div class="cite">来源：<a class="clink" href="https://innersourcecommons.org" rel="noopener" target="_blank">InnerSource Commons</a> - 公开项目与路线图。</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+峰会之外，社区也在积极建设：一个新的公开内源模式，用来让 AI 生成的代码与项目自身的约定保持一致；还有面向实践、也面向项目办公室的常设同行工作组。
+
+方向是重新齐聚一堂 - 2027 年的目标是更常态化的线下区域活动，也包括在这个区域露面。
+    </aside>
+</section>
+<!-- 16. PART 2 DIVIDER :: ai-abstract -->
+<section>
+<div class="bg" style="background-image:url(assets/img/ai-abstract.jpg)"></div>
+<div class="scrim center"></div>
+<div class="divider">
+<div class="num">第二部分</div>
+<h1>AI 正如何重塑内源</h1>
+<div class="meta">我在整个社区中观察到的</div>
+</div>
+<aside class="notes">
+现在进入我承诺的第二部分 - 在实践中，当 AI 遇上内源，我在整个社区里真实看到的情况。
+    </aside>
+</section>
+<!-- 17. THE MYTH :: mirage -->
+<section>
+<div class="bg" style="background-image:url(assets/img/mirage.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">把话说明白</div>
+<div class="flip">
+<div class="side myth">
+<div class="lbl">这个误区</div>
+<p>内源之所以存在，是因为代码<b>昂贵</b>。如果 AI 让代码几乎免费 - 那这套论证不就站不住脚了吗？</p>
+</div>
+<div class="side truth">
+<div class="lbl">为何它站不住脚</div>
+<p>AI 压低的是能<b>编译通过</b>的代码的成本，而不是<b>正确</b>的代码 - 安全、经过测试、久经打磨 - 的成本。</p>
+</div>
+</div>
+<p style="font-size:1.3em;color:var(--ink);margin-top:40px;max-width:34ch;font-weight:700;">东西一便宜，产量就上去。<span class="accent">重复代码也一样。</span></p>
+</div>
+<div class="foot"><span class="dot"></span> 第二部分</div>
+<aside class="notes">
+有一个故事，我们很多人都在对自己讲，在反驳它之前，我想先把它直接说出来。内源之所以存在，是因为写代码曾经很昂贵。如果两个团队需要同样的东西，让一个团队构建、另一个团队复用，会更省。这就是它的整个前提：不要重复，因为重复代价高昂。
+
+如今 AI 几秒钟就能写出代码。于是这个误区说：如果创造代码基本免费，那我们不再重复又能省下什么？AI 难道不是悄悄地终结了内源的理由吗？
+
+这里就是它错在哪里。AI 压低的是写出能编译、看起来没问题的代码的成本。它丝毫 - 一丝一毫 - 都没有改变真正正确的代码的成本：可用、安全、针对你的组织早已吃过苦头才学到的每一个边界情况做过测试。而当你把某样东西变便宜，你就会得到更多。这也包括重复。这个误区把“写起来便宜”误当成了彻头彻尾的“便宜”。它只不过把账单推到了以后，推给了别人。
+    </aside>
+</section>
+<!-- 20. DUPLICATION DATA :: GitClear source screenshot -->
+<section>
+<div class="grid wide-right">
+<div class="stack">
+<div class="kicker">不只是个案 - 有数据为证</div>
+<div class="hero-num red" style="font-size:6.4em;">+81%</div>
+<p class="sub" style="font-size:1.0em;margin-top:14px;max-width:20ch;font-weight:600;"><b style="color:var(--ink)">重复代码块</b>随之激增。</p>
+<p class="sub" style="margin-top:24px;font-size:0.8em;max-width:26ch;">复用 / 重构的代码在全部改动中的占比从 <b style="color:var(--ink)">21% 降至 3.8%</b>。而 DORA 发现，AI 用得越多，交付稳定性反而下降。</p>
+</div>
+<div class="stack" style="align-items:center;">
+<div class="shot wide">
+<img alt="GitClear report - code block duplication up 81%" src="assets/img/proof-gitclear.png"/>
+<div class="cap">GitClear - 《可维护性差距》，2026（6.23 亿次改动）</div>
+</div>
+</div>
+</div>
+<div class="cite">来源：<a class="clink" href="https://www.gitclear.com/the_ai_code_quality_maintainability_gap" rel="noopener" target="_blank">GitClear</a> 代码质量研究，2026；<a class="clink" href="https://dora.dev/research/2024/dora-report/" rel="noopener" target="_blank">Google DORA</a> 2024。</div>
+<div class="foot"><span class="dot"></span> 第二部分</div>
+<aside class="notes">
+而这不只是一个个案。一项大规模的代码改动分析 - 超过六亿次改动 - 发现重复代码块增加了百分之八十一，而重构和复用的代码在全部改动中的占比则从百分之二十一骤降到不足百分之四。Google 自己的 DORA 研究发现，AI 使用的增加，伴随着交付稳定性可衡量的下降。那一个团队故事里的模式，正在整体数据中显现出来。
+    </aside>
+</section>
+<!-- 19. TWO COSTS :: measure -->
+<section>
+<div class="bg" style="background-image:url(assets/img/measure.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">为何重要 - 说精确点</div>
+<div class="grid two" style="height:auto;">
+<div class="card accent-edge">
+<div class="n">代价一</div>
+<h3 style="font-size:1.4em;margin-bottom:14px;">Tokens</h3>
+<p style="font-size:0.86em;">让 agent 去重新推导本已存在的东西，会实打实地消耗算力 - 每个团队、每个冲刺都在烧。而且会不断累积。</p>
+</div>
+<div class="card accent-edge">
+<div class="n">代价二</div>
+<h3 style="font-size:1.4em;margin-bottom:14px;">正确性</h3>
+<p style="font-size:0.86em;">原来的组件赢得了<b>多年的打磨</b>。而复制出来的那份则从零开始 - 不管它看起来多有把握。</p>
+</div>
+</div>
+<p style="text-align:center;font-size:1.3em;color:var(--ink);margin-top:40px;font-weight:700;"><em>写起来便宜，养起来昂贵。</em></p>
+</div>
+<div class="foot"><span class="dot"></span> 第二部分</div>
+<aside class="notes">
+我们来精确地说清楚，为什么那个决定仍然是个问题，因为“这在技术上不够高效”打动不了任何人。有两项具体的代价。
+
+第一：token。每当一个 agent 重造某样东西、而不是去找到它，它就在实打实地烧算力，从零开始把公司早已解决的问题重新推演一遍 - 在每个团队、每项任务上都是如此。这会一个冲刺接一个冲刺地累积。
+
+第二：正确性。原来的组件不只是能编译 - 它赢得了多年的打磨。每一个边界情况、每一个安全补丁、每一次让人从中学到教训的故障。这些一样都不会传递给复制品。无论第一天看起来多有把握，副本都是从零开始。总得有人为它打补丁、做安全加固，年复一年 - 重新赢得原件早已付过一次代价的正确性。
+
+这正是那个陷阱：写起来便宜，养起来昂贵，而账单会在所有人都不再关注之后才送到。
+    </aside>
+</section>
+<!-- 21. REVIEW CAPACITY / CURL :: stats -->
+<section>
+<div class="stack">
+<div class="kicker">问题正在哪里显现 - 评审的承载力</div>
+<h1 style="font-size:1.5em;max-width:32ch;margin-bottom:20px;">如今提交一份贡献几乎不费成本。<span class="accent">而评审一份贡献的成本一如既往。</span></h1>
+<div class="tiles c3">
+<div class="tile"><div class="v">约 1/5</div><div class="l">的报告借助了 AI</div></div>
+<div class="tile"><div class="v">约 1/20</div><div class="l">的报告是真正的漏洞</div></div>
+<div class="tile"><div class="v red">0</div><div class="l">来自 AI - 每一个真实漏洞都由人工发现（6 年间）</div></div>
+</div>
+<div style="display:flex;align-items:center;gap:36px;margin-top:26px;">
+<div class="shot wide" style="max-width:520px;flex:0 0 auto;"><img alt="curl - the end of the bug bounty" src="assets/img/proof-curl.png"/><div class="cap">Daniel Stenberg / curl - 《The end of the curl bug bounty》，2026</div></div>
+<p class="sub" style="font-size:1.05em;font-weight:700;margin:0;">把视野拉大到 curl - 它是地球上使用最广泛的软件之一。2026 年 1 月：它关停了漏洞赏金计划<span style="color:#f08a8a;">（后来随着垃圾提交退潮又重新开放）。</span></p>
+</div>
+</div>
+<div class="cite">来源：<a class="clink" href="https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/" rel="noopener" target="_blank">Daniel Stenberg / curl</a>（HackerOne），2025–2026；社区调查 2026。</div>
+<div class="foot"><span class="dot"></span> 第二部分</div>
+<aside class="notes">
+所以，如果说重复的诱惑可以理解，那么诚实的问题是：评审这条路一开始为什么就这么重？核心就在这里，而且在我调研过的社区里几乎是普遍现象：提交一份贡献的成本已经降到接近于零，而评审一份贡献的成本却纹丝未动。如今 AI 产出贡献的速度，已经快过任何组织能够评审它们的速度。一位受访者告诉我，有一个备受瞩目的内部项目彻底关停了 - 把源码封闭了起来 - 因为它招架不住 AI 生成的拉取请求的洪流。
+
+这不只是内部的事。以 curl 为例 - 它是地球上使用最广泛的软件之一。到去年，提交给 curl 的安全报告中大约五分之一借助了 AI。在所有报告里，约二十分之一是真正的漏洞 - 而这些真实漏洞无一例外都来自人。六年间，AI 生成的报告中发现真实漏洞的数量是零。今年 1 月，curl 关停了它的漏洞赏金计划 - 尽管后来随着 AI 垃圾提交退潮又重新开放了。
+    </aside>
+</section>
+<!-- 22. WHAT HELPS :: stats -->
+<section>
+<div class="stack">
+<div class="kicker">什么才真正有用</div>
+<div class="verdict">
+<div class="vcol good">
+<div class="vh"><span>✓</span> 放大注意力</div>
+<div class="shot" style="max-width:none;padding:12px;margin-bottom:18px;"><img alt="Vercel AI SDK software factory" src="assets/img/proof-vercel.png"/><div class="cap">Vercel AI SDK - 软件工厂</div></div>
+<div class="vsub">agent 先做复现和验证 - 在有人过目之前，就已撰写了 25–35% 的已合并 PR。</div>
+</div>
+<div class="vcol bad">
+<div class="vh"><span>✗</span> 无法取代判断</div>
+<div class="shot" style="max-width:none;padding:12px;margin-bottom:18px;"><img alt="SonarSource State of Code 2026" src="assets/img/proof-sonar.png"/><div class="cap">SonarSource - 《State of Code 2026》</div></div>
+<div class="vsub">还有一个 Red Hat 项目试用了 AI 评审员，发现噪声太多，就把它关掉了。</div>
+</div>
+</div>
+<p style="text-align:center;font-size:1.15em;color:var(--ink);margin-top:30px;font-weight:700;">它是<em>注意力</em>的倍增器 - 而不是<em>判断力</em>的替代品。</p>
+</div>
+<div class="cite">来源：<a class="clink" href="https://vercel.com/blog/building-a-software-factory-for-ai-sdk" rel="noopener" target="_blank">Vercel AI SDK</a>，2025；<a class="clink" href="https://www.sonarsource.com/company/press-releases/sonar-data-reveals-critical-verification-gap-in-ai-coding/" rel="noopener" target="_blank">SonarSource</a> 2026（约 1,100 名开发者）；Cockpit / Red Hat（实践者报告）。</div>
+<div class="foot"><span class="dot"></span> 第二部分</div>
+<aside class="notes">
+那么更好的工具能解决这个问题吗？我去找过答案。诚实的回答是：有时能，而且界线很清晰。自动化奏效的地方，是它在人不得不介入之前，先把枯燥的部分做掉 - 复现问题、验证问题、把范围缩小。Vercel 的 AI SDK 团队报告说，一条 agent 流水线仅靠做这第一遍，就撰写了他们四分之一到三分之一的已合并拉取请求，并关闭了七到八成的新进问题。
+
+不奏效的地方，是让 AI 去替代那个判断决定。一个 Red Hat 项目试用了 AI 评审员，发现它说的话里有一半是噪声，就把它关掉了。而一项 SonarSource 调查发现，百分之九十六的开发者并不完全信任 AI 生成的代码。
+
+所以界线在这里：自动化是人的注意力的真正倍增器。它还不是人的判断力的替代品。你仍然需要一个为最终决定负责的人。没有哪个工具改变过这一点。
+    </aside>
+</section>
+<!-- 23. THE FRONTIER :: doorway -->
+<section>
+<div class="bg" style="background-image:url(assets/img/doorway.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">真正的前沿</div>
+<h1 style="font-size:1.9em;max-width:26ch;margin-bottom:34px;">教会 agent 养成<span class="accent">内源的习惯</span>。</h1>
+<div class="legs">
+<div class="leg-card done">
+<div class="st">✓ 已在真实环境中落地</div>
+<h3>复用共享的那部分</h3>
+<p>一种共享规格（spec）的模式 - 由一个团队掌管需求，其他团队只读消费，就在 agent 读取它们的地方。</p>
+</div>
+<div class="leg-card done">
+<div class="st">✓ 已在真实环境中落地</div>
+<h3>把新东西发布回去</h3>
+<p>Shell 的 Project Fleming - 由 AI 驱动的发现，能找到与你的需求仅仅<em>相邻</em>的代码。</p>
+</div>
+<div class="leg-card open">
+<div class="st">□ 仍然一片空白</div>
+<h3>构建之前先搜索</h3>
+<p>让 agent 先去查找，再决定要不要重新推导。这正是摆在这个社区面前的机会，从今天开始。</p>
+</div>
+</div>
+</div>
+<div class="cite">来源：<a class="clink" href="https://github.com/Fission-AI/OpenSpec" rel="noopener" target="_blank">OpenSpec</a>（共享规格模式）；<a class="clink" href="https://projectfleming.tech" rel="noopener" target="_blank">Shell Project Fleming</a>。</div>
+<div class="foot"><span class="dot"></span> 第二部分</div>
+<aside class="notes">
+而这才真正是前沿所在。不是去管理那股洪流 - 那是分诊、是修管道的活儿。真正的大奖，是教会 agent 本身养成内源的习惯：构建之前先查找，去拉取共享的那部分而不是重新推导它，而当你构建出真正新颖、可复用的东西时，把它推送回去。
+
+我已经找到了真实、鲜活的例子，而且没有人把它叫做内源 - 一种共享规格的模式，由一个团队掌管需求，其他团队只读消费，就在他们的编码 agent 能读到的地方。还有 Shell 自己的 AI 驱动发现工具，能找到与你所要求的仅仅相邻的代码。
+
+三条腿里的两条 - 复用，以及回馈发布 - 此刻已经在建了。第三条腿 - 真正会在构建之前先搜索的 agent - 仍然是一片空白。这不是一个需要焦虑的缺口。这是从今天起，摆在这个社区面前的机会。
+    </aside>
+</section>
+<!-- 24. SOURCE OF KNOWLEDGE :: library -->
+<section>
+<div class="bg" style="background-image:url(assets/img/library.jpg)"></div>
+<div class="scrim center"></div>
+<div class="stack" style="align-items:center;text-align:center;">
+<div class="kicker" style="justify-content:center;">未来走向</div>
+<h1 style="font-size:2.4em;max-width:20ch;text-align:center;">“Source”正在变成一个<span class="accent">知识之源（Source of Knowledge）</span>。</h1>
+<p style="font-size:1.15em;color:var(--ink-2);margin-top:32px;max-width:34ch;font-weight:600;">不只是代码 - 还有一个团队积累下来的背景、模式和决策。而这恰恰是 agent 所需要的底层养料。</p>
+</div>
+<aside class="notes">
+那么这把我们带到了哪里？会在构建之前先搜索的 agent - 那是仍然一片空白的前沿。而它指向了真正的演进：InnerSource 里的“Source”，正在变成一个“知识之源（Source of Knowledge）”。不只是代码，还有一个团队积累下来的背景、模式和决策 - 而这恰恰也是 agent 所需要的底层养料。这个社区里有好几个人，都不约而同、未经提示地汇聚到了这个说法上。这不只是我一个人的解读。
+    </aside>
+</section>
+<!-- 25. TAKEAWAYS :: horizon -->
+<section>
+<div class="bg" style="background-image:url(assets/img/horizon.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">带走两点</div>
+<div class="takeaways">
+<div class="takeaway">
+<div class="tn">1</div>
+<p>在 AI 时代，内源<b>并没有过时</b>。AI 让它要解决的问题<em>变得更大、更快</em> - 而不是更小。</p>
+</div>
+<div class="takeaway">
+<div class="tn">2</div>
+<p>前沿在于教会 agent 养成内源的习惯：<em>构建前先搜索、复用、回馈贡献。</em></p>
+</div>
+</div>
+</div>
+<div class="foot"><span class="dot"></span> 未来走向</div>
+<aside class="notes">
+如果今天你只带走两点，就带走这两点。第一：在 AI 时代，内源并没有过时。AI 让内源所要解决的问题变得更大、更快，而不是更小。第二：下一个前沿不是去管理那股洪流 - 而是教会 AI agent 本身养成内源的习惯。构建前先搜索、复用、回馈贡献。
+    </aside>
+</section>
+<!-- 26. THANK YOU + QR :: bridge -->
+<section>
+<div class="bg" style="background-image:url(assets/img/bridge.jpg)"></div>
+<div class="scrim left"></div>
+<div class="grid wide-left">
+<div class="stack">
+<div class="kicker">谢谢</div>
+<h1 style="font-size:2.1em;max-width:15ch;">致 Jerry Tan，以及<span class="accent">内源中国社区</span>。</h1>
+<p style="font-size:1.0em;color:var(--ink-2);margin-top:26px;max-width:28ch;font-weight:600;">能参与到你们所构建的这一切之中，我深感荣幸。祝各位享受大会接下来的时光。</p>
+<p class="sub" style="margin-top:26px;font-size:0.9em;"><b style="color:var(--ink)">innersourcecommons.org</b> · 2026 峰会 - 11 月 12 日，亚太开启全球这一天。</p>
+</div>
+<div class="stack" style="align-items:center;">
+<div class="qr">
+<img alt="Scan to join Summit 2026" src="assets/img/qr-summit.png"/>
+<div class="lbl">扫码加入<br/>2026 峰会</div>
+</div>
+</div>
+</div>
+<div class="foot"><span class="dot"></span> Russell Rutledge · InnerSource Commons</div>
+<aside class="notes">
+接下来去哪里：InnerSource Commons 网站，以及 11 月 12 日的 2026 峰会 - 追随太阳，而各位所在的区域将开启全球这一天。扫描二维码，我很期待在那里见到你们。
+
+再次感谢 - 感谢 Jerry Tan，以及整个内源中国社区。能参与到你们在这里所构建的一切之中，我深感荣幸。祝各位享受大会接下来的时光。
+    </aside>
+</section>
+<!-- A1. APPENDIX DIVIDER :: clock -->
+<section>
+<div class="bg" style="background-image:url(assets/img/clock.jpg)"></div>
+<div class="scrim center"></div>
+<div class="divider">
+<div class="num">附录</div>
+<h1>参考幻灯片</h1>
+<div class="meta">备用材料，视现场需要取用</div>
+</div>
+<aside class="notes">
+参考幻灯片 - 成熟度差距的数据，以及那个匿名的重复代码故事 - 如果讨论需要，随时可以调出来。
+    </aside>
+</section>
+<!-- 9. MATURITY GAP :: chart (real numbers) -->
+<section>
+<div class="stack">
+<div class="kicker">成熟度差距</div>
+<h1 style="font-size:1.85em;max-width:22ch;margin-bottom:32px;">基础做法很普遍。而<span class="accent">支撑体系</span>并不普遍。</h1>
+<div class="barchart">
+<div class="bar-row"><div class="cap">共享代码仓库</div><div class="track"><div class="fill teal" style="width:86%;">86%</div></div></div>
+<div class="bar-row"><div class="cap">内源文档</div><div class="track"><div class="fill s1" style="width:60%;">60%</div></div></div>
+<div class="bar-row"><div class="cap">发现门户</div><div class="track"><div class="fill muted" style="width:46%;">46%</div></div></div>
+<div class="bar-row"><div class="cap">培训</div><div class="track"><div class="fill muted" style="width:44%;">44%</div></div></div>
+<div class="bar-row"><div class="cap">监控 / 度量</div><div class="track"><div class="fill muted" style="width:32%;">32%</div></div></div>
+</div>
+<p class="sub" style="margin-top:26px;font-size:0.86em;max-width:46ch;">团队共享代码的速度，快过他们建立文档、门户和培训 - 也就是让代码持续可用的那套东西 - 的速度。</p>
+</div>
+<div class="cite">来源：<a class="clink" href="https://innersourcecommons.org/learn/research/state-of-innersource-survey-2025/" rel="noopener" target="_blank">《2025 内源现状报告》</a> - InnerSource Commons（n=57）。</div>
+<div class="foot"><span class="dot"></span> 第一部分</div>
+<aside class="notes">
+调查把这个差距摆得很明白。约百分之八十六的团队在共享代码仓库里共享代码 - 这是最基础的动作。但只有约百分之六十写了内源文档，往下就一路走低：发现门户是百分之四十六，培训是百分之四十四，监控与度量是百分之三十二。
+
+说白了：团队共享代码的速度，快过他们建立那套支撑体系 - 文档、门户、培训 - 的速度，而正是这套体系让代码保持可用。
+    </aside>
+</section>
+<!-- 18. THE TRAP :: duplicate -->
+<section>
+<div class="bg" style="background-image:url(assets/img/duplicate.jpg)"></div>
+<div class="scrim left"></div>
+<div class="stack">
+<div class="kicker">这个陷阱已经在发生 - 用他们自己的话说</div>
+<p class="sub" style="font-size:0.9em;margin-bottom:34px;max-width:40ch;">一个团队自己的 AI 工具找到了那项能力 - 它已经在公司别处构建好、正常运行着。他们还是又重新造了一遍。</p>
+<div class="quote"><p>“回馈贡献的阻力感觉太大了。”</p></div>
+<div class="quote"><p>“如果治理没有随之提速，单纯的 AI 效率会把协作循环活活饿死。”</p><div class="attr">受访者 · 大型电商公司 · 依其所述条件匿名</div></div>
+<p style="font-size:1.05em;color:var(--ink);margin-top:6px;font-weight:600;">在赶工期的情况下，他们的决定错了吗？<span class="accent">大概没错。</span></p>
+</div>
+<div class="cite">来源：<b>社区调查，2026</b> - 20 位实践者，依各受访者所述条件匿名。</div>
+<div class="foot"><span class="dot"></span> 第二部分</div>
+<aside class="notes">
+我想给你们举一个真实的例子，来自我为准备这次演讲而交谈过的一家大型电商公司内部。一个团队需要某项能力。他们自己的 AI 工具找到了它 - 它早已存在，在公司别处构建好、正常运行着。而这个团队还是又重新造了一遍。那个人是这么说的：“回馈贡献的阻力感觉太大了。”于是他们干脆让 AI 从零起了一个副本。
+
+关于这给组织带来的代价，他们自己的原话是：“如果治理没有随之提速，单纯的 AI 效率会在不经意间绕过并饿死协作循环。”接着，几乎像是随口一提，那句一直萦绕在我心头的话：“与社区并肩合作、参与其中的价值不再被认可，这在工作时间里几乎变得难以承受。”这是一个在乎这件事的人，眼看着它发生，并如实说了出来。
+
+那么 - 一个值得静下心来想的问题。那个团队的决定真的错了吗？在当下、在那一天、在赶工期的情况下 - 大概没错。他们把东西交付了。而这正是让下一个观点真正击中人的地方。
+    </aside>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    width:1920, height:1080, margin:0, minScale:0.2, maxScale:2.0,
+    hash:true, slideNumber:'c/t', transition:'fade', transitionSpeed:'default',
+    plugins:[ RevealNotes ]
+  });
+</script>
+</body>
+</html>
