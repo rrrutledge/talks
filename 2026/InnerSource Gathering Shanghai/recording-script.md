@@ -108,10 +108,6 @@ Two of the three legs - reuse, and publishing back - are already being built, ri
 
 ---
 
-So where does this leave us? Agents that search before they build - that's the frontier still wide open. And it points at the real evolution: the "Source" in InnerSource is becoming a "Source of Knowledge." Not just code, but the context, the patterns, the decisions a team accumulates - which is exactly the substrate agents need too. Several people in this community have converged on that framing independently, unprompted. It isn't just my read.
-
----
-
 If you take two things from today, take these. First: InnerSource isn't obsolete in the AI era. AI makes the problem InnerSource solves bigger and faster, not smaller. Second: the next frontier isn't managing the flood - it's teaching AI agents themselves the InnerSource habit. Search before building, reuse, and contribute back.
 
 ---
