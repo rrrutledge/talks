@@ -66,12 +66,6 @@ The theme is "InnerSource in Motion: Navigating the Shifting Tides," with three 
 
 ---
 
-Beyond the Summit, the community is actively building: a new public InnerSource Pattern for keeping AI-generated code aligned with a project's own conventions, and standing peer working groups for practice and for program offices.
-
-And the direction is toward getting back in the room together - the aim for 2027 is more regular in-person regional events, including a presence here in this region.
-
----
-
 ## Part 2 - How AI is reshaping InnerSource
 
 Let's turn to the second half of what I promised - what I'm actually seeing, across the community, as AI meets InnerSource in practice.
@@ -103,14 +97,6 @@ That's the trap, precisely: cheap to write, expensive to own, and the bill arriv
 So if the temptation to duplicate is understandable, the honest question is: why is the review path so heavy in the first place? Here's the core of it, and it's almost universal across the community I surveyed: the cost of producing a contribution has dropped to near zero, but the cost of reviewing one hasn't moved at all. AI can now produce contributions faster than any organization can review them. One respondent told me about a high-profile internal project that shut down entirely - closed its source - because it couldn't handle the flood of AI-generated pull requests.
 
 This isn't just internal. Take curl - one of the most widely used pieces of software on Earth. By last year, roughly one in five security reports to curl were AI-assisted. Of all reports, about one in twenty was a genuine vulnerability - and every one of those real ones came from a human. Across six years, the number of AI-generated reports that found a real vulnerability is zero. In January of this year, curl shut its bug bounty program down - though it later reopened as the AI slop subsided.
-
----
-
-So does better tooling fix this? I went looking. The honest answer is: sometimes, and the line is sharp. Where automation works, it's doing the boring part - reproducing an issue, verifying it, narrowing it - before a human has to look. Vercel's AI SDK team reported an agent pipeline authoring a quarter to a third of their merged pull requests and closing seventy to eighty percent of incoming issues, just by doing that first pass.
-
-Where it doesn't work is asking AI to replace the judgment call. One Red Hat project tried an AI reviewer, found half of what it said was noise, and turned it off. And a SonarSource survey found ninety-six percent of developers don't fully trust AI-generated code.
-
-So here's the line: automation is a genuine force multiplier for a human's attention. It is not, yet, a replacement for a human's judgment. You still need someone accountable for the call. No tool has changed that.
 
 ---
 

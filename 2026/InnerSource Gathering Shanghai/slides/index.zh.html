@@ -466,26 +466,6 @@
 主题是“InnerSource in Motion: Navigating the Shifting Tides”，设三条分会场轨道，AI 贯穿其中。Scott Hanselman 已确认担任主题演讲嘉宾。扫描那个二维码，就能直接进入报名页面。
     </aside>
 </section>
-<!-- 11. INVESTING MORE :: community -->
-<section>
-<div class="bg" style="background-image:url(assets/img/community.jpg)"></div>
-<div class="scrim left"></div>
-<div class="stack">
-<div class="kicker">峰会之外</div>
-<ul class="featurelist">
-<li><b>一个新的公开内源模式（Pattern）</b> - 让 AI 生成的代码与项目自身的约定保持一致。</li>
-<li><b>常设的同行工作组</b> - 面向内源实践，也面向项目办公室。</li>
-<li><b>重新齐聚一堂</b> - 2027 年的目标是定期举办线下区域活动，<span class="accent">也包括在这里。</span></li>
-</ul>
-</div>
-<div class="cite">来源：<a class="clink" href="https://innersourcecommons.org" rel="noopener" target="_blank">InnerSource Commons</a> - 公开项目与路线图。</div>
-<div class="foot"><span class="dot"></span> 第一部分</div>
-<aside class="notes">
-峰会之外，社区也在积极建设：一个新的公开内源模式，用来让 AI 生成的代码与项目自身的约定保持一致；还有面向实践、也面向项目办公室的常设同行工作组。
-
-方向是重新齐聚一堂 - 2027 年的目标是更常态化的线下区域活动，也包括在这个区域露面。
-    </aside>
-</section>
 <!-- 16. PART 2 DIVIDER :: ai-abstract -->
 <section>
 <div class="bg" style="background-image:url(assets/img/ai-abstract.jpg)"></div>
@@ -600,34 +580,6 @@
 所以，如果说重复的诱惑可以理解，那么诚实的问题是：评审这条路一开始为什么就这么重？核心就在这里，而且在我调研过的社区里几乎是普遍现象：提交一份贡献的成本已经降到接近于零，而评审一份贡献的成本却纹丝未动。如今 AI 产出贡献的速度，已经快过任何组织能够评审它们的速度。一位受访者告诉我，有一个备受瞩目的内部项目彻底关停了 - 把源码封闭了起来 - 因为它招架不住 AI 生成的拉取请求的洪流。
 
 这不只是内部的事。以 curl 为例 - 它是地球上使用最广泛的软件之一。到去年，提交给 curl 的安全报告中大约五分之一借助了 AI。在所有报告里，约二十分之一是真正的漏洞 - 而这些真实漏洞无一例外都来自人。六年间，AI 生成的报告中发现真实漏洞的数量是零。今年 1 月，curl 关停了它的漏洞赏金计划 - 尽管后来随着 AI 垃圾提交退潮又重新开放了。
-    </aside>
-</section>
-<!-- 22. WHAT HELPS :: stats -->
-<section>
-<div class="stack">
-<div class="kicker">什么才真正有用</div>
-<div class="verdict">
-<div class="vcol good">
-<div class="vh"><span>✓</span> 放大注意力</div>
-<div class="shot" style="max-width:none;padding:12px;margin-bottom:18px;"><img alt="Vercel AI SDK software factory" src="assets/img/proof-vercel.png"/><div class="cap">Vercel AI SDK - 软件工厂</div></div>
-<div class="vsub">agent 先做复现和验证 - 在有人过目之前，就已撰写了 25–35% 的已合并 PR。</div>
-</div>
-<div class="vcol bad">
-<div class="vh"><span>✗</span> 无法取代判断</div>
-<div class="shot" style="max-width:none;padding:12px;margin-bottom:18px;"><img alt="SonarSource State of Code 2026" src="assets/img/proof-sonar.png"/><div class="cap">SonarSource - 《State of Code 2026》</div></div>
-<div class="vsub">还有一个 Red Hat 项目试用了 AI 评审员，发现噪声太多，就把它关掉了。</div>
-</div>
-</div>
-<p style="text-align:center;font-size:1.15em;color:var(--ink);margin-top:30px;font-weight:700;">它是<em>注意力</em>的倍增器 - 而不是<em>判断力</em>的替代品。</p>
-</div>
-<div class="cite">来源：<a class="clink" href="https://vercel.com/blog/building-a-software-factory-for-ai-sdk" rel="noopener" target="_blank">Vercel AI SDK</a>，2025；<a class="clink" href="https://www.sonarsource.com/company/press-releases/sonar-data-reveals-critical-verification-gap-in-ai-coding/" rel="noopener" target="_blank">SonarSource</a> 2026（约 1,100 名开发者）；Cockpit / Red Hat（实践者报告）。</div>
-<div class="foot"><span class="dot"></span> 第二部分</div>
-<aside class="notes">
-那么更好的工具能解决这个问题吗？我去找过答案。诚实的回答是：有时能，而且界线很清晰。自动化奏效的地方，是它在人不得不介入之前，先把枯燥的部分做掉 - 复现问题、验证问题、把范围缩小。Vercel 的 AI SDK 团队报告说，一条 agent 流水线仅靠做这第一遍，就撰写了他们四分之一到三分之一的已合并拉取请求，并关闭了七到八成的新进问题。
-
-不奏效的地方，是让 AI 去替代那个判断决定。一个 Red Hat 项目试用了 AI 评审员，发现它说的话里有一半是噪声，就把它关掉了。而一项 SonarSource 调查发现，百分之九十六的开发者并不完全信任 AI 生成的代码。
-
-所以界线在这里：自动化是人的注意力的真正倍增器。它还不是人的判断力的替代品。你仍然需要一个为最终决定负责的人。没有哪个工具改变过这一点。
     </aside>
 </section>
 <!-- 23. THE FRONTIER :: doorway -->
