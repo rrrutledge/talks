@@ -37,7 +37,7 @@ And the community keeps compounding: our LinkedIn following is up roughly thirty
 ## China  [Shanghai 6]
 
 It's a truly worldwide movement, and it runs right through China.
-Jerry Tan leads the InnerSource China Community; Willem Jiang at Huawei and Ada Dai at Tencent are Foundation members; Huawei's InnerSource Office presented at our 2025 Global Summit in Yokohama.
+Jerry Tan leads the InnerSource China Community; Willem Jiang at Huawei and Ada Dai at Tencent are Foundation members; and Wiky Li from HSBC Technology China is speaking at our 2026 Summit about AI adoption through InnerSource.
 China isn't following this movement; it's helping lead it.
 
 ---
